@@ -10973,18 +10973,19 @@ VulnerableDriver AnalyzeDriver(const char* driverPath) {
     <span class="close" data-close>×</span>
     <h3>// ABOUT</h3>
 
-    <p>Full-stack engineer who works the entire layer cake &mdash; from PHP rendering the page you're reading to PE&nbsp;parsers and PML4 page-table walks running in ring&nbsp;0.</p>
+    <p style="font-size:13px; line-height:1.65;">I write code at every altitude &mdash; from the PHP rendering this paragraph down to the page-table walk that decides whether you're allowed to read the next byte.</p>
 
-    <p style="margin-top:18px;"><strong style="color:#9ee9ff;">FRONT.</strong> &nbsp;PHP/JS streaming sites I run myself: SSE progress streams, multi-CDN embed proxies, history writeback, admin dashboards. React / Vite / Three.js when I want the page to be 3D &mdash; this site, for example, is hand-rolled vanilla TypeScript on Three.js with a procedural neural-bridge generated from a deterministic PRNG.</p>
+    <p style="margin-top:20px;"><strong style="color:#9ee9ff;">FRONT.</strong> &nbsp;The web layer is where I prototype fast. Streaming sites, server-sent event pipelines, custom canvas UIs. This page is hand-rolled TypeScript on Three.js &mdash; every glowing pin you see is a real source file, placed by a deterministic PRNG inside a procedural neural mesh I wrote from scratch.</p>
 
-    <p><strong style="color:#9ee9ff;">BACK.</strong> &nbsp;Python wherever it makes sense &mdash; AI agent orchestration that routes across local Ollama and Anthropic/OpenAI with full tool-use, data pipelines and ML training loops, discord bots with cog hot-reloading, scrapers behind authenticated sessions, token-bucket rate-limited API clients, async DB layers.</p>
+    <p><strong style="color:#9ee9ff;">BACK.</strong> &nbsp;Python is my pragmatic layer. Agent orchestration that routes across local and frontier LLMs with first-class tool use. ML training loops, async DB plumbing, scrapers that survive auth expiry and rate limits, token-bucketed API clients that don't trip flood control. I ship the smallest version of a system that actually works in production.</p>
 
-    <p><strong style="color:#9ee9ff;">REVERSE-ENGINEERING.</strong> &nbsp;Rebuilt private mobile APIs from observed iOS traffic &mdash; multi-stage HMAC chains reversed, request signers reproduced in Python, the whole protocol replayed for automation. Game-state extractors against unmanaged memory (ECS walks against live processes) and signature-scan-driven memory editors that locate hidden camera/render pointers beyond what in-game UIs expose.</p>
+    <p><strong style="color:#9ee9ff;">REVERSE-ENGINEERING.</strong> &nbsp;Closed mobile APIs don't stay closed. I read the traffic, reverse the multi-stage HMAC chain, rebuild the signer in Python, replay the protocol. Live game processes aren't opaque either &mdash; I walk ECS structures against unmanaged memory and signature-scan for hidden camera/render pointers the UI never lets you touch.</p>
 
-    <p><strong style="color:#9ee9ff;">SECURITY / WINDOWS INTERNALS.</strong> &nbsp;Usermode manual mappers (IAT walk &middot; section copy &middot; DIR64 base relocations &middot; import descriptor patching), kernel IRP dispatch tables, vulnerable-driver IOCTL exploits turned into arbitrary kernel R/W, HVCI / VBS bypass via PFN-database manipulation, 4-level PML4&rarr;PDPT&rarr;PD&rarr;PT page-table walking, EPROCESS/KTHREAD R/W primitives, x64 shellcode emitters with relocation tables, ntoskrnl on-disk PE parsing for symbol-less export resolution. Educational whitehat &mdash; documents the exact techniques the Windows AC/EDR landscape was built to detect.</p>
+    <p><strong style="color:#9ee9ff;">SECURITY / WINDOWS INTERNALS.</strong> &nbsp;This is where I live. Manual mappers assembled by hand: IAT walk, section copy, DIR64 base relocations, import-descriptor patching. Vulnerable-driver IOCTLs converted into arbitrary kernel R/W. HVCI / VBS bypassed via PFN-database manipulation while the hypervisor watches. Four-level PML4&rarr;PDPT&rarr;PD&rarr;PT page-table walks, EPROCESS / KTHREAD primitives, ntoskrnl parsed off disk for symbol-less export resolution, x64 shellcode emitters with their own relocation tables. The Windows AC / EDR rulebook reads like my training material.</p>
+
+    <p style="margin-top:20px; font-style:italic; color:#9ee9ff;">Every claim above is documented as code on this page. Click a cyan pin.</p>
 
     <p style="opacity:0.55; font-size:11px; margin-top:28px; line-height:1.7;">
-      Click any glowing cyan pin to read the actual source.<br/>
       GitHub: <a href="https://github.com/0xE666" target="_blank" rel="noopener">@0xE666</a> &nbsp;&middot;&nbsp; Discord: <strong>eric.cpp</strong>
     </p>
   `,r.appendChild(e),e.querySelector("[data-close]")?.addEventListener("click",()=>e.classList.remove("open"));let t=!1;return{open(){t=!0,e.classList.add("open")},close(){t=!1,e.classList.remove("open")},isOpen:()=>t}}function _m(r){const e=document.createElement("div");e.className="slidepanel contact",e.innerHTML=`
