@@ -10992,7 +10992,7 @@ VulnerableDriver AnalyzeDriver(const char* driverPath) {
     <span class="close" data-close>×</span>
     <h3>// CONTACT</h3>
     <ul style="list-style:none; padding:0; margin:0; line-height:2;">
-      <li>email &nbsp;&nbsp;&nbsp;<a href="mailto:ericflipreset@gmail.com">ericflipreset@gmail.com</a></li>
+      <li>email &nbsp;&nbsp;&nbsp;<a href="mailto:eric@meiggs.dev">eric@meiggs.dev</a></li>
       <li>discord &nbsp;<span style="color:var(--fg);">eric.cpp</span></li>
     </ul>
     <p style="opacity:0.45; font-size:11px; margin-top:24px;">
