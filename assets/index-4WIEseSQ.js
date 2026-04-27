@@ -10972,11 +10972,20 @@ VulnerableDriver AnalyzeDriver(const char* driverPath) {
   `,r.appendChild(l);const c=document.createElement("div");c.className="hud bl",c.innerHTML="[DRAG] rotate &nbsp;·&nbsp; [SCROLL] zoom &nbsp;·&nbsp; [TAP PIN] inspect &nbsp;·&nbsp; [/] search &nbsp;·&nbsp; [ESC] close",r.appendChild(c),document.getElementById("nav-about")?.addEventListener("click",n.openAbout),document.getElementById("nav-contact")?.addEventListener("click",n.openContact)}function mm(r){const e=document.createElement("div");e.className="slidepanel about",e.innerHTML=`
     <span class="close" data-close>×</span>
     <h3>// ABOUT</h3>
-    <p>Full-stack engineer. I build at the seams &mdash; APIs that shouldn't exist (iOS reverse-engineering for Soundmap-API), agents that route across local + cloud LLMs (vaal), and Windows internals tooling for security research.</p>
-    <p>Comfortable from PHP at the surface to PE/IAT walks in C++ at the bottom. Most of my public work is on GitHub as <a href="https://github.com/0xE666" target="_blank" rel="noopener">0xE666</a>.</p>
-    <p style="opacity:0.55; font-size:11px; margin-top:32px;">
-      Tier-1 work shown on the bridge: <strong>vaal</strong>, <strong>Windows-Internals research</strong>.
-      Tier-2: <strong>Soundmap-API</strong>, <strong>poe_null</strong>, <strong>poe-trade-api</strong>, <strong>poe-watcher</strong>.
+
+    <p>Full-stack engineer who works the entire layer cake &mdash; from PHP rendering the page you're reading to PE&nbsp;parsers and PML4 page-table walks running in ring&nbsp;0.</p>
+
+    <p style="margin-top:18px;"><strong style="color:#9ee9ff;">FRONT.</strong> &nbsp;PHP/JS streaming sites I run myself (anime.e&#8209;e.lol, movies.e&#8209;e.lol): SSE progress streams, multi-CDN embed proxy, history writeback, admin dashboard. React/Vite/Three.js when I want the page to be 3D &mdash; this site, for example, is hand-rolled vanilla TypeScript on Three.js with a 50-pin procedural neural-bridge generated from a deterministic PRNG.</p>
+
+    <p><strong style="color:#9ee9ff;">BACK.</strong> &nbsp;Python everywhere it makes sense &mdash; AI agent orchestration (vaal: routes across local Ollama and Anthropic/OpenAI), data pipelines (poe&#8209;ml, crypto backtesting), discord bots with cog hot-reloading (minabot, vergil), web scrapers behind authenticated sessions (govdeals, dndbeyond), token-bucket rate-limited API clients (poe-trade-api, tarkov-market).</p>
+
+    <p><strong style="color:#9ee9ff;">REVERSE-ENGINEERING.</strong> &nbsp;Soundmap-API was rebuilt from the iOS app's traffic &mdash; multi-stage HMAC chain reversed, request signer reproduced in Python, the whole protocol replayed for automated trading. I write game-state extractors against unmanaged memory (poe_null on the PoE2 ECS) and signature-scan-driven memory editors (rocketMemory: locating camera FoV/angle/distance pointers beyond the in-game UI limits).</p>
+
+    <p><strong style="color:#9ee9ff;">SECURITY / WINDOWS INTERNALS.</strong> &nbsp;The Tier-1 winint cluster on this page surfaces 27 real snippets from injector-master, grdv, hvci, vuln, ekm: usermode manual mappers (IAT walk &middot; section copy &middot; DIR64 relocations), kernel IRP dispatch tables, Intel iqvw64e.sys MmMap primitives, Gigabyte gdrv.sys CVE&#8209;2018&#8209;19320 exploit, HVCI/VBS bypass via PFN-database manipulation, 4-level page-table walking, EPROCESS/KTHREAD R/W primitives. Educational whitehat &mdash; documents the exact techniques the Windows AC/EDR landscape was built to detect.</p>
+
+    <p style="opacity:0.55; font-size:11px; margin-top:28px; line-height:1.7;">
+      Click any glowing cyan pin to read the actual source.<br/>
+      GitHub: <a href="https://github.com/0xE666" target="_blank" rel="noopener">@0xE666</a> &nbsp;&middot;&nbsp; Discord: <strong>eric.cpp</strong>
     </p>
   `,r.appendChild(e),e.querySelector("[data-close]")?.addEventListener("click",()=>e.classList.remove("open"));let t=!1;return{open(){t=!0,e.classList.add("open")},close(){t=!1,e.classList.remove("open")},isOpen:()=>t}}function _m(r){const e=document.createElement("div");e.className="slidepanel contact",e.innerHTML=`
     <span class="close" data-close>×</span>
