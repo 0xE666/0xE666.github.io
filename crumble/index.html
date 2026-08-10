@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="The all-in-one Cookie Run: Crumble companion — full cookie & pet codex, tier board, synergy-aware team optimizer, stage power tools, package value, and a complete guide.">
+<meta property="og:title" content="The Crumble Codex">
+<meta property="og:description" content="All-in-one Cookie Run: Crumble companion — codex, tier board, team optimizer, stage power, package value, and guide.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>%F0%9F%8D%AA</text></svg>">
+<title>Crumble Codex — Cookie Run: Crumble Meta Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --ground:#17110d;--surface:#20180f;--surface-2:#2a2015;--raise:#332619;--border:#3d2d1d;--border-soft:#2f2317;
+  --text:#f4ead9;--muted:#b39c82;--faint:#7d6a55;--accent:#f2a63a;--accent-deep:#c97e17;--accent-glow:rgba(242,166,58,.16);
+  --g-tssr:#ffd24a;--g-ssr:#ff5f8c;--g-sr:#b98cff;--g-r:#43c9bf;--g-u:#8695a6;--g-c:#6f7d8c;
+  --e-fire:#ff6b4a;--e-water:#45b6f5;--e-grass:#5ec26a;--e-light:#f0c33a;--e-dark:#b07be6;
+  --boss:#ff7a59;--wave:#57b6ef;--good:#57c98a;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 10px 30px -12px rgba(0,0,0,.7);
+  --radius:14px;
+  --font-display:"Trebuchet MS","Segoe UI",system-ui,sans-serif;
+  --font-body:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  --font-mono:"Consolas",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: light){:root{
+  --ground:#efe7db;--surface:#fbf6ee;--surface-2:#f4ece0;--raise:#fff;--border:#dbcdb8;--border-soft:#e7dccb;
+  --text:#2a1e12;--muted:#6d5c46;--faint:#9a866c;--accent:#c97e17;--accent-deep:#a5620a;--accent-glow:rgba(201,126,23,.12);
+  --g-tssr:#c99400;--g-ssr:#d63e6d;--g-sr:#7f4fd6;--g-r:#159a90;--g-u:#5f7183;--g-c:#7a8794;
+  --e-fire:#e0512b;--e-water:#2b82c9;--e-grass:#2f9e46;--e-light:#c99400;--e-dark:#8a4fd0;
+  --boss:#d9522f;--wave:#2b82c9;--good:#2e9e63;
+  --shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 8px 24px -14px rgba(80,50,10,.35);
+}}
+:root[data-theme="dark"]{
+  --ground:#17110d;--surface:#20180f;--surface-2:#2a2015;--raise:#332619;--border:#3d2d1d;--border-soft:#2f2317;
+  --text:#f4ead9;--muted:#b39c82;--faint:#7d6a55;--accent:#f2a63a;--accent-deep:#c97e17;--accent-glow:rgba(242,166,58,.16);
+  --g-tssr:#ffd24a;--g-ssr:#ff5f8c;--g-sr:#b98cff;--g-r:#43c9bf;--g-u:#8695a6;--g-c:#6f7d8c;
+  --e-fire:#ff6b4a;--e-water:#45b6f5;--e-grass:#5ec26a;--e-light:#f0c33a;--e-dark:#b07be6;
+  --boss:#ff7a59;--wave:#57b6ef;--good:#57c98a;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 10px 30px -12px rgba(0,0,0,.7);
+}
+:root[data-theme="light"]{
+  --ground:#efe7db;--surface:#fbf6ee;--surface-2:#f4ece0;--raise:#fff;--border:#dbcdb8;--border-soft:#e7dccb;
+  --text:#2a1e12;--muted:#6d5c46;--faint:#9a866c;--accent:#c97e17;--accent-deep:#a5620a;--accent-glow:rgba(201,126,23,.12);
+  --g-tssr:#c99400;--g-ssr:#d63e6d;--g-sr:#7f4fd6;--g-r:#159a90;--g-u:#5f7183;--g-c:#7a8794;
+  --e-fire:#e0512b;--e-water:#2b82c9;--e-grass:#2f9e46;--e-light:#c99400;--e-dark:#8a4fd0;
+  --boss:#d9522f;--wave:#2b82c9;--good:#2e9e63;
+  --shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 8px 24px -14px rgba(80,50,10,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--text);font-family:var(--font-body);line-height:1.55;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 80% -10%,var(--accent-glow),transparent 60%);}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+header{padding:42px 0 18px}
+.kicker{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.3rem,6vw,3.9rem);line-height:.98;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h1 .glow{color:var(--accent)}
+.sub{color:var(--muted);max-width:64ch;margin:14px 0 0;font-size:1.02rem}
+.roster{margin-top:20px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:var(--font-mono);font-size:.78rem;color:var(--muted);
+  background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:8px 15px}
+.roster b{color:var(--text)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--good);box-shadow:0 0 10px var(--good)}
+.roster a{color:var(--accent);text-decoration:none}
+nav.tabs{position:sticky;top:0;z-index:20;margin-top:24px;background:color-mix(in srgb,var(--ground) 88%,transparent);backdrop-filter:blur(10px);
+  border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)}
+.tabs-inner{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs-inner::-webkit-scrollbar{display:none}
+.tab{appearance:none;background:none;border:none;cursor:pointer;color:var(--muted);font-family:var(--font-display);font-weight:700;font-size:.92rem;
+  padding:15px 16px;white-space:nowrap;position:relative;transition:color .15s}
+.tab:hover{color:var(--text)}
+.tab[aria-selected="true"]{color:var(--accent)}
+.tab[aria-selected="true"]::after{content:"";position:absolute;left:16px;right:16px;bottom:-1px;height:2px;background:var(--accent);border-radius:2px 2px 0 0}
+.tab .n{font-family:var(--font-mono);font-size:.68rem;color:var(--faint);margin-left:5px}
+main{padding:28px 0 90px}
+.panel{display:none;animation:fade .3s ease}
+.panel.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.panel.active{animation:none}}
+.panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.panel-head h2{font-family:var(--font-display);font-size:1.6rem;margin:0;letter-spacing:-.01em}
+.panel-head p{color:var(--muted);margin:0;font-size:.92rem;max-width:60ch}
+.section-note{color:var(--muted);font-size:.9rem;margin:2px 0 20px;max-width:74ch}
+.callout{margin:0 0 22px;background:var(--accent-glow);border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));border-radius:var(--radius);padding:15px 18px;font-size:.9rem}
+.callout b{color:var(--accent)}
+/* controls */
+.controls{position:sticky;top:52px;z-index:15;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);padding:14px 0;margin-bottom:8px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{flex:1;min-width:190px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 13px}
+.search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+.search input{flex:1;background:none;border:none;color:var(--text);font-family:var(--font-body);font-size:.95rem;outline:none}
+.search svg{flex:none;color:var(--faint)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{appearance:none;cursor:pointer;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.03em;background:var(--surface);border:1px solid var(--border);color:var(--muted);padding:7px 11px;border-radius:999px;transition:all .13s;text-transform:uppercase}
+.chip:hover{color:var(--text);border-color:var(--faint)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#1a1206;font-weight:700}
+.count{font-family:var(--font-mono);font-size:.75rem;color:var(--faint);margin-left:auto}
+.filterbar{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.filterbar .frow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.filterbar .flab{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);min-width:56px}
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 15px;box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gc,var(--faint))}
+.card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.card .name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;line-height:1.15;margin:0}
+.grade-badge{flex:none;font-family:var(--font-mono);font-weight:700;font-size:.7rem;letter-spacing:.04em;padding:4px 8px;border-radius:7px;color:#150f08;background:var(--gc,var(--faint))}
+.metastar{color:var(--accent);font-size:.85rem}
+.tagrow{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.el{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.el .ed{width:8px;height:8px;border-radius:50%;background:var(--ec)}
+.pill{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.03em;text-transform:uppercase;padding:3px 8px;border-radius:6px;border:1px solid var(--border);color:var(--muted);background:var(--surface-2)}
+.pill.role{color:var(--text)}
+.pill.eff{color:var(--good);border-color:color-mix(in srgb,var(--good) 35%,var(--border))}
+.synrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:6px;border-top:1px solid var(--border-soft)}
+.syn-give,.syn-recv{font-family:var(--font-mono);font-size:.66rem;padding:3px 8px;border-radius:6px}
+.syn-give{color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,var(--border));background:var(--accent-glow)}
+.syn-recv{color:var(--muted);border:1px solid var(--border);background:var(--surface-2)}
+[data-g="TSSR"]{--gc:var(--g-tssr)}[data-g="SSR"]{--gc:var(--g-ssr)}[data-g="SR"]{--gc:var(--g-sr)}[data-g="R"]{--gc:var(--g-r)}[data-g="U"]{--gc:var(--g-u)}[data-g="C"]{--gc:var(--g-c)}
+[data-e="Fire"]{--ec:var(--e-fire)}[data-e="Water"]{--ec:var(--e-water)}[data-e="Grass"]{--ec:var(--e-grass)}[data-e="Light"]{--ec:var(--e-light)}[data-e="Dark"]{--ec:var(--e-dark)}
+.empty{text-align:center;color:var(--faint);padding:50px;font-family:var(--font-mono);font-size:.9rem}
+/* synergy tab */
+.syn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.syn-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.syn-card h3{font-family:var(--font-display);font-size:1.2rem;margin:0 0 2px;display:flex;align-items:center;gap:9px}
+.syn-card .ko{font-family:var(--font-mono);font-size:.72rem;color:var(--faint)}
+.syn-card .mech{color:var(--muted);font-size:.88rem;margin:6px 0 13px}
+.rate{display:flex;gap:16px;margin:0 0 13px;font-family:var(--font-mono);font-size:.74rem}
+.rate .lab{color:var(--faint);text-transform:uppercase;letter-spacing:.06em}
+.pv{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:11px 0 5px}
+.namelist{display:flex;gap:6px;flex-wrap:wrap}
+.nm{font-size:.79rem;padding:4px 9px;border-radius:7px;background:var(--surface-2);border:1px solid var(--border);color:var(--text)}
+.nm.provider{border-color:color-mix(in srgb,var(--accent) 45%,var(--border));color:var(--accent)}
+.scarce{margin-top:13px;font-size:.82rem;color:var(--muted);border-top:1px dashed var(--border);padding-top:10px}
+.scarce b{color:var(--text)}.bottleneck{color:var(--boss);font-weight:700}
+/* pets table */
+.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.9rem}
+th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--border-soft)}
+thead th{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);background:var(--surface-2);position:sticky;top:0}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--surface-2)}
+td .petname{font-family:var(--font-display);font-weight:700}
+.t-badge{font-family:var(--font-mono);font-weight:700;font-size:.66rem;padding:3px 8px;border-radius:6px;color:#150f08}
+.eff-txt{font-family:var(--font-mono);font-size:.8rem;color:var(--accent)}
+/* team cards + builder shared */
+.team-stack{display:flex;flex-direction:column;gap:16px}
+.team{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.team-hd{padding:15px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.team-hd .idx{font-family:var(--font-mono);font-size:.75rem;color:var(--faint)}
+.team-hd h3{font-family:var(--font-display);font-size:1.24rem;margin:0;flex:1;min-width:150px}
+.team-hd .slots{font-family:var(--font-mono);font-size:.68rem;color:var(--faint)}
+.team-tag{font-family:var(--font-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.05em;padding:5px 11px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+.team-tag.flag{background:var(--accent);border-color:var(--accent);color:#1a1206;font-weight:700}
+.reset-team{appearance:none;cursor:pointer;font-family:var(--font-mono);font-size:.66rem;background:none;border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:4px 10px}
+.reset-team:hover{border-color:var(--accent);color:var(--accent)}
+.team-body{padding:16px 20px;display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.team-body{grid-template-columns:1.4fr 1fr}}
+.lineup{display:flex;flex-direction:column;gap:4px}
+.unit{display:flex;align-items:center;gap:10px;font-size:.9rem;padding:7px 0;border-bottom:1px solid var(--border-soft)}
+.unit:last-child{border-bottom:none}
+.unit .u-name{font-weight:600;min-width:118px}
+.unit .u-el{width:8px;height:8px;border-radius:50%;background:var(--ec);flex:none}
+.unit .u-role{font-family:var(--font-mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.04em;color:var(--faint)}
+.unit .u-job{color:var(--muted);font-size:.8rem}
+.unit .u-tier{margin-left:auto;font-family:var(--font-mono);font-size:.62rem;font-weight:700;padding:2px 7px;border-radius:5px;color:#150f08;background:var(--gc,var(--faint))}
+.miss{appearance:none;cursor:pointer;flex:none;width:20px;height:20px;border-radius:6px;border:1px solid var(--border);background:var(--surface-2);color:var(--faint);font-size:.7rem;line-height:1;display:grid;place-items:center;transition:all .12s;padding:0}
+.miss:hover{border-color:var(--boss);color:var(--boss)}
+.miss.active{background:var(--accent);border-color:var(--accent);color:#1a1206}
+.unit.sub{background:linear-gradient(90deg,var(--accent-glow),transparent 70%);margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:7px}
+.unit.sub .u-name{color:var(--accent)}
+.team-side{background:var(--surface-2);border-radius:10px;padding:14px 16px;align-self:start}
+.team-side .lab{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.team-side p{margin:0 0 12px;font-size:.85rem;color:var(--muted)}
+.team-side p:last-child{margin:0}
+.team-side b{color:var(--text)}
+.team-side .hint{font-size:.77rem;color:var(--faint);border-top:1px dashed var(--border);padding-top:10px}
+/* builder */
+.build-controls{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px}
+.bc-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.bc-lab{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);min-width:74px}
+.bc-out{font-family:var(--font-mono);font-weight:700;font-size:1.05rem;color:var(--accent);min-width:26px;text-align:center;font-variant-numeric:tabular-nums}
+#sizeRange{flex:1;min-width:150px;max-width:280px;accent-color:var(--accent);height:5px}
+.gen-btn{margin-left:auto;appearance:none;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:.95rem;background:var(--accent);color:#1a1206;border:none;border-radius:10px;padding:11px 20px;transition:transform .1s,filter .15s}
+.gen-btn:hover{filter:brightness(1.08)}.gen-btn:active{transform:scale(.97)}
+.result-hd{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.result-hd h3{font-family:var(--font-display);font-size:1.5rem;margin:0}
+.rating{display:flex;align-items:baseline;gap:7px;margin-left:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:8px 16px}
+.rating .val{font-family:var(--font-mono);font-weight:700;font-size:1.7rem;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1}
+.rating .lab{font-family:var(--font-mono);font-size:.64rem;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+.build-body{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.build-body{grid-template-columns:1.35fr 1fr}}
+.build-lineup{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:8px 18px;box-shadow:var(--shadow)}
+.build-side{display:flex;flex-direction:column;gap:14px}
+.box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:15px 17px;box-shadow:var(--shadow)}
+.box .lab{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.box .why{font-size:.86rem;color:var(--muted);margin:0}.box .why b{color:var(--text)}
+.syn-live{display:flex;flex-direction:column;gap:7px}
+.syn-live .row{display:flex;align-items:center;gap:8px;font-size:.82rem}
+.syn-live .snm{font-family:var(--font-mono);font-size:.72rem;color:var(--text);min-width:90px}
+.syn-live .flow{color:var(--muted);font-size:.79rem}
+.syn-live .on{width:8px;height:8px;border-radius:50%;background:var(--good);flex:none;box-shadow:0 0 7px var(--good)}
+.rolebars{display:flex;flex-direction:column;gap:8px}
+.rolebar{display:grid;grid-template-columns:78px 1fr 22px;align-items:center;gap:9px;font-family:var(--font-mono);font-size:.72rem}
+.rolebar .track{height:8px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.rolebar .fill{height:100%;background:var(--accent);border-radius:4px}
+.rolebar .cnt{color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.petpick{display:flex;gap:9px;flex-wrap:wrap}
+.petpick .p{flex:1;min-width:118px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
+.petpick .p .pn{font-family:var(--font-display);font-weight:700;font-size:.88rem}
+.petpick .p .pe{font-family:var(--font-mono);font-size:.7rem;color:var(--accent);margin-top:2px}
+/* progression */
+.prog{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.prog-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.prog-card h3{font-family:var(--font-display);font-size:1.1rem;margin:0 0 4px;display:flex;gap:9px;align-items:center}
+.prog-card .num{font-family:var(--font-mono);color:var(--accent);font-size:.9rem}
+.prog-card p{color:var(--muted);font-size:.87rem;margin:8px 0 0}.prog-card b{color:var(--text)}
+.prog-card ul{margin:9px 0 0;padding-left:18px;color:var(--muted);font-size:.85rem}.prog-card li{margin:5px 0}
+/* ===== STAGE POWER ===== */
+.stage-tool{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:22px;box-shadow:var(--shadow)}
+.stage-inputs{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+.stage-inputs label{display:flex;flex-direction:column;gap:6px;font-family:var(--font-mono);font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);flex:1;min-width:140px}
+.stage-inputs input{background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:10px 12px;color:var(--text);font-family:var(--font-body);font-size:.95rem;outline:none;font-variant-numeric:tabular-nums}
+.stage-inputs input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+.stage-inputs .gen-btn{margin-left:0}
+#stageResult{margin-top:16px}
+.srec{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.srec .big{font-family:var(--font-mono);font-weight:700;font-size:1.7rem;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1}
+.srec .lab{font-family:var(--font-mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);margin-bottom:3px}
+.srec .bosschip{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:7px 14px;font-size:.86rem}
+.verdict{border-radius:10px;padding:13px 16px;font-size:.9rem;border:1px solid var(--border);color:var(--muted);line-height:1.6}
+.verdict.good{background:color-mix(in srgb,var(--good) 13%,transparent);border-color:color-mix(in srgb,var(--good) 40%,var(--border))}
+.verdict.warn{background:color-mix(in srgb,var(--boss) 11%,transparent);border-color:color-mix(in srgb,var(--boss) 42%,var(--border))}
+.verdict b{color:var(--text)}
+.brk{display:flex;flex-direction:column;gap:5px}
+.brk-row{display:grid;grid-template-columns:minmax(120px,1.2fr) 2fr 52px;gap:12px;align-items:center;padding:9px 12px;border-radius:9px;font-family:var(--font-mono);font-size:.8rem;background:var(--surface);border:1px solid transparent}
+.brk-row.here{background:var(--accent-glow);border-color:color-mix(in srgb,var(--accent) 45%,var(--border))}
+.brk-row .thr{color:var(--muted)}
+.brk-row .track{height:9px;border-radius:5px;background:var(--surface-2);overflow:hidden}
+.brk-row .bar{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--boss),var(--accent) 60%,var(--good))}
+.brk-row .dmg{text-align:right;font-weight:700;color:var(--text)}
+
+/* ===== ADVANCED FEATURES ===== */
+.cardbtns{display:flex;align-items:center;gap:7px}
+.own{appearance:none;cursor:pointer;width:22px;height:22px;border-radius:50%;border:1px solid var(--border);background:var(--surface-2);color:var(--faint);font-size:.7rem;display:grid;place-items:center;padding:0;transition:all .12s}
+.own:hover{border-color:var(--good);color:var(--good)}
+.own.have{background:var(--good);border-color:var(--good);color:#0d1a10}
+.card{cursor:pointer}
+.card.dim{opacity:.38}
+.card.dim:hover{opacity:.72}
+.u-name.clk{cursor:pointer}.u-name.clk:hover{color:var(--accent)}
+.nm.clk{cursor:pointer}.nm.clk:hover{border-color:var(--accent);color:var(--accent)}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.62);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;padding:6vh 16px;overflow:auto}
+.modal.open{display:flex;animation:fade .2s ease}
+.modal-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);max-width:560px;width:100%;padding:22px 24px;box-shadow:0 24px 60px -20px rgba(0,0,0,.8);position:relative}
+.m-close{position:absolute;top:14px;right:14px;appearance:none;cursor:pointer;background:var(--surface-2);border:1px solid var(--border);color:var(--muted);width:30px;height:30px;border-radius:8px}
+.m-close:hover{border-color:var(--accent);color:var(--accent)}
+.m-head{display:flex;align-items:center;gap:12px}
+.m-head h3{font-family:var(--font-display);font-size:1.4rem;margin:0}
+.m-head .grade-badge{font-size:.72rem}
+.m-syn{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 2px}
+.m-lab{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:16px 0 7px}
+.switch{appearance:none;cursor:pointer;font-family:var(--font-mono);font-size:.75rem;background:var(--surface-2);border:1px solid var(--border);color:var(--muted);padding:9px 15px;border-radius:999px}
+.switch[aria-pressed="true"]{background:var(--good);border-color:var(--good);color:#0d1a10;font-weight:700}
+.roster-grid{display:flex;flex-direction:column;gap:16px}
+.rg-grade .rg-lab{font-family:var(--font-mono);font-weight:700;font-size:.72rem;letter-spacing:.06em;margin-bottom:7px}
+.rg-chips{display:flex;gap:6px;flex-wrap:wrap}
+.ochip{appearance:none;cursor:pointer;font-size:.76rem;background:var(--surface);border:1px solid var(--border);color:var(--faint);padding:6px 10px;border-radius:8px;transition:all .1s}
+.ochip:hover{border-color:var(--muted);color:var(--text)}
+.ochip.have{background:color-mix(in srgb,var(--good) 16%,var(--surface));border-color:color-mix(in srgb,var(--good) 45%,var(--border));color:var(--text)}
+.boss-list{display:flex;flex-direction:column;gap:8px}
+.boss-row{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 15px;box-shadow:var(--shadow)}
+.boss-n{font-family:var(--font-display);font-weight:700;font-size:1rem}
+.boss-meta{display:flex;gap:14px;font-family:var(--font-mono);font-size:.72rem;color:var(--faint);margin:3px 0 6px}
+.boss-p{color:var(--accent)}
+.boss-stg{font-family:var(--font-mono);font-size:.76rem;color:var(--muted)}
+.lock-sel,.lock-inp{background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:9px 11px;color:var(--text);font-family:var(--font-body);font-size:.9rem;outline:none}
+.lock-sel:focus,.lock-inp:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+.lock-sel{min-width:170px}.lock-inp{width:150px}
+.share-btn{appearance:none;cursor:pointer;font-family:var(--font-mono);font-size:.66rem;background:none;border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:4px 10px}
+.share-btn:hover{border-color:var(--accent);color:var(--accent)}
+.linkbtn{appearance:none;cursor:pointer;font-family:var(--font-mono);font-size:.72rem;background:var(--accent);color:#1a1206;border:none;border-radius:7px;padding:4px 10px;font-weight:700;margin:2px 6px 2px 0}
+.toast{position:fixed;bottom:78px;right:20px;z-index:60;background:var(--text);color:var(--ground);font-size:.85rem;font-weight:600;padding:10px 16px;border-radius:10px;opacity:0;transform:translateY(8px);transition:all .2s;pointer-events:none}
+.toast.show{opacity:1;transform:none}
+
+/* ===== AIO: global search, guide, cookie tips ===== */
+.gsearch{position:relative;margin-top:18px;max-width:540px}
+.gsearch .gin{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 15px}
+.gsearch .gin:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+.gsearch input{flex:1;background:none;border:none;color:var(--text);font-size:1rem;outline:none;font-family:var(--font-body)}
+.gsearch svg{color:var(--faint);flex:none}
+.gsearch .gkbd{font-family:var(--font-mono);font-size:.6rem;color:var(--faint);border:1px solid var(--border);border-radius:5px;padding:2px 6px}
+.gres{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:25;background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:0 20px 50px -20px rgba(0,0,0,.7);max-height:64vh;overflow:auto;display:none}
+.gres.open{display:block}
+.gres .gsec{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);padding:10px 14px 4px}
+.gres .gitem{display:flex;align-items:center;gap:10px;padding:8px 14px;cursor:pointer;font-size:.9rem}
+.gres .gitem:hover{background:var(--surface-2)}
+.gres .gtag{margin-left:auto;font-family:var(--font-mono);font-size:.62rem;color:var(--faint)}
+.gres .gdot{width:8px;height:8px;border-radius:50%;flex:none}
+.cuse{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-top:3px}
+.m-tip{background:var(--accent-glow);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:10px;padding:11px 14px;font-size:.92rem;color:var(--text);margin:12px 0 2px;line-height:1.55}
+.m-use{display:inline-block;font-family:var(--font-mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,var(--border));border-radius:5px;padding:2px 7px;margin-right:8px}
+.guide-body{display:flex;flex-direction:column;gap:10px}
+.gcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.gcard summary{cursor:pointer;list-style:none;padding:15px 18px;font-family:var(--font-display);font-weight:700;font-size:1.08rem;display:flex;align-items:center;gap:11px}
+.gcard summary::-webkit-details-marker{display:none}
+.gcard summary::after{content:"+";margin-left:auto;color:var(--faint);font-family:var(--font-mono)}
+.gcard[open] summary::after{content:"−"}
+.gcard .gicon{font-size:1.1rem}
+.gcard[open] summary{border-bottom:1px solid var(--border-soft)}
+.gcontent{padding:14px 20px 18px;color:var(--muted);font-size:.92rem;line-height:1.65}
+.gcontent p{margin:0 0 10px}.gcontent ul{margin:0 0 10px;padding-left:20px}.gcontent li{margin:5px 0}
+.gcontent b{color:var(--text)}.gcontent em{color:var(--text);font-style:italic}
+
+/* ===== hero, economy, power planner ===== */
+.herostats{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.hs{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px 15px;display:flex;flex-direction:column;gap:2px;min-width:82px}
+.hs .hv{font-family:var(--font-mono);font-weight:700;font-size:1.35rem;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
+.hs .hl{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.heroquick{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.hq{appearance:none;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:.86rem;background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:9px 14px;transition:all .13s}
+.hq:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.eff-cell{display:flex;align-items:center;gap:9px;min-width:130px}
+.eff-num{font-family:var(--font-mono);font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.eff-bar{flex:1;height:7px;background:var(--surface-2);border-radius:4px;overflow:hidden;min-width:36px}
+.eff-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--good))}
+.eff-t1{color:var(--good)}.eff-t2{color:var(--accent)}.eff-t3{color:var(--muted)}
+.econ-name{font-family:var(--font-display);font-weight:700;font-size:.92rem}
+.econ-cat{font-family:var(--font-mono);font-size:.58rem;text-transform:uppercase;letter-spacing:.05em;color:var(--faint)}
+.econ-c{font-size:.8rem;color:var(--muted)}
+.econ-price{font-variant-numeric:tabular-nums;font-family:var(--font-mono);font-size:.85rem;white-space:nowrap}
+td.econ-dia{font-variant-numeric:tabular-nums;font-family:var(--font-mono);color:var(--accent);font-size:.85rem;white-space:nowrap}
+.frontier{display:flex;flex-direction:column;gap:8px}
+.fr-row{display:grid;grid-template-columns:88px 1fr;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:11px 14px}
+.fr-dmg{font-family:var(--font-mono);font-weight:700;color:var(--accent)}
+.fr-stage{font-family:var(--font-display);font-weight:700;font-size:1.05rem}
+.fr-sub{font-family:var(--font-mono);font-size:.72rem;color:var(--faint)}
+
+/* ===== tier board, element mix, polish ===== */
+.tierboard{display:flex;flex-direction:column;gap:10px}
+.tier-row{display:grid;grid-template-columns:54px 1fr;gap:0;align-items:stretch;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.tier-lab{display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:#150f08}
+.tier-chips{display:flex;gap:6px;flex-wrap:wrap;padding:12px 14px}
+.tchip{cursor:pointer;font-size:.82rem;background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:5px 10px;display:inline-flex;align-items:center;gap:6px;transition:all .12s}
+.tchip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.tchip .ed{width:7px;height:7px;border-radius:50%;flex:none}
+.tchip .tuse{font-family:var(--font-mono);font-size:.56rem;color:var(--faint);letter-spacing:.03em}
+.tchip:hover .tuse{color:var(--accent)}
+.elmix{display:flex;gap:8px;flex-wrap:wrap}
+.elc{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:.75rem;background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:5px 9px}
+.elc .ed{width:8px;height:8px;border-radius:50%}
+/* polish */
+.card{transition:border-color .15s,transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--faint)}
+.tier-row,.boss-row,.team{animation:fade .28s ease both}
+@media (prefers-reduced-motion:reduce){.tier-row,.boss-row,.team,.card{animation:none;transition:none}}
+@media (max-width:560px){
+  .wrap{padding:0 14px}
+  header{padding:32px 0 14px}
+  h1{font-size:2.1rem}
+  .sub{font-size:.95rem}
+  .tab{padding:13px 11px;font-size:.85rem}
+  .grid{grid-template-columns:1fr}
+  .hs{min-width:0;flex:1;padding:9px 11px}
+  .hs .hv{font-size:1.15rem}
+  .heroquick .hq{flex:1;text-align:center}
+  .controls{top:48px}
+  .modal-card{padding:18px 16px}
+  .team-hd{gap:7px;padding:13px 15px}
+  .team-body,.build-body{padding:14px}
+  .unit .u-name{min-width:96px}
+  .result-hd h3{font-size:1.25rem}
+  .tier-lab{font-size:1.15rem}
+}
+
+footer{border-top:1px solid var(--border-soft);padding:26px 0 60px;color:var(--faint);font-size:.8rem}
+footer a{color:var(--muted)}footer .srcs{display:flex;gap:8px 16px;flex-wrap:wrap;margin-top:10px}
+.theme-toggle{position:fixed;bottom:20px;right:20px;z-index:30;appearance:none;cursor:pointer;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--accent);font-size:1.15rem;box-shadow:var(--shadow);display:grid;place-items:center}
+.theme-toggle:hover{border-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="kicker">Cookie Run: Crumble · Meta Database · Aug 2026</p>
+  <h1>The Crumble <span class="glow">Codex</span></h1>
+  <p class="sub">Your all-in-one Cookie Run: Crumble companion — the full cookie &amp; pet codex, a synergy-aware team optimizer, stage-power tools, a boss finder, and a player guide, in one place.</p>
+  <div class="roster"><span class="dot"></span> The all-in-one Cookie Run: Crumble companion · <b>69</b> cookies · <b>54</b> pets · <b>12</b> cookie + <b>3</b> pet slots</div>
+  <div class="herostats">
+    <div class="hs"><span class="hv">69</span><span class="hl">Cookies</span></div>
+    <div class="hs"><span class="hv">54</span><span class="hl">Pets</span></div>
+    <div class="hs"><span class="hv">7</span><span class="hl">Synergies</span></div>
+    <div class="hs"><span class="hv">168</span><span class="hl">Chapters</span></div>
+    <div class="hs"><span class="hv">5,040</span><span class="hl">Stages</span></div>
+  </div>
+  <div class="heroquick">
+    <button class="hq" data-hero="builder">⚔️ Build a team</button>
+    <button class="hq" data-hero="stages">🧱 Check a stage</button>
+    <button class="hq" data-hero="cookies">🍪 Browse cookies</button>
+    <button class="hq" data-hero="economy">💰 Package value</button>
+    <button class="hq" data-hero="guide">📖 Read the guide</button>
+  </div>  <div class="gsearch"><div class="gin"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="gSearch" placeholder="Search anything — cookies, pets, bosses, synergies…" autocomplete="off" aria-label="Global search"><span class="gkbd">esc</span></div><div id="gResults" class="gres"></div></div></header>
+</div>
+
+<nav class="tabs"><div class="wrap"><div class="tabs-inner" role="tablist">
+  <button class="tab" role="tab" aria-selected="true" data-panel="cookies">Cookies <span class="n" id="cc"></span></button>
+    <button class="tab" role="tab" aria-selected="false" data-panel="tierlist">Tier Board</button><button class="tab" role="tab" aria-selected="false" data-panel="guide">Guide</button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="synergies">Synergies <span class="n">7</span></button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="pets">Pets <span class="n">54</span></button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="roster">My Roster</button>  <button class="tab" role="tab" aria-selected="false" data-panel="teams">Team Comps</button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="builder">Builder <span class="n">✦</span></button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="stages">Stage Power</button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="economy">Package Value</button>  <button class="tab" role="tab" aria-selected="false" data-panel="progression">Progression</button>
+</div></div></nav>
+
+<main class="wrap">
+
+<section class="panel active" id="cookies" role="tabpanel">
+  <div class="panel-head"><h2>Cookie Codex</h2><p>All 69, grouped by grade. Filter by grade, class, element, or synergy. ▲ = synergy provided, ▽ = synergy wanted.</p></div>
+  <div class="controls">
+    <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="cookieSearch" placeholder="Search cookies…" aria-label="Search cookies"></label>
+    <span class="count" id="cookieCount"></span>
+  </div>
+  <div class="filterbar">
+    <div class="frow"><span class="flab">Grade</span><div class="chips" id="gradeChips"></div></div>
+    <div class="frow"><span class="flab">Class</span><div class="chips" id="roleChips"></div></div>
+    <div class="frow"><span class="flab">Element</span><div class="chips" id="elChips"></div></div>
+    <div class="frow"><span class="flab">Synergy</span><div class="chips" id="synChips"></div></div>
+  </div>
+  <div class="grid" id="cookieGrid"></div>
+</section>
+
+<section class="panel" id="tierlist" role="tabpanel">
+  <div class="panel-head"><h2>Tier Board</h2><p>A heuristic ranking from rarity + meta usage + synergy value + team-amplifying effects. A guide, not gospel — click any cookie for its detail card.</p></div>
+  <div class="filterbar">
+    <div class="frow"><span class="flab">Class</span><div class="chips" id="tlRole"></div></div>
+    <div class="frow"><span class="flab">Element</span><div class="chips" id="tlEl"></div></div>
+  </div>
+  <div id="tierboard" class="tierboard"></div>
+</section>
+
+<section class="panel" id="guide" role="tabpanel">
+  <div class="panel-head"><h2>Player Guide</h2><p>New or returning? Start here. Everything below is grounded in the live game data this tool runs on.</p></div>
+  <div id="guideBody" class="guide-body"></div>
+</section>
+
+<section class="panel" id="synergies" role="tabpanel">
+  <div class="panel-head"><h2>The 7 Synergies</h2><p>Providers (▲, from real game data) grant a synergy; receivers scale with it. Both must be on the team for it to work.</p></div>
+  <p class="section-note">Rating: <b style="color:var(--boss)">◆ boss/single-target</b> vs <b style="color:var(--wave)">◆ wave clear</b> (★ scale of 3). Provider/receiver lists are computed directly from the 69-cookie dataset.</p>
+  <div class="syn-grid" id="synGrid"></div>
+</section>
+
+<section class="panel" id="pets" role="tabpanel">
+  <div class="panel-head"><h2>Pet Codex</h2><p>All 54 pets by grade. You equip <b>3</b>. Universal buffs fit any team; synergy/element pets pay off only if your team runs that theme.</p></div>
+  <p class="section-note"><b>Best general 3:</b> Holy Baby Drop (Ally ATK) + Gold Drop (Crit Rate) + Sweet n' Sour (Crit DMG). Swap one for a synergy pet (Chain→Fluffy Cheese Cat, Area→Banana Lion, etc.) or Majestic King Choco Drop (Max HP) if you're dying.</p>
+  <div class="table-wrap"><table><thead><tr><th>Grade</th><th>Pet</th><th>Effect(s)</th></tr></thead><tbody id="petBody"></tbody></table></div>
+</section>
+
+<section class="panel" id="roster" role="tabpanel">
+  <div class="panel-head"><h2>My Roster</h2><p>Mark what you own. Flip the switch and the optimizer + team comps build only from your cookies. Saved on this device.</p></div>
+  <div class="controls" style="gap:14px">
+    <button id="useOwnedSwitch" class="switch" aria-pressed="false">OFF — using full roster</button>
+    <span class="count" id="ownCount"></span>
+    <button id="rosterAll" class="chip">Own all</button>
+    <button id="rosterNone" class="chip">Clear</button>
+  </div>
+  <div id="rosterGrid" class="roster-grid"></div>
+</section>
+<section class="panel" id="teams" role="tabpanel">
+  <div class="panel-head"><h2>Meta Team Comps</h2><p>Six 12-cookie lineups by content. Golden rule: funnel materials into 2–3 carries — a focused core beats a spread-thin 12.</p></div>
+  <div class="callout"><b>Missing a cookie?</b> Hit the <b>✕</b> next to it and the best same-class / same-synergy replacement drops into its slot. ✕ again (↺) to restore.</div>
+  <div class="team-stack" id="teamStack"></div>
+</section>
+
+<section class="panel" id="builder" role="tabpanel">
+  <div class="panel-head"><h2>Team Optimizer <span style="color:var(--accent)">✦</span></h2><p>Pick content + team size. The solver builds the best team from all 69 cookies, turns on the right synergies, and picks 3 pets — reasoning shown.</p></div>
+  <div class="build-controls">
+    <div class="bc-row"><span class="bc-lab">Content</span>
+      <div class="chips" id="contentChips">
+        <button class="chip" aria-pressed="true" data-c="story">Story</button>
+        <button class="chip" aria-pressed="false" data-c="boss">Boss / Single-Target</button>
+        <button class="chip" aria-pressed="false" data-c="daily">Daily Dungeon</button>
+        <button class="chip" aria-pressed="false" data-c="crumble">Crumble Dungeon</button>
+        <button class="chip" aria-pressed="false" data-c="pvp">Arena / PvP</button>
+      </div></div>
+    <div class="bc-row"><span class="bc-lab">Team size</span>
+      <input type="range" id="sizeRange" min="5" max="12" value="12" step="1" aria-label="Team size">
+      <output id="sizeOut" class="bc-out">12</output>
+      <button class="gen-btn" id="genBtn">✦ Generate team</button></div>
+    <div class="bc-row"><span class="bc-lab">Build around</span>
+      <select id="lockSel" class="lock-sel"><option value="">— no lock —</option></select>
+      <span class="bc-lab" style="min-width:auto">Stuck on</span>
+      <input id="buildStage" class="lock-inp" placeholder="stage e.g. 30-20" autocomplete="off">
+      <button id="shareBuild" class="share-btn" style="margin-left:auto">↗ Copy share link</button>
+    </div>
+  </div>
+  <div id="buildResult"></div>
+</section>
+
+<section class="panel" id="stages" role="tabpanel">
+  <div class="panel-head"><h2>Stage Power Check</h2><p>Enter a stage for its recommended Power and boss, then add your team Power to see your damage bracket — the hidden reason under-power teams hit walls.</p></div>
+  <div class="stage-tool">
+    <div class="stage-inputs">
+      <label>Stage<input id="stageIn" placeholder="e.g. 30-20" autocomplete="off"></label>
+      <label>Your team Power (optional)<input id="powIn" placeholder="e.g. 1,200,000" inputmode="numeric" autocomplete="off"></label>
+      <button id="stageBtn" class="gen-btn">Check</button>
+    </div>
+    <div id="stageResult"></div>
+  </div>
+  <div class="panel-head" style="margin-top:26px"><h2 style="font-size:1.25rem">Power Planner</h2></div>
+  <p class="section-note">Enter your team Power to see the deepest stage you can clear at each damage bracket — your realistic progression frontier right now.</p>
+  <div class="stage-tool"><div class="stage-inputs"><label>Your team Power<input id="plannerPow" placeholder="e.g. 1,200,000" inputmode="numeric" autocomplete="off"></label><button id="plannerBtn" class="gen-btn">Plan my frontier</button></div><div id="plannerResult" style="margin-top:14px"></div></div>
+
+  <div class="panel-head" style="margin-top:4px"><h2 style="font-size:1.25rem">Power → Damage Brackets</h2></div>
+  <p class="section-note">Final damage = your Power ÷ the stage's recommended Power, snapped to these 8 brackets. <b style="color:var(--boss)">Below 10% you deal just 1% damage</b> — an under-power team literally can't scratch the boss, which is why raising Power (Resolve, promotions, runes) breaks walls faster than swapping cookies. At 120% you get a 20% damage bonus.</p>
+  <div id="bracketTable"></div>
+  <div class="panel-head" style="margin-top:26px"><h2 style="font-size:1.25rem">Boss Finder</h2></div>
+  <p class="section-note">Search any boss to see every stage it guards and the recommended-power range across all 168 chapters.</p>
+  <label class="search" style="margin-bottom:12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="bossSearch" placeholder="Search bosses… e.g. Cool Mint" autocomplete="off"></label>
+  <div id="bossList" class="boss-list"></div>
+</section>
+
+<section class="panel" id="economy" role="tabpanel">
+  <div class="panel-head"><h2>Package Value</h2><p>Every shop package ranked by value — contents converted to a diamond-equivalent, then to efficiency vs the baseline (375💎 per ₩1,500 = 100%). Higher % = more value for your money.</p></div>
+  <div class="controls"><div class="chips" id="econCat"></div><span class="count" id="econCount"></span></div>
+  <div class="table-wrap"><table><thead><tr><th>Efficiency</th><th>Package</th><th>Price</th><th>💎 value</th><th>Contents</th></tr></thead><tbody id="econBody"></tbody></table></div>
+  <p class="section-note">💎 model: cookie pull 200 · pet pull 100 · SSR cookie 36,000 · SSR pet 10,000 · TSSR cookie 9,000 · flame 0.5 · dough 3.75 · rune crystal 1.25 · stellar pt 2.5. SR cookies and period-based permanent memberships are excluded. Prices in KRW (₩); efficiency % is region-agnostic. Membership figures assume the standard ~30-day payout.</p>
+</section>
+<section class="panel" id="progression" role="tabpanel">
+  <div class="panel-head"><h2>Breaking Progression Walls</h2><p>When your meta team stalls on an X-30 boss, it's account power, not comp. These are the levers.</p></div>
+  <div class="callout"><b>Diagnose first:</b> Team wipes before the boss dies → <b>survival</b> problem (DEF/HP/tank/heals). Timer expires with team alive → <b>damage</b> problem (ATK / DEF-down / uptime).</div>
+  <div class="prog" id="progGrid"></div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <div>Cookie, pet, element, class, and synergy values reflect the current game build (1.0.002). Tier stars, team comps, ratings, guide, and progression tips are editorial and community-informed — provisional and subject to balance patches.</div>
+  <div class="srcs">
+    <a href="https://www.pockettactics.com/cookierun-crumble/tier-list">Pocket Tactics</a>
+    <a href="https://www.pocketgamer.com/cookierun-crumble/best-teams/">Pocket Gamer</a>
+    <a href="https://cookieruncrumble.guide/cookie-run-crumble-best-team/">CookieRun Crumble Guide</a>
+  </div>
+</footer>
+<div id="modal" class="modal"><div class="modal-card"><button class="m-close" data-close aria-label="Close">✕</button><div id="modalBody"></div></div></div>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">◐</button>
+
+<script>
+/* ===== GAME DATA (current build values) ===== */
+const COOKIES=[{"n":"Oven Wanderer","grade":"TSSR","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Chain"]},{"n":"Wind Archer","grade":"TSSR","el":"Grass","role":"Shooter","eff":[],"gives":[],"recv":["Pierce"]},{"n":"Espresso","grade":"SSR","el":"Grass","role":"Shooter","eff":[],"gives":[],"recv":["Area"]},{"n":"Twizzly Gummy","grade":"SSR","el":"Dark","role":"Shooter","eff":[],"gives":[],"recv":["Chain"]},{"n":"Milky Way","grade":"SSR","el":"Light","role":"Shooter","eff":[],"gives":[],"recv":["Area"]},{"n":"Dark Choco","grade":"SSR","el":"Dark","role":"Tanker","eff":["DEF Down"],"gives":[],"recv":["Duration"]},{"n":"Toothpaste Choco","grade":"SSR","el":"Grass","role":"Supporter","eff":["Heal"],"gives":["Area"],"recv":["Multishot"]},{"n":"Pomegranate","grade":"SSR","el":"Dark","role":"Supporter","eff":["Skill Amp+"],"gives":["Proj. Speed"],"recv":["Multishot"]},{"n":"Cream Soda","grade":"SSR","el":"Water","role":"Attacker","eff":[],"gives":["Area"],"recv":["Proj. Speed"]},{"n":"Milk (Pediatrician)","grade":"SSR","el":"Light","role":"Supporter","eff":["ATK+","Heal"],"gives":["Duration"],"recv":["Proj. Speed"]},{"n":"Strawberry Shortcake","grade":"SSR","el":"Grass","role":"Attacker","eff":["Move SPD+"],"gives":["Pierce"],"recv":["Proj. Speed"]},{"n":"Melon Soda","grade":"SSR","el":"Water","role":"Shooter","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Vampire","grade":"SSR","el":"Fire","role":"Attacker","eff":["Accuracy-"],"gives":[],"recv":["Chain"]},{"n":"Strawberry Crepe","grade":"SSR","el":"Light","role":"Tanker","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Cream Puff","grade":"SSR","el":"Light","role":"Shooter","eff":[],"gives":[],"recv":["Duration"]},{"n":"Madeleine","grade":"SSR","el":"Light","role":"Tanker","eff":[],"gives":[],"recv":["Proj. Speed","Area"]},{"n":"Charles","grade":"SSR","el":"Fire","role":"Tanker","eff":[],"gives":[],"recv":["Area"]},{"n":"Scorpion","grade":"SSR","el":"Fire","role":"Shooter","eff":[],"gives":[],"recv":["Multishot","Duration"]},{"n":"Alien Donut King","grade":"SSR","el":"Light","role":"Supporter","eff":[],"gives":[],"recv":["Multistrike","Duration"]},{"n":"Nameless Cake Hound","grade":"SSR","el":"Fire","role":"Tanker","eff":["DMG Taken-"],"gives":[],"recv":["Area"]},{"n":"Ion Cookie Robot","grade":"SSR","el":"Water","role":"Tanker","eff":["Shield"],"gives":[],"recv":["Multishot"]},{"n":"Skating Queen","grade":"SSR","el":"Water","role":"Attacker","eff":["Crit DMG+"],"gives":["Chain"],"recv":["Duration"]},{"n":"Licorice","grade":"SR","el":"Dark","role":"Tanker","eff":[],"gives":[],"recv":["Multishot"]},{"n":"Herb","grade":"SR","el":"Grass","role":"Supporter","eff":["Heal"],"gives":["Multishot"],"recv":["Multistrike"]},{"n":"Rye","grade":"SR","el":"Fire","role":"Shooter","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Popcorn","grade":"SR","el":"Light","role":"Shooter","eff":[],"gives":[],"recv":["Duration"]},{"n":"Dr. Wasabi","grade":"SR","el":"Grass","role":"Shooter","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Peach","grade":"SR","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Duration"]},{"n":"Pancake","grade":"SR","el":"Grass","role":"Shooter","eff":["DEF Down"],"gives":[],"recv":["Duration"]},{"n":"Orange","grade":"SR","el":"Water","role":"Supporter","eff":["Crit Rate+"],"gives":["Multistrike"],"recv":["Duration"]},{"n":"Macaron","grade":"SR","el":"Grass","role":"Supporter","eff":["Crit Rate+"],"gives":["Area"],"recv":["Multistrike"]},{"n":"Rockstar","grade":"SR","el":"Fire","role":"Supporter","eff":["Shield"],"gives":["Pierce"],"recv":["Area"]},{"n":"Jungle Warrior","grade":"SR","el":"Grass","role":"Attacker","eff":[],"gives":["Multishot"],"recv":["Duration"]},{"n":"Lemon","grade":"SR","el":"Light","role":"Shooter","eff":[],"gives":[],"recv":["Proj. Speed"]},{"n":"Dr. Bones","grade":"SR","el":"Grass","role":"Supporter","eff":[],"gives":[],"recv":["Chain"]},{"n":"Witchberry","grade":"SR","el":"Dark","role":"Shooter","eff":[],"gives":[],"recv":["Pierce"]},{"n":"Lime","grade":"SR","el":"Water","role":"Supporter","eff":["Crit Rate+","Heal"],"gives":["Chain"],"recv":["Multishot"]},{"n":"Blackberry","grade":"R","el":"Dark","role":"Attacker","eff":[],"gives":[],"recv":["Proj. Speed"]},{"n":"Alchemist","grade":"R","el":"Water","role":"Shooter","eff":[],"gives":["Proj. Speed"],"recv":["Area"]},{"n":"Lilac","grade":"R","el":"Dark","role":"Shooter","eff":[],"gives":[],"recv":["Pierce"]},{"n":"Alien Donut","grade":"R","el":"Light","role":"Shooter","eff":[],"gives":[],"recv":["Pierce"]},{"n":"Poison Mushroom","grade":"R","el":"Dark","role":"Attacker","eff":[],"gives":[],"recv":["Area"]},{"n":"Dark Cherry","grade":"R","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Grapevine","grade":"R","el":"Grass","role":"Supporter","eff":["Heal"],"gives":["Multistrike"],"recv":["Area"]},{"n":"Yogurt Berry","grade":"R","el":"Water","role":"Tanker","eff":[],"gives":[],"recv":["Area"]},{"n":"Cheesecake","grade":"R","el":"Light","role":"Supporter","eff":["ATK+"],"gives":["Multishot"],"recv":["Pierce"]},{"n":"Cherry","grade":"R","el":"Fire","role":"Shooter","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Cocoa","grade":"R","el":"Water","role":"Tanker","eff":[],"gives":[],"recv":["Proj. Speed"]},{"n":"Gummy Bear Worker","grade":"R","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Cheerleader","grade":"U","el":"Water","role":"Supporter","eff":[],"gives":["Duration"],"recv":["Area"]},{"n":"Coffee","grade":"U","el":"Water","role":"Supporter","eff":["Accuracy+"],"gives":["Duration"],"recv":["Multistrike"]},{"n":"Zombie","grade":"U","el":"Grass","role":"Tanker","eff":[],"gives":[],"recv":["Proj. Speed"]},{"n":"Princess","grade":"U","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Area"]},{"n":"Hero","grade":"U","el":"Light","role":"Tanker","eff":[],"gives":["Area"],"recv":["Area"]},{"n":"Angel","grade":"U","el":"Light","role":"Supporter","eff":[],"gives":[],"recv":["Duration"]},{"n":"Bubblegum","grade":"U","el":"Water","role":"Tanker","eff":["Move SPD-"],"gives":[],"recv":["Multishot"]},{"n":"Onion","grade":"U","el":"Dark","role":"Supporter","eff":["ATK-"],"gives":[],"recv":["Area"]},{"n":"Devil","grade":"U","el":"Dark","role":"Shooter","eff":["DEF Down"],"gives":[],"recv":["Pierce"]},{"n":"Red Pepper","grade":"U","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Area"]},{"n":"Adventurer","grade":"U","el":"Grass","role":"Attacker","eff":[],"gives":[],"recv":["Duration"]},{"n":"Strawberry","grade":"C","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Duration"]},{"n":"Muscle","grade":"C","el":"Dark","role":"Tanker","eff":[],"gives":[],"recv":["Area"]},{"n":"Ninja","grade":"C","el":"Dark","role":"Shooter","eff":[],"gives":[],"recv":["Multishot"]},{"n":"Wizard","grade":"C","el":"Light","role":"Shooter","eff":[],"gives":[],"recv":["Multistrike"]},{"n":"Skater","grade":"C","el":"Water","role":"Attacker","eff":[],"gives":[],"recv":["Chain"]},{"n":"Sugar Gnome","grade":"C","el":"Grass","role":"Attacker","eff":[],"gives":[],"recv":["Area"]},{"n":"GingerBrave","grade":"C","el":"Fire","role":"Attacker","eff":[],"gives":[],"recv":["Area"]},{"n":"GingerBright","grade":"C","el":"Light","role":"Attacker","eff":["ATK-"],"gives":[],"recv":["Duration"]},{"n":"Blueberry Bird","grade":"C","el":"Water","role":"Supporter","eff":["DEF+"],"gives":[],"recv":["Multishot"]}];
+const PETS=[{"n":"Gold Drop","grade":"SSR","eff":["Crit Rate+"]},{"n":"Fluffy Cheese Cat","grade":"SSR","eff":["Chain Synergy","+ATK to Chain allies"]},{"n":"Kiwi Bird","grade":"SSR","eff":["DEF+"]},{"n":"Furball Pup","grade":"SSR","eff":["Proj. Speed Synergy","+ATK to Proj. Speed allies"]},{"n":"Marshmallow Hamster","grade":"SSR","eff":["Dark allies Crit DMG+"]},{"n":"Banana Lion","grade":"SSR","eff":["Area Synergy","+ATK to Area allies"]},{"n":"Hot Doggie","grade":"SSR","eff":["Skill Amp+"]},{"n":"Mango Toucan","grade":"SSR","eff":["Evasion+"]},{"n":"Ginseng Sprout","grade":"SSR","eff":["Accuracy+"]},{"n":"Floral Froglet","grade":"SSR","eff":["Fire allies Crit DMG+"]},{"n":"Yule Log Cake","grade":"SSR","eff":["Water allies Crit DMG+"]},{"n":"Pterosatchel","grade":"SSR","eff":["Grass allies Crit DMG+"]},{"n":"Bonbon Birdy","grade":"SSR","eff":["Light allies Crit DMG+"]},{"n":"Yakgwa Pupper","grade":"SSR","eff":["Focus+"]},{"n":"Eggbeak","grade":"SSR","eff":["Attacker allies DMG Reduction+"]},{"n":"Breadog","grade":"SSR","eff":["Tanker allies Evasion+"]},{"n":"Berry Angrybeak","grade":"SSR","eff":["Shooter allies Accuracy+"]},{"n":"Nero the Choco Cat","grade":"SSR","eff":["Supporter allies Focus+"]},{"n":"Holy Baby Drop","grade":"SSR","eff":["Ally ATK+"]},{"n":"Sweet n' Sour","grade":"SSR","eff":["Ally Crit DMG+"]},{"n":"Octo Wasabi","grade":"SSR","eff":["Duration Synergy","+ATK to Duration allies"]},{"n":"Avocatapult","grade":"SSR","eff":["Resist+"]},{"n":"Majestic King Choco Drop","grade":"SSR","eff":["Max HP+"]},{"n":"Apple Rabbit","grade":"SR","eff":["Fire allies ATK+"]},{"n":"Lemon Slice","grade":"SR","eff":["Water allies ATK+"]},{"n":"Owlcorn","grade":"SR","eff":["Grass allies ATK+"]},{"n":"Mini Orange Mouse","grade":"SR","eff":["Light allies ATK+"]},{"n":"Sweet Rice Seal","grade":"SR","eff":["Dark allies ATK+"]},{"n":"Angry Bear","grade":"SR","eff":["Attacker allies Crit Rate+"]},{"n":"Milk Angel","grade":"SR","eff":["Tanker allies Crit Resist+"]},{"n":"Junior Sleuth Ted","grade":"SR","eff":["Shooter allies Crit DMG+"]},{"n":"Cheese Crumble Cat","grade":"SR","eff":["Supporter allies Skill Amp+"]},{"n":"Creamtese","grade":"SR","eff":["ATK+"]},{"n":"Icy Birdie","grade":"SR","eff":["DMG Reduction+"]},{"n":"Soda Dollop","grade":"SR","eff":["Max HP+"]},{"n":"Cloud Pelican","grade":"R","eff":[]},{"n":"Little Ghost","grade":"R","eff":[]},{"n":"Carrot Cake Rabbit","grade":"R","eff":[]},{"n":"Jingle Deer","grade":"R","eff":[]},{"n":"Fluffy Ram","grade":"R","eff":[]},{"n":"Little Tooth","grade":"R","eff":[]},{"n":"Fruit Deer","grade":"R","eff":[]},{"n":"Spirit Helmet","grade":"R","eff":[]},{"n":"Panda Dumpling","grade":"R","eff":[]},{"n":"Flame Bat","grade":"U","eff":[]},{"n":"Brain Gum","grade":"U","eff":[]},{"n":"Cream Mocha","grade":"U","eff":[]},{"n":"Dragon's Tail","grade":"U","eff":[]},{"n":"Celestial Star","grade":"U","eff":[]},{"n":"Pocket Strawberry","grade":"U","eff":[]},{"n":"Dust Unicorn","grade":"C","eff":[]},{"n":"Unpeeled Garlic","grade":"C","eff":[]},{"n":"Choco Drop","grade":"C","eff":[]},{"n":"Cheese Drop","grade":"C","eff":[]}];
+
+const PACKAGES=[{"n":"Nameless Cake Hound 3★ Package","cat":"One-time","price":12000,"dia":543000,"eff":18100,"per":45.25,"c":"2,000 💎 · 15 SSR cookie · 100 dough · 500 rune crystals"},{"n":"Monthly Rewards Sugar-Coating Membership","cat":"Membership","price":7500,"dia":302000,"eff":16107,"per":40.27,"c":"32,000 💎 · 900 cookie pulls · 900 pet pulls"},{"n":"Monthly Gacha Support Sugar-Coating Membership","cat":"Membership","price":15000,"dia":544000,"eff":14507,"per":36.27,"c":"4,000 💎 · 1,800 cookie pulls · 1,800 pet pulls"},{"n":"Nameless Cake Hound Acquisition Package","cat":"One-time","price":1500,"dia":36000,"eff":9600,"per":24,"c":"1 SSR cookie"},{"n":"Majestic King Choco Drop Package","cat":"One-time","price":20000,"dia":246000,"eff":4920,"per":12.3,"c":"60 pet pulls · 24 SSR pet"},{"n":"Dark Choco Cookie 2★ Package","cat":"One-time","price":12000,"dia":112625,"eff":3754,"per":9.39,"c":"4,000 💎 · 3 SSR cookie · 500 rune crystals"},{"n":"Strawberry Shortcake Cookie 4★ Package","cat":"One-time","price":20000,"dia":183625,"eff":3673,"per":9.18,"c":"3,000 💎 · 5 SSR cookie · 500 rune crystals"},{"n":"Crumble Pass","cat":"Pass","price":7500,"dia":66125,"eff":3527,"per":8.82,"c":"10,000 💎 · 180 cookie pulls · 120 pet pulls · 8,000 flames · 100 dough · 1,000 rune crystals · 1,000 stellar pts"},{"n":"Launch Celebration Bulk Acquisition Package Vol.2","cat":"One-time","price":19000,"dia":114000,"eff":2400,"per":6,"c":"6,000 💎 · 240 cookie pulls · 240 pet pulls · 1 SSR cookie"},{"n":"Majestic King Choco Drop Premium Package","cat":"One-time","price":55000,"dia":324000,"eff":2356,"per":5.89,"c":"240 pet pulls · 30 SSR pet"},{"n":"Milky Way Cookie 2★ Package","cat":"One-time","price":19000,"dia":110500,"eff":2326,"per":5.82,"c":"3 SSR cookie · 2,000 rune crystals"},{"n":"Launch Celebration Bulk Acquisition Package Vol.1","cat":"One-time","price":7500,"dia":39000,"eff":2080,"per":5.2,"c":"3,000 💎 · 120 cookie pulls · 120 pet pulls"},{"n":"5-Day Login Package","cat":"Login","price":9900,"dia":45250,"eff":1828,"per":4.57,"c":"8,000 💎 · 180 cookie pulls · 1,000 rune crystals"},{"n":"Crunch, Smash, Crumble! Crumble Starter Package","cat":"One-time","price":3000,"dia":12060,"eff":1608,"per":4.02,"c":"60 💎 · 60 cookie pulls · 1 SR cookie"},{"n":"Sweet Blessing Lv.1 Package","cat":"Blessing","price":7500,"dia":27375,"eff":1460,"per":3.65,"c":"3,000 💎 · 120 cookie pulls · 100 dough"},{"n":"Value Package Vol.2","cat":"One-time","price":12000,"dia":42000,"eff":1400,"per":3.5,"c":"6,000 💎 · 120 cookie pulls · 120 pet pulls"},{"n":"Pickup Gacha Package","cat":"One-time","price":9900,"dia":30000,"eff":1212,"per":3.03,"c":"6,000 💎 · 120 cookie pulls"},{"n":"Cookie All Gather! Cookie Gacha Package","cat":"One-time","price":22000,"dia":66000,"eff":1200,"per":3,"c":"6,000 💎 · 300 cookie pulls"},{"n":"Sweet Blessing Lv.2 Package","cat":"Blessing","price":15000,"dia":41750,"eff":1113,"per":2.78,"c":"9,000 💎 · 150 cookie pulls · 400 dough · 1,000 rune crystals"},{"n":"Wind Archer Cookie 5★ Package","cat":"One-time","price":55000,"dia":143875,"eff":1046,"per":2.62,"c":"4,000 💎 · 30 pet pulls · 15 TSSR cookie · 1,500 rune crystals"},{"n":"Level Pass Tier 1","cat":"Pass","price":1500,"dia":3750,"eff":1000,"per":2.5,"c":"1,000 dough"},{"n":"Level Pass Tier 2","cat":"Pass","price":3000,"dia":7500,"eff":1000,"per":2.5,"c":"2,000 dough"},{"n":"Pickup Gacha Plus Package","cat":"One-time","price":22000,"dia":52750,"eff":959,"per":2.4,"c":"12,000 💎 · 200 cookie pulls · 100 dough · 300 rune crystals"},{"n":"Pet Friend Guaranteed Package","cat":"One-time","price":12000,"dia":28000,"eff":933,"per":2.33,"c":"6,000 💎 · 60 cookie pulls · 1 SSR pet"},{"n":"Sweet Blessing Lv.5 Package","cat":"Blessing","price":45000,"dia":102500,"eff":911,"per":2.28,"c":"24,000 💎 · 230 cookie pulls · 3 TSSR cookie · 800 dough · 2,000 rune crystals"},{"n":"Sweet Blessing Lv.3 Package","cat":"Blessing","price":27000,"dia":60375,"eff":894,"per":2.24,"c":"12,000 💎 · 180 cookie pulls · 1 TSSR cookie · 500 dough · 1,200 rune crystals"},{"n":"SSR Cookie & Pet Random Package Vol.1","cat":"One-time","price":25000,"dia":55750,"eff":892,"per":2.23,"c":"9,000 💎 · 1 SSR cookie · 1 SSR pet · 200 dough"},{"n":"SSR Cookie & Pet Random Package Vol.2","cat":"One-time","price":50000,"dia":110625,"eff":885,"per":2.21,"c":"18,000 💎 · 2 SSR cookie · 2 SSR pet · 500 rune crystals"},{"n":"Sweet Blessing Lv.4 Package","cat":"Blessing","price":37000,"dia":80500,"eff":870,"per":2.18,"c":"18,000 💎 · 200 cookie pulls · 2 TSSR cookie · 700 dough · 1,500 rune crystals"},{"n":"Stellar Link Package Vol.2","cat":"One-time","price":79000,"dia":168500,"eff":853,"per":2.13,"c":"9,000 💎 · 360 cookie pulls · 35,000 stellar pts"},{"n":"Value Package Vol.1","cat":"One-time","price":1500,"dia":3000,"eff":800,"per":2,"c":"3,000 💎 · 1 SR cookie"},{"n":"Pet All Gather! Pet Gacha Package","cat":"One-time","price":19000,"dia":36000,"eff":758,"per":1.89,"c":"6,000 💎 · 300 pet pulls"},{"n":"Sugar Rune Extra Support Package","cat":"One-time","price":9900,"dia":17750,"eff":717,"per":1.79,"c":"2,000 💎 · 60 cookie pulls · 3,000 rune crystals"},{"n":"Pickup Pet Gacha Package","cat":"One-time","price":15000,"dia":26000,"eff":693,"per":1.73,"c":"6,000 💎 · 200 pet pulls"},{"n":"Oven Wanderer Cookie Rush Package Vol.2","cat":"One-time","price":17000,"dia":28500,"eff":671,"per":1.68,"c":"6,000 💎 · 60 cookie pulls · 60 pet pulls · 9,000 flames"},{"n":"Rune Crystal Package Vol.2","cat":"One-time","price":75000,"dia":123250,"eff":657,"per":1.64,"c":"20,000 💎 · 360 cookie pulls · 25,000 rune crystals"},{"n":"Oven Wanderer Cookie Rush Package Vol.1","cat":"One-time","price":12000,"dia":18000,"eff":600,"per":1.5,"c":"3,000 💎 · 60 cookie pulls · 6,000 flames"},{"n":"Stellar Link Package Vol.1","cat":"One-time","price":32000,"dia":48000,"eff":600,"per":1.5,"c":"6,000 💎 · 60 cookie pulls · 12,000 stellar pts"},{"n":"Level Pass Tier 3","cat":"Pass","price":7500,"dia":11250,"eff":600,"per":1.5,"c":"3,000 dough"},{"n":"All-Out Blaze Crystal Jackpot Package","cat":"One-time","price":33000,"dia":48750,"eff":591,"per":1.48,"c":"45,000 💎 · 3,000 rune crystals"},{"n":"Crystal Mega Jackpot Package","cat":"One-time","price":35000,"dia":50000,"eff":571,"per":1.43,"c":"50,000 💎"},{"n":"King Choco Drop’s Special Support Complete Package","cat":"One-time","price":55000,"dia":73750,"eff":536,"per":1.34,"c":"20,000 💎 · 200 cookie pulls · 10,000 rune crystals · 500 stellar pts"},{"n":"Promotion Pass Tier 1","cat":"Pass","price":1500,"dia":2000,"eff":533,"per":1.33,"c":"10 cookie pulls"},{"n":"Guild Golden Bell Package Vol.2","cat":"Guild","price":12000,"dia":15000,"eff":500,"per":1.25,"c":"9,000 💎 · 20 cookie pulls · 20 pet pulls"},{"n":"Rune Crystal Package Vol.1","cat":"One-time","price":37000,"dia":45500,"eff":492,"per":1.23,"c":"9,000 💎 · 120 cookie pulls · 10,000 rune crystals"},{"n":"Guild Golden Bell Package Vol.3","cat":"Guild","price":23000,"dia":28250,"eff":491,"per":1.23,"c":"18,000 💎 · 30 cookie pulls · 30 pet pulls · 1,000 rune crystals"},{"n":"Guild Golden Bell Package Vol.1","cat":"Guild","price":7500,"dia":9000,"eff":480,"per":1.2,"c":"6,000 💎 · 10 cookie pulls · 10 pet pulls"},{"n":"Golden Baby Drop’s Radiant Blessing Package","cat":"Blessing","price":75000,"dia":80500,"eff":429,"per":1.07,"c":"30,000 💎 · 240 cookie pulls · 1,000 stellar pts"},{"n":"Valor Flame Bulk Support Package Vol.2","cat":"One-time","price":45000,"dia":48000,"eff":427,"per":1.07,"c":"12,000 💎 · 120 cookie pulls · 24,000 flames"},{"n":"Crumble Launch Celebration 7-Day Login Package","cat":"Login","price":22000,"dia":22050,"eff":401,"per":1,"c":"69 cookie pulls · 60 pet pulls · 3,000 flames · 200 dough"},{"n":"Promotion Pass Tier 2","cat":"Pass","price":3000,"dia":3000,"eff":400,"per":1,"c":"15 cookie pulls"},{"n":"Oven Wanderer Cookie Welcome Package","cat":"One-time","price":12000,"dia":11500,"eff":383,"per":0.96,"c":"6,000 💎 · 6,000 flames · 1,000 stellar pts"},{"n":"Wind Archer Cookie Acquisition Package","cat":"One-time","price":17000,"dia":15000,"eff":353,"per":0.88,"c":"6,000 💎 · 1 TSSR cookie"},{"n":"Valor Flame Bulk Support Package Vol.1","cat":"One-time","price":35000,"dia":30000,"eff":343,"per":0.86,"c":"9,000 💎 · 60 cookie pulls · 18,000 flames"},{"n":"Oven Wanderer Cookie Launch Celebration Welcome Package","cat":"One-time","price":6000,"dia":4000,"eff":267,"per":0.67,"c":"2,000 💎 · 4,000 flames"},{"n":"Promotion Pass Tier 3","cat":"Pass","price":7500,"dia":4000,"eff":213,"per":0.53,"c":"20 cookie pulls"}];
+const COOKIE_TIPS={"Oven Wanderer":{"tip":"Top-tier Fire melee carry; funnel materials into it first and add a scarce Chain provider so strikes bounce across whole waves.","use":"Main carry"},"Wind Archer":{"tip":"Elite Grass ranged carry—feed her first and pair Strawberry Shortcake's Pierce so arrows punch through entire enemy lines.","use":"Main carry"},"Espresso":{"tip":"Strong Grass shooter; pair an Area provider like Toothpaste Choco or Cream Soda to widen his blasts for wave clear.","use":"Wave clear"},"Twizzly Gummy":{"tip":"Dark shooter that wants a scarce Chain provider so shots ricochet between foes; solid AoE once you slot one.","use":"Wave clear"},"Milky Way":{"tip":"Light shooter; hand her Area from Toothpaste Choco or Cream Soda to enlarge her volleys and sweep packed waves.","use":"Wave clear"},"Dark Choco":{"tip":"Core frontline debuffer—his stacking DEF Down multiplies everyone's damage; extend it with Milk's Duration and pair Pomegranate.","use":"DEF-down debuffer"},"Toothpaste Choco":{"tip":"Healer supplying scarce Area—Espresso and Milky Way crave it; feed her Multishot to boost her own output.","use":"Healer / Area enabler"},"Pomegranate":{"tip":"Amp-core support: her Skill Amp+ pairs with Dark Choco, and her scarce Proj. Speed feeds Cream Soda or Strawberry Shortcake.","use":"Amp support"},"Cream Soda":{"tip":"Water attacker doubling as an Area provider for Espresso and Milky Way; take Pomegranate's Proj. Speed to sharpen her hits.","use":"Area enabler / DPS"},"Milk (Pediatrician)":{"tip":"Main healer plus ATK+ buff; her Duration prolongs Dark Choco's DEF Down—grab Pomegranate's Proj. Speed for herself.","use":"Main healer"},"Strawberry Shortcake":{"tip":"Rare Pierce provider—Wind Archer desperately wants it; a mobile attacker who takes Pomegranate's Proj. Speed for her own shots.","use":"Pierce enabler"},"Melon Soda":{"tip":"Water shooter craving a scarce Multistrike provider so skills fire repeatedly; strong only once you own one of the two enablers.","use":"Multistrike DPS"},"Vampire":{"tip":"Fire melee saddled with an Accuracy- drawback; wants a scarce Chain provider to bounce hits—bench for cleaner SSR carries early.","use":"Situational DPS"},"Strawberry Crepe":{"tip":"Sturdy Light tank; frontline first, but her offense only shines with a scarce Multistrike provider—otherwise just a wall.","use":"Frontline tank"},"Cream Puff":{"tip":"Reliable SSR ranged carry whose skills stretch with longer windows—slot a Duration provider so her damage keeps ticking through boss fights.","use":"Sustained DPS"},"Madeleine":{"tip":"Light frontline tank whose skills widen with Area and quicken with Proj. Speed; the latter has only two providers, so plan around scarcity.","use":"Frontline tank"},"Charles":{"tip":"Fire tank whose skills grow with Area (four providers, the least scarce synergy); dependable early frontline while you build real carries.","use":"Frontline tank"},"Scorpion":{"tip":"Fire shooter feasting on Multishot—pair with Herb—plus Duration; more projectiles make her strong wave clear once both providers are online.","use":"Wave clear DPS"},"Alien Donut King":{"tip":"Light supporter whose skills multiply with Multistrike (only two providers) and Duration; a synergy-hungry buffer, not a standalone carry.","use":"Synergy support"},"Nameless Cake Hound":{"tip":"Fire tank with built-in DMG Taken- and Area scaling; the damage reduction makes him a premium frontline anchor for tough stages.","use":"Frontline tank"},"Ion Cookie Robot":{"tip":"Water tank that shields the team and scales skills with Multishot—feed it Herb; a sturdy defensive core for progression fights.","use":"Shield tank"},"Skating Queen":{"tip":"Rare Chain provider (one of only two) and Crit DMG attacker; her bounces want a Chain receiver, while she needs a Duration provider herself.","use":"Chain enabler"},"Licorice":{"tip":"SR Dark tank scaling with Multishot (pair Herb); fine early frontline, but bench once Cake Hound or Ion Cookie Robot arrive.","use":"Early tank"},"Herb":{"tip":"Grass healer AND scarce Multishot provider—feeds Scorpion, Ion, Licorice—while her own skills want a Multistrike provider; keep her rostered.","use":"Healer / enabler"},"Rye":{"tip":"SR fire shooter scaling with Multistrike (two scarce providers); early-game DPS filler—bench once Cream Puff or Scorpion carry.","use":"Early DPS"},"Popcorn":{"tip":"SR light shooter that needs a Duration provider to shine; early-game filler, bench once SSR shooters anchor your damage.","use":"Early DPS"},"Dr. Wasabi":{"tip":"SR grass shooter scaling with Multistrike (only two providers); serviceable early DPS—bench once your SSR shooters come online.","use":"Early DPS"},"Peach":{"tip":"SR fire attacker wanting a Duration provider; early melee filler—bench for Skating Queen or the TSSR Oven Wanderer later.","use":"Early melee DPS"},"Pancake":{"tip":"Grass ranged DPS whose DEF Down softens foes; add a Duration provider to stretch that debuff window and amplify whole-team damage.","use":"DEF-down debuffer"},"Orange":{"tip":"Rare Multistrike provider (only two exist)—feed it to Macaron to multiply her skill hits; the Crit Rate buff sweetens any DPS core.","use":"Multistrike enabler"},"Macaron":{"tip":"Area provider for AoE receivers like Poison Mushroom or Rockstar; take Orange's Multistrike to multiply her own hits, plus a Crit buff.","use":"Area enabler"},"Rockstar":{"tip":"Scarce Pierce provider (two total) letting Witchberry or Alien Donut punch through lines; shields the team and scales with Macaron's Area.","use":"Pierce enabler"},"Jungle Warrior":{"tip":"Melee Attacker doubling as Multishot provider for Lime; wants a Duration provider to extend its own skills for steady frontline damage.","use":"Multishot enabler"},"Lemon":{"tip":"Light ranged DPS that scales with faster shots—slot Alchemist's Proj. Speed; a solid SR carry until you land Wind Archer.","use":"Story carry"},"Dr. Bones":{"tip":"Grass Supporter whose skills scale with Chain; pair Lime so attacks bounce to more enemies—otherwise bench once stronger SSRs arrive.","use":"Chain receiver"},"Witchberry":{"tip":"Dark ranged DPS that scales with Pierce—give it Rockstar's Pierce so shots skewer rows; excels in Dark Choco DEF-down cores.","use":"Wave clear"},"Lime":{"tip":"Best SR support here: heals, buffs Crit, and is one of two Chain providers (feed Dr. Bones); scales with Jungle Warrior's Multishot.","use":"Main healer"},"Blackberry":{"tip":"R-grade Dark Attacker scaling with Proj. Speed from Alchemist; passable early damage but bench once real SSR carries arrive.","use":"Bench / early"},"Alchemist":{"tip":"R-grade but rare—one of only two Proj. Speed providers; keep for Lemon or Blackberry despite low grade, and it scales with Macaron's Area.","use":"Proj-speed enabler"},"Lilac":{"tip":"R-grade Dark Shooter that scales with Pierce; playable with Rockstar for early row-clearing, but bench once SSRs come online.","use":"Bench / early"},"Alien Donut":{"tip":"R-grade Light Shooter needing Rockstar's Pierce to shine; fine early wave clear, otherwise early-game filler to bench later.","use":"Bench / early"},"Poison Mushroom":{"tip":"R-grade Dark Attacker whose AoE grows with Macaron's Area; decent early wave clear but bench once SSR carries mature.","use":"Bench / early"},"Dark Cherry":{"tip":"Fire melee DPS whose skills scale with Multistrike; pair a scarce provider like Grapevine (only two exist). R-grade, bench once SSRs arrive.","use":"Early melee DPS"},"Grapevine":{"tip":"One of only two Multistrike providers, so this healer punches above R-grade; feed Dark Cherry or Cherry, and give it an Area provider itself.","use":"Multistrike enabler"},"Yogurt Berry":{"tip":"Basic Water frontline whose skills grow with Area; pair an Area provider like Hero, otherwise bench once you land an SSR tank.","use":"Early frontline tank"},"Cheesecake":{"tip":"ATK-buffing Multishot provider that feeds receivers like Bubblegum; wants a scarce Pierce provider to scale its own kit.","use":"Multishot / ATK buffer"},"Cherry":{"tip":"Ranged Fire DPS scaling with Multistrike; needs one of the two scarce providers (Grapevine). R-grade, bench once SSR shooters arrive.","use":"Early ranged DPS"},"Cocoa":{"tip":"Water frontline whose skills want Proj. Speed, but only two providers exist so pairing is hard; early-game filler, bench soon.","use":"Early tank / bench"},"Gummy Bear Worker":{"tip":"Fire melee DPS scaling with Multistrike; slot Grapevine, one of two providers. Redundant with Dark Cherry, so bench once SSRs arrive.","use":"Early melee DPS"},"Cheerleader":{"tip":"Duration provider for buff and DoT carries like Angel; wants an Area provider (Hero) to scale her own skills. Handy U-grade glue.","use":"Duration enabler"},"Coffee":{"tip":"Duration provider (feeds Angel) with an accuracy buff; her own skills want a Multistrike provider like Grapevine to shine.","use":"Duration enabler"},"Zombie":{"tip":"Grass frontline scaling with Proj. Speed, but only two providers exist so it is hard to enable; bench once better tanks appear.","use":"Early tank / bench"},"Princess":{"tip":"Fire melee whose AoE scales with Area; pair an Area provider like Hero for wave clear, then bench for SSR attackers.","use":"Early wave clear"},"Hero":{"tip":"Light tank that grants Area to receivers like Yogurt Berry and Princess, but needs a second Area provider to scale itself.","use":"Area-enabling tank"},"Angel":{"tip":"Light support whose buffs stretch with Duration; pair Cheerleader or Coffee. Gives no synergy, so her value hinges on that provider.","use":"Duration receiver"},"Bubblegum":{"tip":"Slowing Water frontline whose skills scale with Multishot; pair Cheesecake, its Multishot provider. Solid early crowd-control tank.","use":"Slow / CC tank"},"Onion":{"tip":"U-grade Dark support with an ATK- debuff; pair an Area provider to widen reach, but bench once SSRs arrive.","use":"Bench / early"},"Devil":{"tip":"U Dark shooter stacking DEF Down; wants a Pierce provider (only 2 exist) so shots hit rows, feeding a Dark Choco core.","use":"DEF-down debuffer"},"Red Pepper":{"tip":"U Fire attacker with no debuff; an Area provider (4 exist) widens its swings, but it's early filler to bench for SSRs.","use":"Bench / early"},"Adventurer":{"tip":"U Grass attacker scaling with Duration; grab a Duration provider to stretch its windows, otherwise bench once real carries land.","use":"Bench / early"},"Strawberry":{"tip":"C Fire attacker receiving Duration; pair a Duration provider to lengthen hits, but this is pure early-game filler.","use":"Bench / early"},"Muscle":{"tip":"C Dark tanker taking Area to widen threat; usable frontline early, but bench for a real SSR tank when possible.","use":"Frontline (early)"},"Ninja":{"tip":"C Dark shooter scaling with Multishot for extra projectiles; low-grade filler, bench once SSR shooters like Wind Archer arrive.","use":"Bench / early"},"Wizard":{"tip":"C Light shooter receiving Multistrike (only 2 providers); pair one so skills fire more times, but it's early filler.","use":"Bench / early"},"Skater":{"tip":"C Water attacker scaling with Chain (only 2 providers); bounces need a rare enabler, so keep as early filler and bench.","use":"Bench / early"},"Sugar Gnome":{"tip":"C Grass attacker taking Area for bigger swings; fine early wave clear, but bench once SSR carries are invested.","use":"Wave clear (early)"},"GingerBrave":{"tip":"C Fire attacker receiving Area; an Area provider (4 exist) helps early clears, but this starter is filler to bench soon.","use":"Bench / early"},"GingerBright":{"tip":"C Light attacker with an ATK- debuff scaling on Duration; add a Duration provider to hold the debuff, otherwise bench.","use":"Bench / early"},"Blueberry Bird":{"tip":"C Water supporter giving DEF+ and receiving Multishot; a light early shield-buffer, but bench for real SSR supporters.","use":"Bench / early"}};
+const GUIDE_SECTIONS=[{"title":"New to Crumble?","icon":"🍪","html":"<p><b>Cookie Run: Crumble</b> is an idle RPG: you assemble a team of Cookies that auto-battle through stages while you steer the strategy — <em>who</em> is on the team, not which buttons to press.</p><p>The core loop is simple:</p><ul><li>Build a team and clear the next stage.</li><li>Farm daily dungeons and the Crumble Dungeon for upgrade materials.</li><li>Pour those materials into your carries, gain Power, and push further.</li></ul><p>The <b>one habit that matters most early</b>: <em>focus 2-3 carries.</em> Materials are scarce, and a team is only as strong as its damage dealers. Spreading upgrades across your whole roster leaves everyone too weak to clear content — pick two or three Cookies and feed them everything.</p>"},{"title":"How Synergies Work","icon":"🔗","html":"<p>Synergies are the heart of team-building, and every one is <b>one-directional</b>: a <b>Provider</b> Cookie grants the synergy, and a <b>Receiver</b> Cookie's skills scale with it. If only one side is on the team, nothing happens — <em>you need both a Provider and a Receiver present</em> for the effect to fire.</p><p>There are <b>7 synergies</b>:</p><ul><li><b>Multistrike</b> — skills fire more times.</li><li><b>Area</b> — bigger range / AoE.</li><li><b>Duration</b> — longer skill, buff, and DoT windows.</li><li><b>Multishot</b> — more projectiles at once.</li><li><b>Proj. Speed</b> — projectiles travel faster.</li><li><b>Pierce</b> — shots pass through enemies.</li><li><b>Chain</b> — attacks bounce to more enemies.</li></ul><p>Providers are <b>scarce</b>, so plan around them: <b>Multistrike, Proj. Speed, Pierce, and Chain each have only 2 providers</b>, and <b>Area has 4</b>. If your carry receives a synergy with few providers, securing one of those Cookies is a priority.</p><p>In this tool, each Cookie is tagged: <b>▲</b> means it <em>provides</em> that synergy, <b>▽</b> means it <em>receives</em> it. A valid pairing needs a ▲ and a ▽ for the same synergy on the same team.</p>"},{"title":"The Power Wall","icon":"🧱","html":"<p>Damage in Crumble is gated by a <b>Power Wall</b>. Your final damage is your team's <b>Power</b> divided by the stage's <b>recommended Power</b>, then snapped down to a bracket:</p><ul><li>Under 10% of recommended → <b>1%</b> damage</li><li>10%+ → 5%</li><li>20%+ → 15%</li><li>40%+ → 35%</li><li>60%+ → 55%</li><li>80%+ → 75%</li><li>100%+ → <b>100%</b> (full damage)</li><li>120%+ → 120%</li></ul><p>Because damage snaps to these brackets, an <b>under-Power team is mathematically capped</b> no matter how perfect the comp is. Sitting at 95% of a stage's Power still deals only 75% damage — the fix is <em>more Power, not a different lineup.</em></p><p>When you're stuck, open the <b>Stage Power</b> tab to compare your team Power against the stage's requirement. If you're below 100%, raise Power (levels, ATK, Resolve) before you start swapping Cookies.</p>"},{"title":"Upgrade Priority","icon":"📈","html":"<p>Upgrade in this order, and always aim it at your <b>2-3 carries</b> first:</p><ul><li><b>1. Levels</b> — raise each carry toward its cap. Your <b>Crumble Level</b> caps how high any individual Cookie can be leveled, so pushing account progress unlocks more headroom.</li><li><b>2. ATK</b> — when choosing what to boost, <b>ATK first</b>. It's the most direct multiplier on your damage.</li><li><b>3. Resolve</b> — account-wide flat stats that benefit your whole team at once. It's the main <b>Coin</b> sink, so dump surplus Coin here.</li><li><b>4. Promotions</b> — feed <b>duplicate Soulstones</b> into your carries to promote them for a big power jump.</li><li><b>5. Sugar Runes</b> — up to <b>4 per Cookie</b>. Match the rune type to the Cookie's role: damage runes on carries, defensive runes on your Tanker.</li></ul><p><em>Every point spent on a bench Cookie is a point your carries didn't get.</em> Keep it focused.</p>"},{"title":"Currencies & Farming","icon":"💰","html":"<p>Farm the <b>daily dungeons</b> every day — they're your steady supply of upgrade fuel:</p><ul><li><b>EXP</b> — levels up your Cookies.</li><li><b>Coin</b> — mainly funds <b>Resolve</b>.</li><li><b>Dough</b> — the currency for building and upgrading Cookies.</li></ul><p>The <b>Crumble Dungeon</b> is the deeper grind for higher-tier materials that push your carries past the daily-dungeon ceiling.</p><p><b>Where to spend:</b> Coin → Resolve (account-wide stats); EXP → your 2-3 carries first; Dough and Crumble materials → promotions and carry upgrades. Don't hoard — flat account stats and carry levels are always worth buying.</p>"},{"title":"Reroll & Early Targets","icon":"🎯","html":"<p>The two <b>TSSRs</b> — <b>Wind Archer</b> (Shooter) and <b>Oven Wanderer</b> (Attacker) — are the strongest Cookies in the game and a great reroll goal, but they are <em>not required</em>. A well-built SSR carry backed by the right support clears content just fine.</p><p>What actually makes a team work early:</p><ul><li>A single <b>DPS carry</b> (Shooter or Attacker) to pour materials into — a TSSR if you're lucky, otherwise any strong SSR damage dealer.</li><li>The <b>Amplifier core</b>: <b>Dark Choco</b> (stacking DEF Down) + <b>Pomegranate</b> (ATK / Skill-Amp buff). This pair multiplies almost any carry's damage.</li><li><b>Grapevine</b>, a <em>free</em> Cookie that enables Rapid-Fire / <b>Multistrike</b> — extra valuable because Multistrike has only 2 providers.</li></ul><p>Prioritize a carry plus the amplifier core over chasing a specific rarity. Check the <b>My Roster</b> tab to see which of these you already have.</p>"},{"title":"Glossary","icon":"📖","html":"<ul><li><b>TSSR</b> — the top rarity; only two exist: Wind Archer and Oven Wanderer.</li><li><b>SSR / SR / R / U / C</b> — the rarities below TSSR, in descending order (SSR highest, C lowest).</li><li><b>Attacker</b> — melee / charge damage dealer.</li><li><b>Shooter</b> — ranged damage dealer.</li><li><b>Tanker</b> — frontline Cookie built for defense and soaking hits.</li><li><b>Supporter</b> — provides buffs, heals, and synergy.</li><li><b>Elements</b> — Fire, Water, Grass, Light, and Dark.</li><li><b>Multistrike</b> — synergy: skills fire more times.</li><li><b>Area</b> — synergy: bigger range / AoE.</li><li><b>Duration</b> — synergy: longer skill / buff / DoT windows.</li><li><b>Multishot</b> — synergy: more projectiles at once.</li><li><b>Proj. Speed</b> — synergy: projectiles travel faster.</li><li><b>Pierce</b> — synergy: shots pass through enemies.</li><li><b>Chain</b> — synergy: attacks bounce to more enemies.</li><li><b>Provider</b> — the Cookie that grants a synergy (▲).</li><li><b>Receiver</b> — the Cookie whose skills scale with a synergy (▽); both must be on the team.</li><li><b>Resolve</b> — account-wide flat stats; the main Coin sink.</li><li><b>Promotion</b> — upgrading a Cookie using duplicate Soulstones.</li><li><b>Sugar Rune</b> — an equippable stat piece, up to 4 per Cookie, matched to the Cookie's role.</li><li><b>Crumble Level</b> — account level that caps how high individual Cookies can be leveled.</li><li><b>Power Wall</b> — the bracket system that caps your damage when team Power is below a stage's recommended Power.</li><li><b>Amplifier</b> — a support core (Dark Choco + Pomegranate) that multiplies the whole team's damage.</li></ul>"},{"title":"FAQ","icon":"❓","html":"<p><b>I'm stuck on an X-30 boss — what do I do?</b> Open the <b>Stage Power</b> tab and compare your team Power to the stage. If you're under 100%, you're being capped by the Power Wall — raise Power (carry levels, ATK, Resolve) instead of reshuffling the team.</p><p><b>Do I need Wind Archer or Oven Wanderer?</b> No. The TSSRs are the strongest Cookies, but a solid SSR carry plus the Dark Choco + Pomegranate amplifier core clears content. Upgrades and Power matter more than owning a specific unit.</p><p><b>What's the best team?</b> There's no single answer, but the reliable framework is: one <b>DPS carry</b> + the <b>amplifier core</b> (Dark Choco DEF Down, Pomegranate ATK buff) + a <b>synergy Provider</b> that matches your carry's Receiver skills + a <b>Tanker</b> to survive. Assemble and test it in the <b>Builder</b> tab.</p><p><b>My comp looks perfect but deals almost no damage — why?</b> Two usual causes: you're below the stage's Power (the Power Wall), or you have a synergy Receiver with no matching Provider. Both fail quietly. Check the ▲/▽ tags in the <b>Builder</b> and your Power in <b>Stage Power</b>.</p><p><b>Should I level my whole roster?</b> No — focus 2-3 carries. Spreading materials thin leaves everyone under-Power. Bench Cookies can wait.</p><p><b>Where do promotions come from?</b> Duplicate <b>Soulstones</b> of the same Cookie. Farm dungeons and pull for dupes of your carries specifically, not the whole roster.</p>"}];
+const GRADES=["TSSR","SSR","SR","R","U","C"];
+const GORDER=Object.fromEntries(GRADES.map((g,i)=>[g,i]));
+const GRADEW={TSSR:5,SSR:4,SR:2.6,R:1.6,U:0.9,C:0.5};
+const ROLES=["Attacker","Shooter","Tanker","Supporter"];
+const ELEMENTS=["Fire","Water","Grass","Light","Dark"];
+const BY_NAME=Object.fromEntries(COOKIES.map(c=>[c.n,c]));
+const META=new Set(["Oven Wanderer","Wind Archer","Vampire","Espresso","Cream Soda","Milky Way","Dark Choco","Pomegranate","Scorpion","Ion Cookie Robot","Toothpaste Choco","Milk (Pediatrician)","Strawberry Shortcake","Skating Queen","Grapevine","Herb","Melon Soda"]);
+const LS={get(k,d){try{const v=localStorage.getItem("crumble."+k);return v==null?d:JSON.parse(v);}catch(e){return d;}},set(k,v){try{localStorage.setItem("crumble."+k,JSON.stringify(v));}catch(e){}}};
+let OWNED=new Set(LS.get("owned",COOKIES.map(c=>c.n)));
+let OWNED_PETS=new Set(LS.get("ownedPets",PETS.map(p=>p.n)));
+let useOwned=LS.get("useOwned",false);
+function saveOwned(){LS.set("owned",[...OWNED]);LS.set("ownedPets",[...OWNED_PETS]);}
+const cPool=()=>useOwned?COOKIES.filter(c=>OWNED.has(c.n)):COOKIES;
+
+const SYN_META=[
+ {k:"Multistrike",ko:"연타",mech:"Skills activate more times in succession — raw skill-uptime/DPS multiplier.",boss:3,wave:2,scarce:"<b class='bottleneck'>Tightest bottleneck</b> — many want it, only Orange & Grapevine supply it (both cheap)."},
+ {k:"Area",ko:"범위",mech:"Attack range & area of effect increased — coverage and positioning.",boss:1,wave:3,scarce:"<b>Easiest to cover</b> — 4 providers including cheap Hero (U)."},
+ {k:"Duration",ko:"지속",mech:"Skill duration extended — longer transforms, buffs, and poison/DoT fields.",boss:3,wave:1,scarce:"Moderate — 3 providers (Milk, Cheerleader, Coffee), cheap options exist."},
+ {k:"Multishot",ko:"다발",mech:"More projectiles fired at once — accelerates buildup effects like poison.",boss:3,wave:2,scarce:"3 providers (Herb, Jungle Warrior, Cheesecake). Scorpion is the headline receiver."},
+ {k:"Proj. Speed",ko:"탄속",mech:"Projectiles travel faster — more consistent hits on moving bosses.",boss:2,wave:2,scarce:"Only 2 providers (Pomegranate, Alchemist)."},
+ {k:"Pierce",ko:"관통",mech:"Shots pass through and hit multiple lined-up enemies.",boss:2,wave:3,scarce:"Only 2 providers (Strawberry Shortcake, Rockstar). <b>Wind Archer's</b> key synergy."},
+ {k:"Chain",ko:"연쇄",mech:"Attacks bounce/chain to additional nearby enemies.",boss:1,wave:3,scarce:"Only 2 providers (Skating Queen, Lime). Feeds <b>Oven Wanderer</b> & Vampire."}
+];
+const SYN_PET={Chain:"Fluffy Cheese Cat","Proj. Speed":"Furball Pup",Area:"Banana Lion",Duration:"Octo Wasabi"};
+const providersOf=k=>COOKIES.filter(c=>c.gives.includes(k));
+const receiversOf=k=>COOKIES.filter(c=>c.recv.includes(k));
+
+const TEAMS=[
+ {name:"Story / All-Around",tag:"THE meta team",flag:1,
+  desc:"Dual TSSR carries, a provider for every key receiver, and a full amplifier stack. Wave and boss phases both covered.",
+  syn:"Live: <b>Pierce</b> (Shortcake→Wind Archer), <b>Area</b> (Cream Soda→Espresso/Milky Way), <b>Multistrike</b> (Grapevine), <b>Proj. Speed</b> (Pomegranate), <b>Multishot</b> (Herb).",
+  roster:["Wind Archer","Strawberry Shortcake","Oven Wanderer","Vampire","Espresso","Cream Soda","Milky Way","Dark Choco","Pomegranate","Ion Cookie Robot","Grapevine","Herb"]},
+ {name:"Boss / Single-Target",tag:"burst",flag:0,
+  desc:"Cut wave-clearers — one target. Stack Multistrike + Chain + Duration with a heavy DEF-down / ATK amplifier core.",
+  syn:"Key stack: <b>Multistrike</b> (Grapevine) + <b>Chain</b> (Skating Queen→Vampire/Oven Wanderer) + DEF-down (Dark Choco) × ATK (Pomegranate).",
+  roster:["Vampire","Melon Soda","Espresso","Scorpion","Grapevine","Skating Queen","Dark Choco","Pomegranate","Oven Wanderer","Ion Cookie Robot","Herb","Milk (Pediatrician)"]},
+ {name:"Daily Dungeon / Farming",tag:"speed clear",flag:0,
+  desc:"Waves matter — lean AoE for fast auto-clears, keep one Tanker so a glass line doesn't wipe. Main EXP/coin/dough source.",
+  syn:"<b>Area</b> (Cream Soda) + <b>Pierce</b> (Shortcake) turn AoE cookies into screen-wide clears. Speed over survival.",
+  roster:["Wind Archer","Espresso","Milky Way","Cream Soda","Strawberry Shortcake","Vampire","Pomegranate","Grapevine","Dark Choco","Scorpion","Yogurt Berry","Herb"]},
+ {name:"Crumble Dungeon",tag:"boss + timer",flag:0,
+  desc:"Uses your whole roster — level your bench. Burst the boss with the amplifier stack, plus a mitigation + double-heal survival layer.",
+  syn:"Amplifier core (DEF-down + ATK) plus mitigation: Ion Robot's team-wide damage reduction, backed by double healing.",
+  roster:["Vampire","Oven Wanderer","Wind Archer","Dark Choco","Pomegranate","Toothpaste Choco","Ion Cookie Robot","Milk (Pediatrician)","Herb","Grapevine","Skating Queen","Espresso"]},
+ {name:"Arena / PvP",tag:"provisional",flag:0,
+  desc:"Stall teams beat burst — long matches reward whoever's still standing. ~4 Tankers / 4 healers / 2 carries / utility.",
+  syn:"A <b>survival race</b>, not synergy-driven. Balance the roles; a lopsided team gets punished. (PvP meta still unsettled.)",
+  roster:["Vampire","Melon Soda","Ion Cookie Robot","Nameless Cake Hound","Madeleine","Charles","Milk (Pediatrician)","Toothpaste Choco","Herb","Alchemist","Pomegranate","Dark Choco"]},
+ {name:"Poison Stacking (F2P)",tag:"no TSSR needed",flag:0,
+  desc:"Self-sustaining DoT 'melt' cycle. Needs zero TSSRs — a great alternate when your carries aren't leveled.",
+  syn:"Overlapping <b>Multishot + Duration + Area + Pierce</b> keeps poison stacking faster than the boss can shed it. Scorpion is the engine.",
+  roster:["Scorpion","Jungle Warrior","Milky Way","Lemon","Cream Soda","Strawberry Shortcake","Toothpaste Choco","Dark Choco","Pomegranate","Milk (Pediatrician)","Herb","Licorice"]}
+];
+const teamState=TEAMS.map(t=>({names:[...t.roster],missing:{}}));
+
+const PROG=[
+ {n:"Leveling / EXP",num:"01",body:"Raises base HP/ATK/DEF — biggest early lever. Individual level is <b>capped by your Crumble Level</b> (account level); if cookies stop leveling, raise that via Auto Hunt + missions.",list:["Auto Hunt idle drip (caps ~8h — claim often)","EXP Dungeon = the concentrated source","EXP candies for higher rarities"]},
+ {n:"Promotions",num:"02",body:"Duplicate pulls become <b>Soulstones</b> to promote a cookie's grade — a bigger jump than several levels. Prioritize your carries.",list:["Collection bonuses: passive stats for owning cookies","Star Abilities grant Arena-exclusive effects","Verify exact numbers in-game"]},
+ {n:"Sugar Runes",num:"03",body:"Craftable enhancements, up to <b>4 per cookie</b>. Matching rune type to role beats raw stat totals.",list:["Power (ATK/CRIT) → carries","Defense (DEF/HP) → tanks & healers","Concentrate on your main team first"]},
+ {n:"Resolve",num:"04",body:"Account-wide flat stat growth, the <b>main Coin sink</b>. Level ATK/DEF/HP; each to 20 finishes a stage, then resets for bigger payoffs. Never expires.",list:["Coins → Resolve (ATK-weighted)","Applies to your whole lineup","Best lever when level/gear are capped"]},
+ {n:"Upgrade Priority",num:"05",body:"Near-unanimous community consensus:",list:["<b>Focus 2–3 cookies</b>, not the whole roster","<b>ATK first</b> — killing faster beats out-tanking the timer","Then just enough survivability to stop wipes","Layer Resolve (ATK) + Power Runes on carries"]},
+ {n:"Where to Farm",num:"06",body:"Push each daily dungeon as <b>deep as you can</b> — some award bonus summons every 5th level.",list:["Coin Dungeon → Resolve fuel","EXP Dungeon → cookie levels","Dough/Material Dungeon → gear crafting","Crumble Dungeon uses your whole bench"]}
+];
+
+/* ===== RENDER ===== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const gvar=g=>`var(--g-${g.toLowerCase()})`;
+const filt={grade:"all",role:"all",el:"all",syn:"all"};
+
+function chipHTML(items,attr,active){return [`<button class="chip" aria-pressed="${active==='all'}" data-${attr}="all">All</button>`].concat(items.map(x=>`<button class="chip" aria-pressed="false" data-${attr}="${x}">${x}</button>`)).join("");}
+$("#gradeChips").innerHTML=chipHTML(GRADES,"grade","all");
+$("#roleChips").innerHTML=chipHTML(ROLES,"role","all");
+$("#elChips").innerHTML=chipHTML(ELEMENTS,"el","all");
+$("#synChips").innerHTML=chipHTML(SYN_META.map(s=>s.k),"syn","all");
+
+function renderCookies(){
+  const q=$("#cookieSearch").value.trim().toLowerCase();
+  const list=COOKIES.filter(c=>
+    (filt.grade==="all"||c.grade===filt.grade)&&
+    (filt.role==="all"||c.role===filt.role)&&
+    (filt.el==="all"||c.el===filt.el)&&
+    (filt.syn==="all"||c.gives.includes(filt.syn)||c.recv.includes(filt.syn))&&
+    (!q||c.n.toLowerCase().includes(q)||(c.gives.join()+c.recv.join()+c.eff.join()).toLowerCase().includes(q))
+  ).sort((a,b)=>GORDER[a.grade]-GORDER[b.grade]||a.n.localeCompare(b.n));
+  const g=$("#cookieGrid");
+  g.innerHTML=list.length?list.map(c=>`
+    <article class="card ${useOwned&&!OWNED.has(c.n)?'dim':''}" data-g="${c.grade}" data-e="${c.el}" data-cookie="${c.n}">
+      <div class="top"><div><h3 class="name">${META.has(c.n)?'<span class="metastar">★</span> ':''}${c.n}</h3>${COOKIE_TIPS[c.n]?`<div class="cuse">${COOKIE_TIPS[c.n].use}</div>`:""}</div>
+        <div class="cardbtns"><button class="own ${OWNED.has(c.n)?'have':''}" data-own="${c.n}" title="Toggle owned" aria-label="Toggle owned">${OWNED.has(c.n)?'●':'○'}</button><span class="grade-badge">${c.grade}</span></div></div>
+      <div class="tagrow"><span class="el"><span class="ed"></span>${c.el}</span><span class="pill role">${c.role}</span>${c.eff.map(e=>`<span class="pill eff">${e}</span>`).join("")}</div>
+      <div class="synrow">${c.gives.map(s=>`<span class="syn-give">▲ ${s}</span>`).join("")}${c.recv.map(s=>`<span class="syn-recv">▽ ${s}</span>`).join("")}${!c.gives.length&&!c.recv.length?'<span class="syn-recv">no synergy</span>':''}</div>
+    </article>`).join(""):'<div class="empty">No cookies match those filters.</div>';
+  $("#cookieCount").textContent=list.length+" / "+COOKIES.length;
+  $("#cc").textContent=COOKIES.length;
+}
+function renderSyn(){
+  $("#synGrid").innerHTML=SYN_META.map(s=>{
+    const prov=providersOf(s.k),recv=receiversOf(s.k);
+    return `<div class="syn-card">
+      <h3>${s.k} <span class="ko">${s.ko}</span></h3>
+      <p class="mech">${s.mech}</p>
+      <div class="rate">
+        <span><span class="lab">Boss</span> <b style="color:var(--boss)">${'★'.repeat(s.boss)}${'☆'.repeat(3-s.boss)}</b></span>
+        <span><span class="lab">Wave</span> <b style="color:var(--wave)">${'★'.repeat(s.wave)}${'☆'.repeat(3-s.wave)}</b></span>
+      </div>
+      <div class="pv">Providers (${prov.length})</div>
+      <div class="namelist">${prov.map(p=>`<span class="nm provider">▲ ${p.n}</span>`).join("")||'<span class="nm">—</span>'}</div>
+      <div class="pv">Receivers (${recv.length})</div>
+      <div class="namelist">${recv.slice(0,10).map(p=>`<span class="nm">${p.n}</span>`).join("")}${recv.length>10?`<span class="nm">+${recv.length-10}</span>`:''}</div>
+      <div class="scarce">${s.scarce}</div>
+    </div>`;
+  }).join("");
+}
+function renderPets(){
+  const list=[...PETS].sort((a,b)=>GORDER[a.grade]-GORDER[b.grade]);
+  $("#petBody").innerHTML=list.map(p=>`<tr>
+    <td><span class="t-badge" style="background:${gvar(p.grade)}">${p.grade}</span></td>
+    <td><span class="petname">${p.n}</span></td>
+    <td class="eff-txt">${p.eff.length?p.eff.join(" · "):'<span style="color:var(--faint)">— (ownership bonus only)</span>'}</td>
+  </tr>`).join("");
+}
+
+/* ---- team comps ---- */
+const unitJob=c=>c.gives.length?'▲ '+c.gives.join("/"):(c.recv.length?'▽ '+c.recv.join("/"):(c.eff[0]||c.role));
+function findReplacement(name,teamNames,ownedOnly){
+  const orig=BY_NAME[name];if(!orig)return null;
+  let cand=COOKIES.filter(c=>!teamNames.includes(c.n));
+  if(ownedOnly)cand=cand.filter(c=>OWNED.has(c.n));
+  if(!cand.length)return null;
+  let pool=cand;
+  if(orig.gives.length){const g=orig.gives[0];const same=cand.filter(c=>c.gives.includes(g));if(same.length)pool=same;else{const sr=cand.filter(c=>c.role===orig.role);if(sr.length)pool=sr;}}
+  else{const sr=cand.filter(c=>c.role===orig.role);if(sr.length)pool=sr;if(orig.recv.length){const p=pool.filter(c=>c.recv.some(r=>orig.recv.includes(r)));if(p.length)pool=p;}}
+  pool.sort((a,b)=>GRADEW[b.grade]-GRADEW[a.grade]||a.n.localeCompare(b.n));return pool[0]||null;
+}
+function renderTeam(i){
+  const t=TEAMS[i],st=teamState[i];const used=[...st.names];
+  const rows=st.names.map((nm,slot)=>{
+    let c=BY_NAME[nm];const manual=st.missing[slot];let auto=null;
+    if(!manual&&useOwned&&!OWNED.has(nm)){const rep=findReplacement(nm,used,true);if(rep){auto=nm;c=rep;used[slot]=rep.n;}}
+    if(!c)return"";
+    const lab=manual?('sub for '+manual):(auto?('you lack '+auto):unitJob(c));
+    return `<div class="unit ${manual||auto?'sub':''}" data-g="${c.grade}" data-e="${c.el}">
+      <button class="miss ${manual?'active':''}" data-team="${i}" data-slot="${slot}" title="${manual?'Restore original':"I don't have this — swap out"}">${manual?'↺':'✕'}</button>
+      <span class="u-el"></span>
+      <span class="u-name clk" data-cookie="${c.n}">${META.has(c.n)?'<span class="metastar">★</span> ':''}${c.n}</span>
+      <span class="u-role">${c.role}</span><span class="u-job">${lab}</span><span class="u-tier">${c.grade}</span></div>`;
+  }).join("");
+  const sc=Object.keys(st.missing).length;
+  return `<div class="team"><div class="team-hd"><span class="idx">${String(i+1).padStart(2,'0')}</span><h3>${t.name}</h3>
+      <span class="slots">${st.names.length} cookies</span><span class="team-tag ${t.flag?'flag':''}">${t.tag}</span>
+      <button class="share-btn" data-share="${i}">↗ share</button>
+      ${sc?`<button class="reset-team" data-reset="${i}">↺ reset ${sc}</button>`:''}</div>
+    <div class="team-body"><div class="lineup">${rows}</div>
+      <div class="team-side"><p class="lab">Why it works</p><p>${t.desc}</p><p class="lab">Key synergy</p><p>${t.syn}</p>
+      <p class="hint">${useOwned?'Auto-adapted to your roster. ':''}✕ swaps a cookie; click a name for its detail card.</p></div></div></div>`;
+}
+function renderTeams(){$("#teamStack").innerHTML=TEAMS.map((_,i)=>renderTeam(i)).join("");}
+function toggleMissing(i,slot){const st=teamState[i];
+  if(st.missing[slot]){st.names[slot]=st.missing[slot];delete st.missing[slot];}
+  else{const rep=findReplacement(st.names[slot],st.names,useOwned);if(!rep){toast&&toast("No owned replacement available");return;}st.missing[slot]=st.names[slot];st.names[slot]=rep.n;}
+  $("#teamStack").children[i].outerHTML=renderTeam(i);}
+function resetTeam(i){teamState[i]={names:[...TEAMS[i].roster],missing:{}};$("#teamStack").children[i].outerHTML=renderTeam(i);}
+
+/* ---- optimizer ---- */
+const AMP={"DEF Down":4,"Skill Amp+":3,"ATK+":3,"Crit DMG+":2,"Crit Rate+":1.5};
+const SURV={"Heal":1.6,"Shield":1.4,"DMG Taken-":1.3,"DEF+":0.8};
+const PROFILES={
+ story:{label:"Story / All-Around",synW:{Multistrike:3,Area:3,Pierce:3,Chain:2,Duration:2,Multishot:2,"Proj. Speed":2},
+   rolePref:{Shooter:1.0,Attacker:0.95,Supporter:0.9,Tanker:0.65},quota:{Shooter:4,Attacker:3,Supporter:4,Tanker:1},amp:1.0,surv:0.6},
+ boss:{label:"Boss / Single-Target",synW:{Multistrike:3,Chain:3,Duration:3,Multishot:2,"Proj. Speed":2,Pierce:1,Area:1},
+   rolePref:{Attacker:1.0,Shooter:1.0,Supporter:0.9,Tanker:0.6},quota:{Attacker:3,Shooter:3,Supporter:4,Tanker:1},amp:1.35,surv:0.55},
+ daily:{label:"Daily Dungeon / Farming",synW:{Area:3,Pierce:3,Chain:3,Multistrike:2,Multishot:2,Duration:1,"Proj. Speed":1},
+   rolePref:{Shooter:1.1,Attacker:0.95,Supporter:0.8,Tanker:0.5},quota:{Shooter:5,Attacker:3,Supporter:3,Tanker:1},amp:0.85,surv:0.35},
+ crumble:{label:"Crumble Dungeon",synW:{Multistrike:3,Chain:3,Duration:2,Multishot:2,"Proj. Speed":2,Area:2,Pierce:1},
+   rolePref:{Shooter:0.95,Attacker:0.9,Supporter:1.0,Tanker:0.85},quota:{Shooter:3,Attacker:3,Supporter:5,Tanker:1},amp:1.2,surv:1.0},
+ pvp:{label:"Arena / PvP",synW:{Multistrike:1.2,Chain:1,Duration:1.5,Multishot:1,"Proj. Speed":1,Area:1,Pierce:1},
+   rolePref:{Tanker:1.25,Supporter:1.2,Shooter:0.75,Attacker:0.75},quota:{Tanker:4,Supporter:5,Shooter:2,Attacker:1},amp:0.6,surv:1.5}
+};
+function marginal(c,team,P){
+  let s=GRADEW[c.grade]*(P.rolePref[c.role]||0.55);
+  if((c.role==="Attacker"||c.role==="Shooter")&&GRADEW[c.grade]>=4)s+=2.4*(1-0.45*P.surv); // marquee carry pull (dampened in survival modes)
+  const inRole=team.filter(x=>x.role===c.role).length,q=P.quota[c.role]||0;
+  if(inRole>=q)s-=3.4*(inRole-q+1);else s+=1.5;
+  c.gives.forEach(g=>{const w=P.synW[g]||0.5;const dup=team.some(x=>x.gives.includes(g));
+    const rc=team.filter(x=>x.recv.includes(g)).length;s+=dup?0.3*w:w*(1+0.5*Math.min(rc,3));});
+  c.recv.forEach(r=>{const w=P.synW[r]||0.5;const provOn=team.some(x=>x.gives.includes(r));s+=w*(provOn?1.2:0.5);});
+  c.eff.forEach(e=>{if(AMP[e])s+=AMP[e]*P.amp;if(SURV[e])s+=SURV[e]*P.surv;});
+  if(c.role==="Tanker")s+=1.0*P.surv;
+  return s;
+}
+function repair(team,P,src,keep){
+  const syns=Object.keys(P.synW).sort((a,b)=>P.synW[b]-P.synW[a]);
+  for(const S of syns){if(P.synW[S]<2)continue;
+    const hasR=team.some(x=>x.recv.includes(S)),hasP=team.some(x=>x.gives.includes(S));
+    if(hasR&&!hasP){const prov=providersOf(S).filter(c=>(!src||src.includes(c))&&!team.includes(c)).sort((a,b)=>GRADEW[b.grade]-GRADEW[a.grade])[0];if(!prov)continue;
+      const activeG=new Set(team.filter(x=>x.gives.some(g=>team.some(y=>y.recv.includes(g)))).flatMap(x=>x.gives));
+      const cand=team.filter(x=>x!==keep&&!x.eff.some(e=>AMP[e])&&!x.gives.some(g=>activeG.has(g))).sort((a,b)=>marginal(a,team,P)-marginal(b,team,P))[0];
+      if(cand)team[team.indexOf(cand)]=prov;}}
+  return team;
+}
+function activeSyn(team,P){const out=[];
+  for(const S of Object.keys(P.synW)){const pr=team.find(x=>x.gives.includes(S));const rc=team.filter(x=>x.recv.includes(S));
+    if(pr&&rc.length)out.push({k:S,provider:pr.n,recvs:rc.map(r=>r.n),w:P.synW[S]});}
+  return out.sort((a,b)=>b.w*b.recvs.length-a.w*a.recvs.length);}
+function buildTeam(key,size,lockName){
+  const P=PROFILES[key];let team=[];const src=cPool();
+  const lockObj=(lockName&&BY_NAME[lockName]&&src.includes(BY_NAME[lockName]))?BY_NAME[lockName]:null;if(lockObj)team.push(lockObj);
+  while(team.length<size){let best=null,bs=-1e9;for(const c of src){if(team.includes(c))continue;const m=marginal(c,team,P);if(m>bs){bs=m;best=c;}}if(!best)break;team.push(best);}
+  team=repair(team,P,src,lockObj);
+  const active=activeSyn(team,P);
+  const hasDC=team.some(x=>x.eff.includes("DEF Down")),hasAtk=team.some(x=>x.eff.includes("ATK+")||x.eff.includes("Skill Amp+"));
+  const synScore=active.reduce((a,s)=>a+s.w*Math.min(s.recvs.length,4),0);
+  const gsum=team.length?team.reduce((a,c)=>a+GRADEW[c.grade],0)/team.length:0;
+  const roles={};team.forEach(c=>roles[c.role]=(roles[c.role]||0)+1);
+  let bal=0;for(const r in P.quota)bal+=Math.min(roles[r]||0,P.quota[r]);
+  const rating=Math.round(Math.min(98,44+synScore*1.35+(hasDC?3:0)+(hasAtk?3:0)+gsum*2.6+bal*0.7));
+  const elc={};team.forEach(c=>elc[c.el]=(elc[c.el]||0)+1);
+  const domEl=Object.entries(elc).sort((a,b)=>b[1]-a[1])[0];
+  const ELPET={Fire:"Floral Froglet",Water:"Yule Log Cake",Grass:"Pterosatchel",Light:"Bonbon Birdy",Dark:"Marshmallow Hamster"};
+  let pets=[{n:"Holy Baby Drop",e:"Ally ATK+"},{n:"Gold Drop",e:"Crit Rate+"},{n:"Sweet n' Sour",e:"Crit DMG+"}];
+  if(P.surv>=1.2)pets[1]={n:"Majestic King Choco Drop",e:"Max HP+"};
+  const dom=active.find(s=>SYN_PET[s.k]&&s.recvs.length>=2);
+  if(dom)pets[2]={n:SYN_PET[dom.k],e:dom.k+" synergy +ATK"};
+  else if(domEl&&domEl[1]>=7)pets[2]={n:ELPET[domEl[0]],e:domEl[0]+" allies Crit DMG+"};
+  return {P,team,active,hasDC,hasAtk,rating,roles,pets,domEl};
+}
+function renderBuild(){
+  const key=$("#contentChips [aria-pressed='true']").dataset.c,size=+$("#sizeRange").value;
+  const lock=$("#lockSel")?$("#lockSel").value:"";
+  const R=buildTeam(key,size,lock);
+  const carries=R.team.filter(c=>c.role==="Attacker"||c.role==="Shooter").slice(0,3).map(c=>c.n);
+  const dom=R.active.find(s=>SYN_PET[s.k]&&s.recvs.length>=2);
+  const petWhy=R.P.surv>=1.2?"survival-tilted (HP pet for PvP)":dom?`a ${dom.k} pet since the team leans on it`:(R.domEl&&R.domEl[1]>=7?`a ${R.domEl[0]} crit pet (mono-element team)`:"universal ATK + crit");
+  const why=`Built around <b>${carries.join(", ")||"your roster"}</b> as the damage core. `
+    +(R.active.length?`Turned on ${R.active.length} synerg${R.active.length>1?"ies":"y"} — chiefly <b>${R.active[0].k}</b> (${R.active[0].provider} → ${R.active[0].recvs.length}). `:"")
+    +(R.hasDC&&R.hasAtk?"Full amplifier stack (DEF-down × ATK/skill-amp). ":R.hasDC?"DEF-down multiplies team damage. ":R.hasAtk?"ATK/skill-amp buff boosts the team. ":"")
+    +(R.P.surv>=1.0?"A tank + double-heal layer keeps it alive. ":"")+`Pets: ${petWhy}.`
+    +(useOwned?" <b>Built from your roster only.</b>":"")+(lock?` Locked in <b>${lock}</b>.`:"");
+  const maxQ=Math.max(...Object.values(R.P.quota));
+  const bars=ROLES.map(r=>{const c=R.roles[r]||0;return `<div class="rolebar"><span>${r}</span><span class="track"><span class="fill" style="width:${Math.min(100,c/maxQ*100)}%"></span></span><span class="cnt">${c}</span></div>`;}).join("");
+  const elc={};R.team.forEach(c=>elc[c.el]=(elc[c.el]||0)+1);const elbox=ELEMENTS.map(e=>elc[e]?`<span class="elc"><span class="ed" style="background:var(--e-${e.toLowerCase()})"></span>${e} ${elc[e]}</span>`:"").join("");
+  let coach="";const stg=$("#buildStage")?$("#buildStage").value.trim():"";const mm=stg.match(/(\d+)\s*[-\s]\s*(\d+)/);
+  if(mm){const info=stageLookup(+mm[1],+mm[2]);if(info)coach+=`<div class="verdict warn" style="margin-bottom:16px">🎯 <b>${mm[1]}-${mm[2]}</b> needs <b>${fmtN(info.power)}</b> Power (boss: ${info.boss}). A perfect comp still fails under ~80% of that — if you're below it, it's a <b>Power wall</b>. <button class="linkbtn" data-jump="stages">Check your bracket →</button><button class="linkbtn" data-jump="progression">Progression →</button></div>`;}
+  if(R.team.length<size)coach+=`<div class="verdict warn" style="margin-bottom:16px">Only ${R.team.length} owned cookies available — own more in <button class="linkbtn" data-jump="roster">My Roster</button> or turn roster-only off.</div>`;
+  $("#buildResult").innerHTML=coach+`
+    <div class="result-hd"><h3>${R.P.label} · ${R.team.length} cookies</h3><div class="rating"><span class="val">${R.rating}</span><span class="lab">team<br>rating</span></div></div>
+    <div class="build-body">
+      <div class="build-lineup">${R.team.map(c=>`<div class="unit" data-g="${c.grade}" data-e="${c.el}"><span class="u-el"></span><span class="u-name clk" data-cookie="${c.n}">${META.has(c.n)?'<span class="metastar">★</span> ':''}${c.n}</span><span class="u-role">${c.role}</span><span class="u-job">${c.gives.length?'▲ '+c.gives.join("/"):(c.recv.length?'▽ '+c.recv.join("/"):(c.eff[0]||''))}</span><span class="u-tier">${c.grade}</span></div>`).join("")}</div>
+      <div class="build-side">
+        <div class="box"><p class="lab">Why this team</p><p class="why">${why}</p></div>
+        <div class="box"><p class="lab">Active synergies (${R.active.length})</p><div class="syn-live">${R.active.length?R.active.map(s=>`<div class="row"><span class="on"></span><span class="snm">${s.k}</span><span class="flow">${s.provider} → ${s.recvs.length}×</span></div>`).join(""):'<span class="why">No synergies active — raw stats carry here.</span>'}</div></div>
+        <div class="box"><p class="lab">Class balance</p><div class="rolebars">${bars}</div></div>
+        <div class="box"><p class="lab">Element mix</p><div class="elmix">${elbox}</div>${R.domEl&&R.domEl[1]>=7?`<p class="why" style="margin-top:8px">Mono-${R.domEl[0]} leaning — an element crit pet fits.</p>`:""}</div>
+        <div class="box"><p class="lab">Recommended pets (3 slots)</p><div class="petpick">${R.pets.map(p=>`<div class="p"><div class="pn">${p.n}</div><div class="pe">${p.e}</div></div>`).join("")}</div></div>
+      </div></div>`;
+}
+function renderProg(){$("#progGrid").innerHTML=PROG.map(p=>`<div class="prog-card"><h3><span class="num">${p.num}</span> ${p.n}</h3><p>${p.body}</p><ul>${p.list.map(l=>`<li>${l}</li>`).join("")}</ul></div>`).join("");}
+
+/* ===== INTERACTION ===== */
+$$(".tab").forEach(tab=>tab.addEventListener("click",()=>{
+  $$(".tab").forEach(t=>t.setAttribute("aria-selected",t===tab));
+  $$(".panel").forEach(p=>p.classList.toggle("active",p.id===tab.dataset.panel));
+  window.scrollTo({top:0});}));
+function wireFilter(sel,key){$$(sel+" .chip").forEach(c=>c.addEventListener("click",()=>{
+  $$(sel+" .chip").forEach(x=>x.setAttribute("aria-pressed",x===c));
+  filt[key]=c.dataset[key==="el"?"el":key];renderCookies();}));}
+$("#gradeChips").addEventListener("click",e=>{if(e.target.dataset.grade){$$("#gradeChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===e.target));filt.grade=e.target.dataset.grade;renderCookies();}});
+$("#roleChips").addEventListener("click",e=>{if(e.target.dataset.role){$$("#roleChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===e.target));filt.role=e.target.dataset.role;renderCookies();}});
+$("#elChips").addEventListener("click",e=>{if(e.target.dataset.el){$$("#elChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===e.target));filt.el=e.target.dataset.el;renderCookies();}});
+$("#synChips").addEventListener("click",e=>{if(e.target.dataset.syn){$$("#synChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===e.target));filt.syn=e.target.dataset.syn;renderCookies();}});
+$("#cookieSearch").addEventListener("input",renderCookies);
+$$("#contentChips .chip").forEach(c=>c.addEventListener("click",()=>{$$("#contentChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===c));renderBuild();}));
+$("#sizeRange").addEventListener("input",e=>{$("#sizeOut").textContent=e.target.value;});
+$("#sizeRange").addEventListener("change",renderBuild);
+$("#genBtn").addEventListener("click",renderBuild);
+$("#teamStack").addEventListener("click",e=>{const m=e.target.closest(".miss");if(m){toggleMissing(+m.dataset.team,+m.dataset.slot);return;}const r=e.target.closest(".reset-team");if(r)resetTeam(+r.dataset.reset);});
+$("#themeToggle").addEventListener("click",()=>{const cur=document.documentElement.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",cur==="dark"?"light":"dark");});
+
+/* stage data */
+const STAGE_POW=[[1600,1950,2033,2166,2950,3063,3326,3589,3852,4115,4311,4507,4692,4846,4908,4945,4968,4991,5153,5439,5842,6006,6342,6992,8199,8914,9484,9900,9994,10258],[10683,11235,11282,11326,11357,11362,11362,11373,11407,11501,11620,11745,11870,11994,12119,12243,12367,12492,12617,12741,12865,12991,13115,13238,13363,13488,13613,13737,13862,13987],[14111,14236,14349,14433,14488,14522,14554,14587,14620,14652,14685,14718,14751,14783,15108,16035,18580,20912,22381,22799,22825,22852,22880,22909,22936,22962,22989,23017,23044,23071],[23099,23127,23154,23181,23209,23236,23263,23290,23318,23345,23373,23401,23428,23455,23482,23510,23536,23563,23591,23618,23646,23673,23712,23816,24361,25210,26277,26615,26738,26758],[26792,26825,26858,26891,26924,26958,27003,27522,30607,33654,34234,34630,35029,35435,35845,36259,36677,37102,37530,37964,38403,38851,39365,40001,40682,41377,42083,42802,43534,44277],[45032,45801,46584,47380,48189,49012,49849,50699,51567,52448,53324,53984,54489,54998,55511,56030,56552,57080,57614,58152,58695,59243,59796,60356,60919,61488,62063,62641,63227,63817],[64413,65015,65621,66235,66853,67479,68109,68744,69387,70033,70688,71349,72014,72688,73367,74051,74743,75441,76145,76857,77574,78299,79030,79768,80513,81264,82024,82791,83562,84344],[85132,85928,86730,87539,88357,89182,90014,90856,91703,92561,93424,94297,95179,96293,97797,99325,100406,101121,101819,102521,103229,103943,104660,105382,106110,106843,107580,108323,109071,109823],[110583,111347,112115,112889,113668,114452,115243,116039,116840,117646,118459,119277,120100,120929,121763,122604,123451,124304,125161,126025,126895,127771,128653,129542,130437,131336,132244,133157,134077,135002],[135933,136872,137818,138769,139727,140693,141663,142642,143627,144618,145616,146621,147633,148652,149679,151241,154948,158861,162825,166840,170915,175055,179247,183493,187794,192155,196579,201067,205612,210215],[210374,210534,210693,210853,211012,211171,211331,211490,211650,211809,211969,212128,212287,212447,212607,212767,212927,213088,213248,213408,213568,213729,213889,214049,214210,214370,214530,214691,214851,215012],[215173,215334,215496,215657,215818,215980,216141,216302,216463,216625,216786,216947,217108,217270,217433,217595,217758,217921,218083,218246,218409,218572,218734,218897,219060,219222,219385,219548,219711,219875],[220038,220202,220365,220529,220693,220856,221020,221183,221347,221510,221674,221838,222001,222166,222330,222495,222660,222824,222989,223154,223318,223483,223647,223812,223977,224141,224306,224471,224637,224803],[224969,225135,225301,225467,225633,225800,225966,226132,226298,226464,226630,226796,226963,227130,227297,227463,227630,227797,227964,228131,228298,228465,228632,228799,228966,229133,229300,229468,229636,229803],[229971,230139,230307,230474,230642,230810,230978,231146,231313,231481,231649,231817,231987,232156,232325,232494,232663,232832,233001,233170,233340,233509,233678,233847,234016,234185,234356,234526,234696,234866],[235037,235207,235377,235548,235718,235888,236059,236229,236399,236570,236740,236911,237083,237254,237425,237596,237767,237939,238110,238281,238452,238623,238794,238966,239137,239309,239482,239655,239827,240000],[243118,246257,249426,252622,255840,259085,262352,265650,268977,272327,275707,279114,282549,286012,289499,293018,296565,300140,303744,307373,311041,314730,318450,322201,325979,329796,333634,337507,341411,345343],[349310,353303,357329,360728,362665,363228,363791,364357,364926,365495,366064,366633,367203,367773,368342,368912,369481,370051,370621,371193,371770,372347,372925,373503,374080,374659,375237,375815,376392,376970],[377548,378127,378711,379296,379882,380468,381053,381639,382224,382809,383395,383980,384566,385154,385743,386335,386928,387521,388115,388708,389300,389893,390487,391080,391672,392266,392863,393463,394064,394665],[395267,395868,396469,397070,397671,398271,398873,399475,400079,400686,401294,401904,402512,403121,403731,404340,404949,405558,406168,406778,407387,408002,408619,409237,409855,410471,411089,411707,412324,412941],[413559,414176,414796,415418,416042,416667,417292,417917,418543,419168,419793,420419,421044,421669,422296,422925,423558,424191,424826,425460,426093,426728,427362,427995,428629,429263,429897,430534,431174,431816],[432458,433100,433742,434384,435026,435668,436310,436952,437595,438239,438887,439537,440187,440838,441489,442139,442790,443441,444091,444742,445392,446045,446701,447359,448018,448677,449336,449996,450654,451315],[451973,452631,453291,453951,454615,455282,455949,456616,457283,457952,458619,459287,459955,460623,461290,461958,462629,463305,463981,464657,465373,466731,470033,475085,480397,485056,488056,489574,490802,492011],[493222,494434,495649,496867,498086,499307,500531,501756,502983,504213,505444,506676,507912,509150,510388,511630,512874,514118,515364,516614,518002,519461,520923,523097,525631,528176,530726,533281,535846,538420],[541001,543589,546186,548789,551398,554018,556643,559277,561916,564562,567217,569878,572548,575224,577906,580596,583294,585998,588708,591426,594150,596908,600040,603846,607840,611858,615899,619959,624036,628137],[632256,636397,640557,644738,648941,653160,657399,661662,665945,670248,674569,678912,683274,687658,692062,696483,700927,705391,709873,714376,718898,723444,728008,732589,737188,741812,746456,751117,755797,760498],[765249,770462,776032,781537,785474,787327,788917,790496,792061,793615,795157,796687,798202,799707,801199,802678,804141,805590,807025,808448,809854,811246,812624,813987,815334,816663,817980,819278,820561,821826],[823074,824306,825520,826715,827894,829052,830190,831334,833682,838714,845724,853489,861348,869275,877272,885341,893490,901716,910014,918384,926832,935368,943980,952664,961425,970277,979211,988223,997312,1006489],[1015754,1025104,1034535,1044053,1053661,1063359,1073143,1083015,1092986,1103045,1112917,1119334,1124824,1130339,1135881,1141449,1147049,1152676,1158336,1164029,1169749,1175507,1181287,1187096,1192932,1198799,1204696,1210619,1216572,1222554],[1228566,1234607,1240677,1246779,1252910,1259072,1265263,1271483,1277737,1284020,1290333,1296679,1303056,1309465,1315904,1322923,1337410,1352872,1368503,1384306,1400287,1416487,1432857,1449409,1466137,1483085,1500235,1517569,1535095,1552824],[1570546,1585664,1597381,1608629,1619959,1631370,1642859,1654427,1666081,1677816,1689631,1701528,1713515,1725584,1737736,1749972,1762297,1774714,1787212,1799795,1814163,1829132,1844218,1859422,1874745,1890206,1905924,1922389,1939367,1956508],[1973814,1991270,2008873,2026627,2044550,2062628,2080866,2099256,2117823,2136547,2155435,2174489,2193718,2213120,2232682,2252415,2272332,2292431,2312701,2332549,2351726,2370949,2390322,2409844,2429517,2449369,2469386,2489559,2509887,2530385],[2551062,2571907,2592912,2614086,2635443,2656975,2678681,2700555,2722620,2744860,2767283,2789889,2812694,2835687,2858858,2882222,2905779,2929540,2953484,2977614,3001938,3026494,3051236,3076171,3101296,3126651,3152219,3177984,3203950,3230128],[3256540,3283163,3309869,3336087,3362085,3388280,3414680,3441273,3468088,3495104,3522332,3549770,3577427,3605302,3633384,3661684,3690209,3718969,3747943,3777126,3806545,3836215,3866109,3895813,3918768,3937736,3956668,3975685,3994788,4013984],[4033282,4052671,4072148,4091713,4111380,4131143,4151000,4170947,4190997,4211139,4231378,4251714,4272151,4292686,4313307,4334009,4354802,4375705,4396699,4417791,4438984,4460291,4481694,4503197,4524797,4546510,4568332,4590253,4612273,4634397],[4656641,4678988,4701437,4723986,4746657,4769423,4792296,4815271,4838363,4861565,4884877,4908299,4931834,4955487,4979247,5003121,5027110,5051223,5075445,5099777,5124226,5148803,5173499,5198303,5223219,5248254,5273415,5298690,5324078,5349586],[5375232,5400998,5426880,5452880,5479015,5505277,5531663,5558168,5584806,5611573,5638468,5665489,5692640,5719925,5747331,5774868,5802534,5830343,5858278,5886341,5914541,5942888,5971366,5999975,6028711,6057601,6086634,6115799,6145095,6174530],[6204124,6233857,6263722,6293717,6323869,6354168,6384607,6415184,6445915,6476792,6507820,6538994,6570313,6601791,6633415,6665189,6697113,6729201,6761437,6793819,6826358,6859059,6891910,6924909,6958061,6991381,7024873,7058513,7092310,7126259],[7160399,7194694,7229144,7263750,7298537,7333496,7368616,7403896,7439347,7474979,7510779,7546746,7582882,7619204,7655691,7692354,7729186,7766211,7803405,7840769,7878314,7916050,7953968,7992057,8030316,8068778,8107434,8146271,8185281,8224476],[8263884,8303476,8343246,8383198,8423353,8463711,8504255,8544981,8585908,8627037,8668365,8709884,8751597,8793519,8835636,8877954,8920468,8963202,9006133,9049262,9092599,9136152,9179918,9223882,9268047,9312436,9357053,9401869,9446891,9492111],[9512926,9533781,9554685,9575634,9596630,9617672,9638756,9659891,9681073,9702298,9723571,9744888,9766257,9787669,9809129,9830636,9852190,9873793,9895440,9917138,9938881,9960674,9982510,10004399,10026333,10048318,10070350,10092428,10114556,10136734],[10158958,10181235,10203557,10225929,10248349,10270822,10293343,10315913,10338535,10361204,10383924,10406692,10429514,10452384,10475303,10498274,10521294,10544364,10567486,10590657,10613880,10637155,10660480,10683855,10707283,10730761,10754289,10777873,10801507,10825191],[10848929,10872719,10896560,10920452,10944400,10968398,10992448,11016554,11040710,11064916,11089176,11113489,11137857,11162278,11186750,11211280,11235860,11260493,11285185,11309926,11334723,11359576,11384482,11409442,11434459,11459529,11484655,11509836,11535072,11560362],[11585709,11611110,11636568,11662082,11687653,11713277,11738960,11764696,11790492,11816342,11842250,11868215,11894235,11920308,11946443,11972633,11998883,12025187,12051550,12077972,12104451,12130989,12157583,12184239,12210949,12237722,12264548,12291438,12318384,12345390],[12372455,12399579,12426765,12454008,12481312,12508677,12536098,12563582,12591127,12618731,12646395,12674119,12701904,12729752,12752565,12775416,12798308,12821241,12844216,12867233,12890289,12913386,12936528,12959708,12982933,13006195,13029501,13052850,13076237,13099673],[13123145,13146658,13170217,13193817,13217459,13241145,13264871,13288642,13312452,13336310,13360206,13384147,13408130,13432155,13456226,13479882,13503581,13527321,13551103,13574928,13598792,13622699,13646650,13670640,13694675,13718752,13742868,13767030,13791234,13815481],[13839770,13864101,13888474,13912891,13937351,13961853,13986398,14010988,14035619,14060296,14085016,14109779,14134582,14159434,14184326,14209263,14234246,14259274,14284347,14309461,14334622,14359826,14385076,14410366,14435706,14461087,14486513,14511986,14537500,14563062],[14588668,14614318,14640014,14665757,14691543,14717373,14743251,14769173,14795139,14821154,14847214,14873320,14899471,14925668,14951911,14978202,15004538,15030912,15057336,15083804,15110319,15136880,15163489,15190144,15216846,15243596,15270392,15297234,15324124,15351062],[15378048,15405080,15432160,15459288,15486465,15513685,15540954,15568276,15595642,15623057,15650521,15678031,15705590,15733200,15760856,15788561,15816315,15844118,15878265,15912486,15946782,15981151,16015594,16050111,16084701,16119367,16154109,16188925,16223815,16258783],[16293822,16328941,16364134,16399401,16434746,16470165,16505663,16541238,16576887,16612614,16648418,16684298,16720257,16756294,16792406,16828598,16864866,16901213,16937642,16967368,16997145,17026976,17056860,17086794,17116783,17146823,17176918,17207065,17237262,17267517],[17297822,17328178,17358592,17389059,17419578,17450147,17480775,17511454,17542187,17572975,17603816,17634712,17665663,17696665,17727723,17758837,17790006,17821227,17852505,17883836,17915209,17946638,17978119,18009657,18041251,18072898,18104603,18136364,18168179,18200051],[18231977,18263962,18296000,18328096,18360247,18392456,18424721,18457041,18489421,18521856,18554346,18586896,18619502,18652163,18684884,18717662,18750500,18783391,18816340,18849350,18882416,18915553,18948748,18981999,19015311,19048682,19082110,19115597,19149140,19182747],[19216409,19250132,19283914,19317755,19351657,19385617,19419636,19453715,19487855,19522053,19556313,19590632,19625010,19659450,19693950,19728510,19763132,19797813,19832557,19867361,19902228,19937153,19972143,20007195,20042310,20077486,20112723,20148021,20183381,20218806],[20254291,20289840,20325450,20361120,20396857,20432653,20468515,20504437,20540424,20576475,20612588,20648763,20685005,20721307,20757675,20794106,20830601,20867160,20903783,20940470,20977221,21014039,21050920,21087864,21124873,21161948,21199086,21236289,21273558,21310894],[21348295,21385759,21423292,21460891,21498554,21536284,21574080,21611941,21649870,21687866,21725928,21764057,21802252,21840515,21878846,21917242,21955707,21994237,22032838,22071507,22110241,22149046,22187916,22226856,22265862,22304940,22344085,22383298,22422579,22461930],[22501351,22540839,22580398,22620025,22659724,22699491,22739327,22779233,22819211,22859259,22899375,22939563,22979821,23020150,23060548,23101020,23141562,23182175,23222857,23263613,23304440,23345339,23386308,23427352,23468466,23509638,23550885,23592205,23633594,23675059],[23716596,23758204,23799887,23841640,23883472,23925372,23967346,24009395,24051520,24093718,24135986,24178332,24220751,24263244,24305813,24348457,24391174,24433967,24476834,24519777,24562795,24605888,24649057,24692303,24735624,24779022,24822501,24866057,24909687,24953398],[24997184,25041046,25084986,25129002,25173096,25217267,25261517,25305843,25350247,25394729,25439289,25483928,25528643,25573436,25618314,25663265,25708296,25753407,25798596,25843865,25889213,25934640,25980146,26025736,26071403,26117148,26162977,26208892,26254888,26300962],[26347121,26393359,26439677,26486077,26532560,26579123,26625767,26672495,26719305,26766196,26813168,26860225,26907363,26954582,27001888,27049276,27096744,27144298,27191936,27239656,27287460,27335347,27383321,27431377,27479519,27527742,27576055,27624446,27672926,27721491],[27770140,27818877,27867696,27916602,27965596,28014674,28063837,28113089,28162424,28211849,28261359,28310957,28360640,28410412,28460271,28510218,28560251,28610373,28660580,28710881,28761268,28811741,28862304,28912956,28963697,29014527,29065447,29116454,29167551,29218739],[29270016,29321382,29372840,29424387,29476022,29527753,29579572,29631480,29683482,29735575,29787760,29840034,29892400,29944860,29997411,30050054,30102789,30155618,30208539,30261551,30314660,30367860,30421152,30474540,30528020,30581594,30635263,30689025,30742883,30796834],[30850881,30905024,30959258,31013590,31068018,31122540,31177158,31231872,31286681,31341590,31396593,31451692,31506888,31562180,31617570,31673057,31728642,31784323,31840103,31895980,31951956,32008031,32064201,32120473,32176842,32233309,32289878,32346545,32403311,32460178],[32517144,32574206,32631365,32688626,32745989,32803450,32861014,32918675,32976440,33034308,33092275,33150345,33208517,33266789,33325166,33383644,33442226,33500909,33559697,33618585,33677581,33736676,33795878,33855180,33914590,33974100,34033719,34093440,34153267,34213200],[34273235,34333377,34393629,34453988,34514453,34575024,34635700,34696482,34757371,34818368,34879471,34940682,35002001,35063426,35124960,35186601,35248352,35310210,35372177,35434251,35496437,35558728,35621131,35683644,35746266,35808998,35871843,35934794,35997854,36061029],[36124313,36187707,36251215,36314833,36378560,36442402,36506356,36570422,36634600,36698890,36763292,36827808,36892436,36957180,37022036,37087005,37152092,37217288,37282601,37348029,37413571,37479226,37544998,37610888,37676894,37743012,37809244,37875596,37942067,38008651],[38075352,38142171,38209108,38276159,38343333,38410619,38478028,38545555,38613201,38680962,38748844,38816846,38884966,38953205,39021564,39090045,39158646,39227364,39296207,39365169,39434251,39503454,39572779,39642226,39711796,39781486,39851300,39921236,39991294,40061478],[40131780,40202210,40272761,40343437,40414236,40452715,40491230,40529782,40568374,40606997,40645659,40684360,40723095,40761868,40800678,40839525,40878408,40917331,40956288,40995282,41034314,41073385,41112489,41151634,41190815,41230035,41269288,41308583,41347913,41387283],[41426687,41466130,41505610,41545127,41584685,41624276,41663915,41703589,41743299,41783050,41822838,41862667,41902530,41942430,41982369,42022349,42062362,42102419,42142511,42182641,42222809,42263016,42303261,42343544,42383866,42424225,42464625,42505063,42545537,42586050],[42626605,42667196,42707825,42748493,42789200,42829947,42870732,42911557,42952420,42993322,43034264,43075243,43116263,43157321,43198419,43239555,43280730,43321946,43363199,43404491,43445826,43487197,43528607,43570059,43611549,43653080,43694650,43736259,43777906,43819596],[43861323,43903090,43944900,43986745,44028634,44070559,44112527,44154534,44196550,44238604,44280700,44322834,44365012,44407227,44449480,44491776,44534112,44576488,44618906,44661362,44703862,44746399,44788977,44831596,44874254,44916954,44959697,45002476,45045298,45088160],[45131067,45174008,45216993,45260022,45303086,45346194,45389344,45432535,45475765,45519068,45562415,45605799,45649227,45692695,45736209,45779756,45823351,45866985,45910661,45954379,45998138,46041940,46085782,46129665,46173592,46217558,46261570,46305622,46349715,46393851],[46438028,46482248,46526510,46570814,46615161,46659548,46703981,46748451,46792969,46837526,46882125,46926768,46971454,47016181,47060953,47105765,47150620,47195520,47240460,47285442,47330470,47375541,47420653,47465807,47511006,47556246,47601532,47646862,47692231,47737643],[47783104,47828602,47874147,47919733,47965364,48011037,48056756,48102518,48148323,48194171,48240062,48285998,48331977,48378002,48424071,48470182,48516338,48562539,48608780,48655068,48701400,48747776,48794195,48840661,48887170,48933721,48980318,49026959,49073645,49120375],[49167152,49213970,49260835,49307744,49354695,49401694,49448739,49495825,49542957,49590134,49637356,49684624,49731936,49779290,49826691,49874139,49921629,49969168,50016750,50064378,50112048,50159767,50207530,50255340,50303195,50351095,50399041,50447033,50495068,50543151],[50591281,50639455,50687675,50735944,50784255,50832610,50881016,50929467,50977962,51026505,51075096,51123731,51172412,51221140,51269915,51318735,51367602,51416516,51465475,51514484,51563537,51612636,51661784,51710978,51760217,51809505,51858838,51908223,51957649,52007127],[52056648,52106218,52155836,52205499,52255208,52304970,52354777,52404629,52454531,52504480,52554476,52604518,52654612,52704750,52754938,52805171,52855454,52905785,52956165,53006590,53057064,53107586,53158156,53208774,53259443,53310157,53360921,53411732,53462593,53513502],[53564458,53615465,53666518,53717621,53768771,53819973,53871222,53922520,53973865,54025261,54076707,54128198,54179739,54231332,54282972,54334662,54386402,54438191,54490027,54541913,54593850,54645835,54697872,54749957,54802090,54854274,54906509,54958791,55011125,55063509],[55115940,55168424,55220957,55273540,55326172,55378856,55431588,55484373,55537206,55590089,55643024,55696009,55749044,55802130,55855266,55908454,55961692,56014979,56068318,56121707,56175149,56228640,56282182,56335776,56389420,56443117,56496861,56550659,56604509,56658410],[56712361,56766364,56820418,56874523,56928681,56982890,57037152,57091463,57145826,57200243,57254711,57309230,57363800,57418425,57473099,57527828,57582608,57637429,57692305,57747232,57802215,57857248,57912330,57967468,58022658,58077899,58133195,58188542,58243944,58299396],[58354903,58410460,58466073,58521736,58577454,58633226,58689049,58744927,58800856,58856839,58912876,58968966,59025109,59081305,59137555,59193859,59250219,59306629,59363100,59419630,59476209,59532845,59589532,59646278,59703071,59759923,59816829,59873787,59930800,59987870],[60044990,60102168,60159397,60216684,60274022,60331417,60388866,60446370,60503927,60561540,60619211,60676932,60734710,60792545,60850433,60908376,60966375,61024428,61082537,61140702,61198921,61257196,61315527,61373913,61432354,61490853,61549405,61608014,61666679,61725400],[61784177,61843009,61901897,61960842,62019841,62078899,62138011,62197181,62256407,62315690,62375029,62434421,62493875,62553383,62612947,62672568,62732248,62791983,62851775,62911622,62971528,63031491,63091509,63151586,63211717,63271909,63332156,63392462,63452823,63513244],[63573722,63634259,63694851,63755500,63816211,63876976,63937801,63998682,64059622,64120619,64181675,64242791,64303962,64365192,64426483,64487830,64549234,64610699,64672222,64733802,64795441,64857140,64918898,64980718,65042595,65104530,65166522,65228575,65290689,65352859],[65415092,65477380,65539729,65602136,65664606,65727133,65789719,65852367,65915073,65977839,66040665,66103549,66166495,66229501,66292564,66355689,66418875,66482121,66545427,66608792,66672220,66735705,66799255,66862863,66926530,66990258,67054048,67117899,67181811,67245783],[67309814,67373908,67438063,67502279,67566556,67630895,67695295,67759753,67824278,67888863,67953508,68018215,68082983,68147812,68212705,68277658,68342673,68407750,68472890,68538090,68603353,68668680,68734068,68799515,68865027,68930602,68996238,69061936,69127697,69193521],[69259407,69325355,69391366,69457443,69523579,69589780,69656045,69722370,69788761,69855213,69921729,69988311,70054953,70121659,70188429,70255263,70322161,70389120,70456146,70523236,70590387,70657603,70724884,70792228,70859637,70927112,70994650,71062255,71129920,71197650],[71265448,71333309,71401233,71469223,71537278,71605396,71673580,71741830,71810144,71878524,71946966,72015478,72084051,72152691,72221396,72290169,72359004,72427906,72496873,72565905,72635006,72704169,72773399,72842696,72912057,72954080,72996123,73038194,73080289,73122405],[73164549,73206714,73248906,73291121,73333359,73375623,73417912,73460225,73502561,73544922,73587308,73629719,73672153,73714612,73757096,73799604,73842136,73884693,73927274,73969882,74012513,74055168,74097847,74140551,74183282,74226035,74268810,74311614,74354440,74397291],[74440167,74483066,74525993,74568943,74611917,74654915,74697940,74740988,74784063,74827162,74870284,74913432,74956605,74999803,75043027,75086274,75129545,75172845,75216169,75259516,75302889,75346286,75389708,75433157,75476627,75520127,75563651,75607199,75650773,75694372],[75737995,75781646,75825321,75869021,75912746,75956496,76000272,76044074,76087899,76131749,76175626,76219528,76263455,76307408,76351384,76395389,76439418,76483469,76527550,76571655,76615785,76659939,76704121,76748329,76792560,76836817,76881099,76925407,76969723,77014062],[77058426,77102817,77147233,77191675,77236141,77280634,77325152,77369695,77414266,77458862,77503483,77548129,77592801,77637500,77682225,77726973,77771750,77816549,77861377,77906230,77951109,77996013,78040944,78085899,78130881,78175890,78220925,78265983,78311072,78356192],[78401339,78446514,78491714,78536936,78582188,78627468,78672771,78718103,78763459,78808841,78854248,78899685,78945144,78990633,79036144,79081685,79127250,79172841,79218459,79264104,79309775,79355471,79401195,79446944,79492720,79538523,79584352,79630207,79676089,79721998],[79767939,79813912,79859910,79905934,79951985,79998061,80044164,80090293,80136453,80182635,80228842,80275082,80321344,80367634,80413949,80460294,80506663,80553059,80599484,80645932,80692409,80738914,80785444,80832001,80878582,80925195,80971834,81018498,81065188,81111908],[81158653,81205393,81252160,81298953,81345773,81392619,81439495,81486394,81533322,81580278,81627260,81674270,81721304,81768369,81815457,81862577,81909720,81956893,82004094,82051319,82098571,82145852,82193160,82240495,82287859,82335248,82382664,82430106,82477580,82525079],[82572604,82620158,82667775,82715417,82763085,82810783,82858507,82906260,82954037,83001845,83049680,83097543,83145434,83193349,83241295,83289268,83337269,83385296,83433352,83481434,83529545,83577685,83625850,83674045,83722267,83770518,83818795,83867099,83915433,83963796],[84012184,84060600,84109045,84157520,84206023,84254551,84303111,84351696,84400311,84448952,84497623,84546321,84595047,84643801,84692584,84741393,84790233,84839100,84887994,84936917,84985869,85034848,85083855,85132894,85181957,85231050,85280169,85329319,85378497,85427702],[85476937,85526199,85575490,85624808,85674156,85723531,85772933,85822365,85871827,85921313,85970832,86020379,86069950,86119556,86169186,86218846,86268535,86318252,86367998,86417772,86467575,86517408,86567268,86617158,86667076,86717024,86766999,86817003,86867037,86917098],[86967191,87017310,87067458,87117637,87167843,87218081,87268344,87318637,87368960,87419311,87469691,87520100,87570539,87621006,87671503,87722029,87772584,87823168,87873782,87924424,87975097,88025795,88076526,88127285,88178074,88228893,88279740,88330615,88381521,88432457],[88483420,88534415,88585436,88636491,88687572,88738685,88789825,88840993,88892195,88943423,88994681,89045970,89097290,89148636,89200012,89251421,89302855,89354322,89405817,89457341,89508897,89560483,89612097,89663740,89715414,89767119,89818853,89870615,89922409,89974231],[90026084,90077967,90129880,90181824,90233795,90285798,90337829,90389893,90441985,90494107,90546260,90598443,90650654,90702898,90755171,90807473,90859805,90912169,90964564,91016986,91069442,91121924,91174438,91226983,91279557,91332163,91384797,91437465,91490161,91542888],[91595643,91648431,91701250,91754098,91806974,91859884,91912825,91965793,92018794,92071826,92124887,92177979,92231103,92284256,92337442,92390656,92443902,92497176,92550483,92603820,92657190,92710588,92764018,92817480,92870970,92924491,92978045,93031627,93085243,93138889],[93192567,93246275,93300012,93353783,93407582,93461414,93515276,93569171,93623095,93677051,93731037,93785055,93839103,93893184,93947295,94001437,94055613,94109817,94164052,94218319,94272619,94326949,94381310,94435701,94490127,94544582,94599070,94653588,94708137,94762717],[94817329,94871974,94926649,94981356,95036093,95090861,95145663,95200492,95255355,95310249,95365176,95420133,95475124,95530145,95585198,95640282,95695400,95750547,95805728,95860939,95916183,95971459,96026766,96082105,96137477,96192880,96248315,96303782,96359281,96414811],[96470374,96525969,96581596,96637255,96692947,96748672,96804430,96860218,96916040,96971895,97027780,97083696,97139647,97195628,97251643,97307690,97363769,97419880,97476024,97532200,97588408,97644651,97700924,97757228,97813567,97869937,97926342,97982777,98039243,98095745],[98152279,98208846,98265442,98322072,98378737,98435433,98492162,98548923,98605718,98662546,98719407,98776298,98833224,98890183,98947173,99004198,99061255,99118343,99175465,99232622,99289810,99347031,99404286,99461572,99518891,99576248,99633633,99691051,99748505,99805991],[99863509,99921060,99978647,100036265,100093902,100151576,100209282,100267019,100324793,100382597,100440438,100498310,100556216,100614153,100672124,100730130,100788168,100846242,100904348,100962488,101020660,101078866,101137108,101195382,101253687,101312026,101370401,101428810,101487252,101545726],[101604235,101662777,101721354,101779963,101796088,101812214,101828345,101844477,101860611,101876748,101892887,101909028,101925176,101941322,101957470,101973622,101989779,102005937,102022096,102038258,102054423,102070594,102086760,102102935,102119108,102135289,102151468,102167650,102183837,102200024],[102216217,102232408,102248605,102264803,102301519,102338249,102374992,102411747,102448517,102485299,102522092,102558902,102595726,102632560,102669408,102706270,102743144,102780033,102816934,102853850,102890778,102927717,102964671,103001638,103038619,103075614,103112622,103149643,103186678,103223723],[103260785,103297857,103334946,103372048,103409794,103447559,103485335,103523125,103560930,103598750,103636581,103674425,103712287,103750158,103788045,103825947,103863861,103901792,103939734,103977689,104015660,104053646,104091642,104129654,104167681,104205719,104243772,104281843,104319922,104358019],[104396127,104434248,104472386,104510538,104548279,104586034,104623801,104661583,104699379,104737190,104775013,104812850,104850698,104888563,104926441,104964334,105002238,105040155,105078089,105116034,105153994,105191967,105229955,105267957,105305971,105344000,105382042,105420098,105458167,105496251],[105534347,105572459,105610585,105648721,105729854,105811052,105892308,105973629,106055010,106136455,106217963,106299533,106381165,106462862,106544619,106626439,106708325,106790272,106872280,106954353,107036490,107118687,107200947,107283274,107365664,107448114,107530628,107613207,107695848,107778553],[107861322,107944155,108027049,108110010,108148752,108187510,108226281,108265066,108303863,108342675,108381502,108420342,108459198,108498064,108536948,108575843,108614753,108653677,108692614,108731567,108770534,108809513,108848508,108887515,108926537,108965571,109004620,109043684,109082763,109121854],[109160960,109200081,109239212,109278361,109317522,109356694,109395886,109435087,109474303,109513533,109552778,109592037,109631310,109670596,109709899,109749211,109788543,109827884,109867243,109906612,109945997,109985399,110024813,110064239,110103682,110143139,110182608,110222093,110261592,110301103],[110340632,110380171,110419727,110459297,110498879,110538476,110578090,110617715,110657356,110697009,110736678,110776363,110816059,110855773,110895496,110935236,110974991,111014760,111054541,111094338,111134150,111173975,111213814,111253669,111293537,111333419,111373316,111413227,111453152,111493091],[111533045,111573015,111612998,111652995,111693005,111733034,111773074,111813130,111853201,111893285,111933383,111973497,112013625,112053765,112093925,112134095,112174278,112214479,112254692,112294920,112335163,112375421,112415692,112455976,112496279,112536593,112576923,112617267,112657626,112697997],[112738386,112778786,112819202,112859635,112900078,112940536,112981007,113021495,113061998,113102513,113143043,113183590,113224149,113264723,113305312,113345913,113386533,113427166,113467813,113508475,113549150,113589842,113630548,113671268,113712001,113752750,113793514,113834294,113875086,113915893],[113956716,113997551,114038405,114079271,114120153,114161049,114201958,114242889,114283827,114324782,114365753,114406738,114447738,114488751,114529779,114570824,114611882,114652956,114694044,114735147,114776263,114817394,114858541,114899703,114940880,114982070,115023276,115064498,115105731,115146980],[115188247,115229525,115270821,115312129,115353450,115394790,115436142,115477509,115518889,115560286,115601699,115643124,115684568,115726021,115767493,115808978,115850479,115891994,115933524,115975070,116016631,116058205,116099794,116141399,116183019,116224654,116266303,116307967,116349648,116391342],[116433051,116474774,116516513,116558269,116600039,116641824,116683626,116725440,116767271,116809116,116850976,116892853,116934742,116976649,117018569,117060504,117102455,117144421,117186401,117228396,117270405,117312432,117354473,117396529,117438601,117480685,117522786,117564902,117607035,117649181],[117691343,117733519,117775710,117817918,117860137,117902374,117944623,117986890,118029173,118071468,118113779,118156105,118198448,118240805,118283175,118325562,118367964,118410382,118452814,118495263,118537726,118580206,118622698,118665208,118707731,118750271,118792825,118835396,118877980,118920580],[118963197,119005829,119048475,119091136,119133814,119176506,119219212,119261935,119304671,119347426,119390195,119432979,119475777,119518591,119561423,119604267,119647129,119690004,119732895,119775802,119818725,119861661,119904613,119947583,119990567,120033566,120076580,120119607,120162653,120205714],[120248790,120291881,120334989,120378111,120421251,120464408,120507577,120550762,120593964,120637181,120680413,120723662,120766923,120810201,120853495,120896807,120940131,120983470,121026828,121070201,121113589,121156991,121200409,121243845,121287293,121330759,121374239,121417737,121461246,121504775],[121548318,121591878,121635451,121679041,121722643,121766264,121809899,121853550,121897216,121940901,121984598,122028313,122072041,122115786,122159547,122203324,122247115,122290922,122334745,122378585,122422438,122466310,122510196,122554098,122598017,122641950,122685898,122729864,122773843,122817841],[122861853,122905881,122949925,122993984,123038060,123082150,123126257,123170380,123214519,123258673,123302844,123347031,123391232,123435449,123479684,123523932,123568197,123612479,123656775,123701089,123745417,123789761,123834122,123878498,123922890,123967300,124011723,124056162,124100617,124145090],[124189577,124234083,124278603,124323138,124367676,124412233,124456804,124501393,124545995,124590614,124635250,124679902,124724568,124769251,124813953,124858666,124903399,124948144,124992910,125037689,125082486,125127297,125172125,125216969,125261829,125306705,125351594,125396505,125441427,125486369],[125531324,125576297,125621287,125666290,125711323,125756374,125801438,125846520,125891617,125936732,125981861,126027008,126072167,126117347,126162542,126207753,126252979,126298223,126343482,126388759,126434050,126479357,126524681,126570022,126615380,126660752,126706141,126751549,126796968,126842408],[126887861,126933331,126978820,127024322,127069843,127115380,127160932,127206498,127252085,127297686,127343302,127388936,127434585,127480254,127525936,127571635,127617351,127663084,127708832,127754597,127800379,127846176,127891990,127937819,127983666,128029530,128075409,128121307,128167221,128213147],[128259096,128305056,128351035,128397031,128443041,128489070,128535112,128581175,128627254,128673346,128719457,128765582,128811727,128857889,128904064,128950257,128996467,129042695,129088936,129135196,129181472,129227765,129274074,129320401,129366743,129413101,129459477,129505870,129552277,129598705],[129645146,129691604,129738080,129784573,129831082,129877608,129924152,129970714,130017292,130063882,130110494,130157122,130203766,130250426,130297102,130343797,130390507,130437234,130483979,130530740,130577516,130624312,130671124,130717951,130764795,130811658,130858537,130905429,130952344,130999271],[131046216,131093179,131140159,131187156,131234167,131281196,131328239,131375303,131422381,131469476,131516589,131563718,131610863,131658027,131705206,131752404,131799618,131846849,131894096,131941362,131988643,132035943,132083258,132130588,132177938,132225305,132272689,132320089,132367507,132414941],[132462392,132509860,132557346,132604846,132652367,132699905,132747459,132795028,132842615,132890220,132937840,132985481,133033136,133080809,133128498,133176206,133223929,133271673,133319428,133367204,133414998,133462806,133510633,133558479,133606339,133654217,133702111,133750024,133797954,133845902],[133893866,133941847,133989845,134037860,134085894,134133944,134182013,134230096,134278198,134326317,134374453,134422608,134470777,134518965,134567172,134615393,134663635,134711889,134760163,134808457,134856765,134905090,134953436,135001797,135050175,135098571,135146983,135195414,135243861,135292326],[135340808,135389310,135437826,135486360,135534913,135583482,135632068,135680672,135729294,135777933,135826590,135875264,135923954,135972663,136021391,136070134,136118895,136167675,136216469,136265284,136314115,136362962,136411830,136460713,136509614,136558533,136607468,136656421,136705394,136754383],[136803389,136852411,136901453,136950514,136999546,137048600,137097670,137146760,137195863,137244986,137294126,137343284,137392459,137441654,137490865,137540093,137589339,137638601,137687883,137737183,137786498,137835832,137885184,137934554,137983940,138033345,138082770,138132207,138181666,138231142],[138280636,138330147,138379675,138429222,138478830,138528458,138578102,138627762,138677442,138727138,138776854,138826587,138876339,138926106,138975893,139025696,139075518,139125358,139175218,139225093,139274985,139324896,139374827,139424774,139474740,139524720,139574721,139624740,139674777,139724832],[139774905,139824997,139875104,139925230,139975373,140025534,140075714,140125910,140176124,140226356,140276607,140326875,140377162,140427465,140477789,140528131,140578489,140628865,140679261,140729674,140780103,140830554,140881021,140931505,140982007,141032531,141083071,141133628,141184204,141234797],[141285409,141336039,141386687,141437355,141488040,141538740,141589461,141640200,141690957,141741734,141792528,141843341,141894170,141945016,141995884,142046767,142097672,142148594,142199533,142250490,142301465,142352460,142403473,142454503,142505553,142556619,142607706,142658810,142709931,142761073],[142812232,142863409,142914605,142965818,143015816,143065829,143115863,143165911,143215977,143266063,143316165,143366284,143416420,143466577,143516749,143566939,143617146,143667371,143717610,143767873,143818150,143868444,143918756,143969088,144019436,144069800,144120183,144170584,144221003,144271438],[144321892,144372363,144422853,144473359,144523883,144574424,144624983,144675562,144726158,144776769,144827399,144878048,144928713,144979396,145030098,145080816,145131552,145182307,145233079,145283869,145334677,145385502,145436345,145487206,145538084,145588980,145639894,145690827,145741780,145792746],[145843732,145894733,145945756,145996796,146047853,146098927,146150019,146201130,146252257,146303403,146354569,146405752,146456951,146508169,146559404,146610658,146661928,146713219,146764526,146815853,146867196,146918558,146969936,147021332,147072749,147124181,147175634,147227102,147278589,147330094],[147381618,147433159,147484719,147536297,147587891,147639504,147691136,147742785,147794454,147846139,147897841,147949564,148001302,148053061,148104839,148156632,148208444,148260275,148312122,148363990,148415874,148467776,148519698,148571638,148623595,148675570,148727563,148779575,148831605,148883656],[148935719,148987805,149039909,149092030,149144169,149196325,149248502,149300696,149352909,149405139,149457388,149509655,149561940,149614244,149666566,149718907,149771267,149823640,149876038,149928451,149980883,150033333,150085801,150138290,150190794,150243317,150295859,150348421,150400999,150453596],[150506210,150558846,150611497,150664170,150716857,150769566,150822290,150875036,150927799,150980579,151033379,151086199,151139034,151191890,151244764,151297657,151350566,151403496,151456443,151509409,151562394,151615398,151668418,151721460,151774519,151827595,151880692,151933807,151986938,152040091],[152093262,152146451,152199658,152252884,152306128,152359393,152412673,152465975,152519293,152572632,152625988,152679363,152732758,152786170,152839603,152893052,152946521,153000008,153053514,153107037,153160583,153214144,153267725,153321323,153374944,153428581,153482237,153535911,153589605,153643316],[153697047,153750797,153804567,153858354,153912163,153965989,154019832,154073695,154127579,154181482,154235403,154289345,154343302,154397279,154451276,154505291,154559326,154613380,154667452,154721543,154775652,154829781,154883928,154938095,154992282,155046485,155100711,155154952,155209212,155263493],[155317794,155372110,155426448,155480803,155535179,155589569,155643984,155698413,155752864,155807332,155861818,155916326,155970851,156025398,156079962,156134545,156189146,156243767,156298407,156353066,156407745,156462445,156517160,156571898,156626652,156681425,156736220,156791032,156845863,156900715],[156955583,157010474,157065381,157120310,157175256,157230223,157285208,157340214,157395237,157450280,157505343,157560424,157615525,157670646,157725784,157780943,157836120,157891318,157946534,158001770,158057026,158112300,158167594,158222906,158278240,158333593,158388963,158444354,158499764,158555192],[158610641,158666110,158721597,158777103,158832630,158888175,158943741,158999326,159054929,159110552,159166196,159221859,159277542,159333241,159388962,159444701,159500463,159556241,159612040,159667858,159723697,159779554,159835432,159891326,159947244,160003178,160059133,160115107,160171102,160227115],[160283151,160339202,160395277,160451366,160507480,160563611,160619762,160675931,160732122,160788333,160844563,160900813,160957081,161013371,161069679,161126006,161182355,161238722,161295108,161351517,161407940,161464386,161520855,161577341,161633845,161690372,161746917,161803481,161860066,161916669],[161973295,162029938,162086603,162143285,162199990,162256713,162313455,162370220,162427001,162483805,162540628,162597470,162654331,162711214,162768117,162825038,162881981,162938941,162995924,163052925,163109946,163166990,163224051,163281131,163338232,163395354,163452496,163509655,163566837,163624040],[163681261,163738501,163795762,163853045,163910273,163967521,164024788,164082077,164139383,164196711,164254060,164311427,164368815,164426223,164483649,164541099,164598566,164656054,164713562,164771089,164828638,164886207,164943796,165001404,165059032,165116682,165174352,165232040,165289748,165347478],[165405229,165462998,165520789,165578598,165636504,165694428,165752374,165810341,165868325,165926331,165984359,166042406,166100472,166158561,166216669,166274796,166332945,166391113,166449301,166507513,166565742,166623992,166682264,166740553,166798865,166857197,166915549,166973921,167032315,167090728],[167149161,167207617,167266090,167324586,167383102,167441637,167500194,167558771,167617368,167675986,167734626,167793284,167851965,167910662,167969385,168028124,168086885,168145670,168204472,168263295,168322138,168381002,168439887,168498793,168557719,168616666,168675634,168734622,168793630,168852661],[168911708,168970781,169029873,169088984,169148117,169207268,169266444,169325637,169384854,169444090,169503347,169562624,169621923,169681243,169740581,169799942,169859321,169918725,169978148,170037591,170097054,170156540,170216045,170275573,170335120,170394689,170454280,170513886,170573517,170633171],[170692844,170752538,170812252,170871986,170931743,170991519,171051317,171111135,171170977,171230836,171290719,171350623,171410546,171470489,171530455,171590441,171650448,171710477,171770526,171830597,171890688,171950801,172010934,172071089,172131263,172191461,172251677,172311915,172372176,172432458],[172492758,172553084,172613427,172673791,172734179,172794583,172855011,172915461,172975933,173036426,173096939,173157473,173218029,173278604,173339202,173399820,173460461,173521122,173581805,173642510,173703234,173763980,173824747,173885537,173946346,174007178,174068029,174128906,174189799,174250716],[174311653,174372611,174433593,174494595,174555617,174616663,174677728,174738815,174799921,174861053,174922205,174983376,175044570,175105785,175167021,175228281,175289560,175350860,175412182,175473527,175534892,175596277,175657687,175719118,175780568,175842042,175903536,175965051,176026587,176088148],[176149726,176211328,176272954,176334597,176396264,176457952,176519662,176581392,176643145,176704920,176766716,176828532,176890372,176952234,177014115,177076020,177137947,177199893,177261861,177323853,177385866,177447901,177509955,177572033,177634132,177696253,177758394,177820559,177882747,177944956],[178007182,178069434,178131709,178194003,178256320,178318659,178381017,178443400,178505804,178568229,178630676,178693148,178755638,178818151,178880685,178943242,179005822,179068422,179131045,179193690,179256355,179319044,179381755,179444485,179507240,179570016,179632813,179695635,179758477,179821339],[179884226,179947134,180010063,180073015,180135989,180198984,180262003,180325041,180388103,180451188,180514295,180577422,180640572,180703746,180766939,180830155,180893395,180956654,181019938,181083243,181146570,181209919,181273291,181336684,181400098,181463538,181526999,181590481,181653984,181717512],[181781061,181844631,181908224,181971841,182035477,182099137,182162820,182226525,182290253,182354002,182417773,182481566,182545383,182609221,182673082,182736964,182800870,182864798,182928748,182992721,183056715,183120733,183184772,183248834,183312918,183377024,183441153,183505305,183569480,183633675],[183697895,183762136,183826401,183890688,183954997,184019328,184083682,184148058,184212459,184276879,184341321,184405788,184470277,184534789,184599323,184663879,184728461,184793062,184857686,184922334,184987002,185051694,185116409,185181147,185245908,185310691,185375497,185440323,185505174,185570049],[185634945,185699865,185764805,185829770,185894757,185959764,186024797,186089854,186154932,186220031,186285155,186350301,186415471,186480663,186545878,186611115,186676376,186741659,186806963,186872292,186937644,187003019,187068417,187133837,187199281,187264745,187330234,187395746,187461281,187526838],[187592418,187658021,187723649,187789297,187854970,187920665,187986383,188052124,188117888,188183676,188249486,188315319,188381174,188447054,188512957,188578881,188644832,188710802,188776796,188842814,188908854,188974918,189041007,189107116,189173248,189239404,189305584,189371785,189438011,189504259],[189570533,189636828,189703147,189769488,189835850,189902237,189968645,190035076,190101532,190168011,190234515,190301038,190367587,190434161,190500754,190567372,190634015,190700679,190767368,190834079,190900813,190967572,191034353,191101159,191167984,191234838,191301712,191368611,191435532,191502477],[191569447,191636437,191703452,191770495,191837558,191904647,191971758,192038891,192106049,192173232,192240437,192307666,192374919,192442194,192509494,192576817,192644163,192711535,192778928,192846344,192913785,192981248,193048736,193116250,193183783,193251343,193318926,193386531,193454161,193521813],[193589492,193657193,193724916,193792667,193860436,193928231,193996052,194063893,194131760,194199650,194267563,194335504,194403464,194471450,194539458,194607491,194675548,194743629,194811733,194879861,194948012,195016188,195084387,195152611,195220859,195289129,195357425,195425742,195494087,195562453],[195630845,195699257,195767696,195836157,195888446,195940747,195993062,196045391,196097735,196150092,196202460,196254846,196307245,196359659,196412085,196464527,196516983,196569451,196621934,196674430,196726942,196779468,196832006,196884560,196937126,196989707,197042300,197094911,197147535,197200174]];
+const BOSS_TBL=["King Choco Drop","Berrytail Choco Scorpion","Cake Hound Pack","Cream Cake Wolf","Jelly Worm","Cool Mint Cookie","Blueberry Cream Hermit Crab","Durianeer Deckfruit","Durianeer Fanfruit","Mangosteen Water Bomber","Broken Cleaning Bot","Broken Repair Bot","Broken Welding Bot","Rowdy Biker","Rowdy Truck","GingerCraven","Ginkgoblin Sharpshooter","Ginkgoblin Bomber","Spactus","Cream Eagle","Ginkgoblin Stormer","Poison Shroomer","Tainted Pomegranate Crow","Pomegranate Beetle","Tainted Ent","Queen Jelly Bee","Redberry Assassin","Cookievorous Plant","Choco Werehound Princess","Magma Lizard","Magma Waffle Lizard","Valley Magmastorm Ghost","Magma Sugar Waffle Lizard","Cloud Yogurt Clione","Ice Cone Lancer","Angry Snowman","Ice Candy Golem"];
+const BOSS_IDX=[[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15],[0,0,1,2,0,3,1,2,1,0,3,1,2,3,0,3,1,2,3,4,1,2,3,1,2,3,1,2,3,5],[6,7,8,6,7,8,6,7,8,9,6,7,8,6,7,6,7,8,6,9,7,8,6,7,8,6,7,8,6,5],[10,11,12,10,11,12,10,11,12,13,10,11,12,10,11,10,13,12,10,14,13,12,10,13,12,10,13,12,10,15],[16,17,18,16,17,18,16,17,18,19,16,17,18,16,17,19,16,17,19,20,16,17,19,16,17,19,16,17,19,20],[21,22,23,21,22,23,21,22,23,21,21,22,23,21,22,21,22,23,21,24,22,23,21,22,23,21,22,23,21,24],[25,26,27,25,26,27,25,26,27,26,25,26,27,25,26,25,26,27,25,28,26,27,25,26,27,25,26,27,25,5],[29,30,31,29,30,31,29,30,31,30,29,30,31,29,30,29,30,31,29,32,30,31,29,30,31,29,30,31,29,32],[33,34,35,33,34,35,33,34,35,34,33,34,35,33,34,33,34,35,33,36,34,35,33,34,35,33,34,35,33,15]];
+
+/* ===== STAGE POWER LOGIC ===== */
+const BRACKETS=[{r:0,d:1,l:"< 10%"},{r:.1,d:5,l:"≥ 10%"},{r:.2,d:15,l:"≥ 20%"},{r:.4,d:35,l:"≥ 40%"},{r:.6,d:55,l:"≥ 60%"},{r:.8,d:75,l:"≥ 80%"},{r:1,d:100,l:"≥ 100%"},{r:1.2,d:120,l:"≥ 120%"}];
+const fmtN=n=>n.toLocaleString("en-US");
+function stageLookup(ch,st){if(ch<1||ch>STAGE_POW.length)return null;const arr=STAGE_POW[ch-1];if(!arr||st<1||st>arr.length)return null;return{power:arr[st-1],boss:BOSS_TBL[BOSS_IDX[ch-1][st-1]]};}
+function bracketIdx(ratio){let i=0;for(let k=0;k<BRACKETS.length;k++){if(ratio>=BRACKETS[k].r)i=k;}return i;}
+function renderBrackets(stagePower,hereIdx){
+  $("#bracketTable").innerHTML='<div class="brk">'+BRACKETS.map((b,i)=>{
+    const thr=stagePower?fmtN(Math.ceil(b.r*stagePower))+" power":b.l+" power";
+    return '<div class="brk-row '+(i===hereIdx?'here':'')+'"><span class="thr">'+thr+'</span><span class="track"><span class="bar" style="width:'+Math.max(4,b.d)+'%"></span></span><span class="dmg">'+b.d+'%</span></div>';
+  }).join("")+'</div>';
+}
+function renderStageResult(){
+  const raw=$("#stageIn").value.trim();const m=raw.match(/(\d+)\s*[-\s]\s*(\d+)/);const box=$("#stageResult");
+  if(!m){box.innerHTML='<div class="verdict warn">Enter a stage like <b>30-20</b> (chapter-stage).</div>';renderBrackets();return;}
+  const ch=+m[1],st=+m[2];const info=stageLookup(ch,st);
+  if(!info){box.innerHTML='<div class="verdict warn">No data for <b>'+ch+'-'+st+'</b>. Chapters 1–'+STAGE_POW.length+', stages 1–30.</div>';renderBrackets();return;}
+  const powRaw=$("#powIn").value.replace(/[^\d]/g,"");const pow=powRaw?+powRaw:null;
+  let html='<div class="srec"><div><div class="lab">Recommended Power · '+ch+'-'+st+'</div><div class="big">'+fmtN(info.power)+'</div></div><span class="bosschip">Boss: <b>'+info.boss+'</b></span></div>';
+  if(pow){
+    const ratio=pow/info.power,bi=bracketIdx(ratio),cur=BRACKETS[bi],next=BRACKETS[bi+1];
+    html+='<div class="verdict '+(cur.d>=100?'good':'warn')+'">Your <b>'+fmtN(pow)+'</b> is <b>'+Math.round(ratio*100)+'%</b> of recommended → you deal <b>'+cur.d+'% damage</b> ('+cur.l+' bracket).';
+    if(next)html+=' Reach <b>'+fmtN(Math.ceil(next.r*info.power))+'</b> for '+next.d+'% damage.';else html+=' Top bracket — max damage.';
+    if(cur.d<100)html+=' Hit <b>'+fmtN(info.power)+'</b> for full 100%.';
+    html+='</div>';
+    if(cur.d<100)html+='<div class="verdict warn" style="margin-top:10px">⚠ <b>Power wall, not a comp problem.</b> Under 100% you deal reduced damage no matter how good the team is — raise Power first. <button class="linkbtn" data-jump="progression">Progression levers →</button><button class="linkbtn" data-jump="builder">Best team →</button></div>';
+    box.innerHTML=html;renderBrackets(info.power,bi);
+  }else{html+='<div class="verdict">Add your team Power above to see your damage bracket and the power you need to clear.</div>';box.innerHTML=html;renderBrackets(info.power);}
+}
+$("#stageBtn").addEventListener("click",renderStageResult);
+$("#stageIn").addEventListener("keydown",e=>{if(e.key==="Enter")renderStageResult();});
+$("#powIn").addEventListener("keydown",e=>{if(e.key==="Enter")renderStageResult();});
+renderBrackets();
+
+function toast(msg){let t=$("#toast");if(!t){t=document.createElement("div");t.id="toast";t.className="toast";document.body.appendChild(t);}t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1800);}
+function jumpTab(id){const tab=$('.tab[data-panel="'+id+'"]');if(tab)tab.click();}
+function partnersFor(c){
+  const feeders=[];c.recv.forEach(r=>providersOf(r).forEach(p=>{if(!feeders.includes(p))feeders.push(p);}));
+  const bene=[];c.gives.forEach(g=>receiversOf(g).forEach(p=>{if(!bene.includes(p))bene.push(p);}));
+  return {feeders:feeders.sort((a,b)=>GRADEW[b.grade]-GRADEW[a.grade]),bene:bene.sort((a,b)=>GRADEW[b.grade]-GRADEW[a.grade])};
+}
+function openCookieModal(name){
+  const c=BY_NAME[name];if(!c)return;const {feeders,bene}=partnersFor(c);const tw=TEAMS.filter(t=>t.roster.includes(name)).map(t=>t.name);
+  $("#modalBody").innerHTML=`
+    <div class="m-head"><h3>${META.has(c.n)?'★ ':''}${c.n}</h3><span class="grade-badge" style="background:${gvar(c.grade)}">${c.grade}</span></div>
+    ${COOKIE_TIPS[c.n]?`<div class="m-tip"><span class="m-use">${COOKIE_TIPS[c.n].use}</span>${COOKIE_TIPS[c.n].tip}</div>`:""}
+    <div class="tagrow" style="margin:10px 0"><span class="el" data-e="${c.el}"><span class="ed" style="background:var(--e-${c.el.toLowerCase()})"></span>${c.el}</span><span class="pill role">${c.role}</span>${c.eff.map(e=>`<span class="pill eff">${e}</span>`).join("")}<button class="own ${OWNED.has(c.n)?'have':''}" data-own="${c.n}" style="width:auto;border-radius:8px;padding:3px 10px;font-size:.72rem">${OWNED.has(c.n)?'● owned':'○ not owned'}</button></div>
+    <div class="m-syn">${c.gives.map(s=>`<span class="syn-give">▲ provides ${s}</span>`).join("")}${c.recv.map(s=>`<span class="syn-recv">▽ wants ${s}</span>`).join("")||(c.gives.length?'':'<span class="syn-recv">no synergy</span>')}</div>
+    ${c.recv.length?`<p class="m-lab">Best providers for what it wants (${c.recv.join(", ")})</p><div class="namelist">${feeders.slice(0,12).map(p=>`<span class="nm provider clk" data-cookie="${p.n}">${p.n}</span>`).join("")||'<span class="nm">— none</span>'}</div>`:''}
+    ${c.gives.length?`<p class="m-lab">Cookies that benefit from its ${c.gives.join("/")}</p><div class="namelist">${bene.slice(0,16).map(p=>`<span class="nm clk" data-cookie="${p.n}">${p.n}</span>`).join("")||'<span class="nm">—</span>'}</div>`:''}
+    ${tw.length?`<p class="m-lab">Featured in meta teams</p><div class="namelist">${tw.map(n=>`<span class="nm">${n}</span>`).join("")}</div>`:''}`;
+  $("#modal").classList.add("open");
+}
+function closeModal(){$("#modal").classList.remove("open");}
+function renderRoster(){
+  const sw=$("#useOwnedSwitch");if(sw){sw.setAttribute("aria-pressed",useOwned);sw.textContent=useOwned?"ON — building from my roster":"OFF — using full roster";}
+  const oc=$("#ownCount");if(oc)oc.textContent=OWNED.size+" / "+COOKIES.length+" cookies · "+OWNED_PETS.size+" / "+PETS.length+" pets";
+  const byGrade={};COOKIES.forEach(c=>{(byGrade[c.grade]=byGrade[c.grade]||[]).push(c);});
+  let html=GRADES.map(g=>byGrade[g]?`<div class="rg-grade"><div class="rg-lab" style="color:${gvar(g)}">${g} cookies</div><div class="rg-chips">${byGrade[g].map(c=>`<button class="ochip ${OWNED.has(c.n)?'have':''}" data-own="${c.n}">${c.n}</button>`).join("")}</div></div>`:'').join("");
+  html+=`<div class="rg-grade"><div class="rg-lab" style="color:var(--accent)">Pets</div><div class="rg-chips">${PETS.map(p=>`<button class="ochip ${OWNED_PETS.has(p.n)?'have':''}" data-ownpet="${p.n}">${p.n}</button>`).join("")}</div></div>`;
+  const rg=$("#rosterGrid");if(rg)rg.innerHTML=html;
+}
+function toggleOwn(name,isPet){const set=isPet?OWNED_PETS:OWNED;if(set.has(name))set.delete(name);else set.add(name);saveOwned();renderRoster();renderCookies();renderTeams();buildLockOptions();renderBuild();}
+function setUseOwned(v){useOwned=v;LS.set("useOwned",v);renderRoster();renderCookies();renderTeams();buildLockOptions();renderBuild();}
+function buildLockOptions(){const sel=$("#lockSel");if(!sel)return;const cur=sel.value;const src=cPool().slice().sort((a,b)=>a.n.localeCompare(b.n));sel.innerHTML='<option value="">— no lock —</option>'+src.map(c=>`<option value="${c.n}">${c.n} (${c.grade})</option>`).join("");if(cur&&src.some(c=>c.n===cur))sel.value=cur;}
+function bossData(){const map={};for(let ci=0;ci<STAGE_POW.length;ci++)for(let si=0;si<STAGE_POW[ci].length;si++){const b=BOSS_TBL[BOSS_IDX[ci][si]];(map[b]=map[b]||[]).push({s:(ci+1)+"-"+(si+1),p:STAGE_POW[ci][si]});}return map;}
+let BOSS_CACHE=null;
+function renderBossFinder(q){const map=BOSS_CACHE||(BOSS_CACHE=bossData());q=(q||"").trim().toLowerCase();
+  const names=Object.keys(map).filter(n=>!q||n.toLowerCase().includes(q)).sort((a,b)=>map[a][0].p-map[b][0].p);
+  const el=$("#bossList");if(!el)return;
+  el.innerHTML=names.map(n=>{const arr=map[n];const pmin=Math.min(...arr.map(x=>x.p)),pmax=Math.max(...arr.map(x=>x.p));const stg=arr.map(x=>x.s);
+    return `<div class="boss-row"><div class="boss-n">${n}</div><div class="boss-meta"><span>${arr.length} stage${arr.length>1?'s':''}</span><span class="boss-p">${fmtN(pmin)}–${fmtN(pmax)} power</span></div><div class="boss-stg">${stg.slice(0,10).join(", ")}${stg.length>10?" +"+(stg.length-10)+" more":""}</div></div>`;}).join("")||'<div class="empty">No boss matches.</div>';
+}
+function copyBuildLink(){const key=$("#contentChips [aria-pressed='true']").dataset.c,size=$("#sizeRange").value,lock=$("#lockSel")?$("#lockSel").value:"";
+  const enc=s=>encodeURIComponent(s).replace(/./g,"%2E");
+  const hh="#build="+[key,size,enc(lock),useOwned?1:0].join(".");
+  try{location.hash=hh;}catch(e){}
+  const url=location.origin+location.pathname+hh;
+  if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast("Share link copied"),()=>toast("Link set in URL bar"));else toast("Link set in URL bar");}
+function parseHash(){let hh=location.hash;if(!hh.startsWith("#build="))return;
+  let parts;try{parts=hh.slice(7).split(".").map(p=>decodeURIComponent(p));}catch(e){return;}
+  const key=parts[0],size=parts[1],lock=parts[2],uo=parts[3];
+  if(!PROFILES[key])return;jumpTab("builder");
+  const cc=$('#contentChips [data-c="'+key+'"]');if(cc)$("#contentChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===cc));
+  if(size){$("#sizeRange").value=size;$("#sizeOut").textContent=size;}
+  if(uo==="1"&&!useOwned){useOwned=true;LS.set("useOwned",true);renderRoster();renderCookies();renderTeams();}
+  buildLockOptions();if($("#lockSel")&&lock)$("#lockSel").value=lock;
+  renderBuild();}
+$("#cookieGrid").addEventListener("click",e=>{const o=e.target.closest("[data-own]");if(o){e.stopPropagation();toggleOwn(o.dataset.own);return;}const card=e.target.closest("[data-cookie]");if(card)openCookieModal(card.dataset.cookie);});
+$("#modal").addEventListener("click",e=>{if(e.target.id==="modal"||e.target.closest("[data-close]")){closeModal();return;}const o=e.target.closest("[data-own]");if(o){toggleOwn(o.dataset.own);openCookieModal(o.dataset.own);return;}const link=e.target.closest(".clk[data-cookie]");if(link)openCookieModal(link.dataset.cookie);});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+$("#teamStack").addEventListener("click",e=>{const sh=e.target.closest("[data-share]");if(sh){const st=teamState[+sh.dataset.share];const names=st.names.join(", ");if(navigator.clipboard)navigator.clipboard.writeText(names);toast("Copied: "+names.slice(0,40)+"…");return;}const clk=e.target.closest(".clk[data-cookie]");if(clk)openCookieModal(clk.dataset.cookie);});
+$("#buildResult").addEventListener("click",e=>{const j=e.target.closest("[data-jump]");if(j){jumpTab(j.dataset.jump);return;}const c=e.target.closest(".clk[data-cookie]");if(c)openCookieModal(c.dataset.cookie);});
+$("#stageResult").addEventListener("click",e=>{const j=e.target.closest("[data-jump]");if(j)jumpTab(j.dataset.jump);});
+const rg=$("#rosterGrid");if(rg)rg.addEventListener("click",e=>{const o=e.target.closest("[data-own]");if(o){toggleOwn(o.dataset.own);return;}const p=e.target.closest("[data-ownpet]");if(p)toggleOwn(p.dataset.ownpet,true);});
+if($("#useOwnedSwitch"))$("#useOwnedSwitch").addEventListener("click",()=>setUseOwned(!useOwned));
+if($("#rosterAll"))$("#rosterAll").addEventListener("click",()=>{COOKIES.forEach(c=>OWNED.add(c.n));PETS.forEach(p=>OWNED_PETS.add(p.n));saveOwned();renderRoster();renderCookies();renderTeams();buildLockOptions();renderBuild();});
+if($("#rosterNone"))$("#rosterNone").addEventListener("click",()=>{OWNED.clear();OWNED_PETS.clear();saveOwned();renderRoster();renderCookies();renderTeams();buildLockOptions();renderBuild();});
+if($("#bossSearch"))$("#bossSearch").addEventListener("input",e=>renderBossFinder(e.target.value));
+if($("#shareBuild"))$("#shareBuild").addEventListener("click",copyBuildLink);
+if($("#lockSel"))$("#lockSel").addEventListener("change",renderBuild);
+if($("#buildStage"))$("#buildStage").addEventListener("input",renderBuild);
+function renderGuide(){const el=$("#guideBody");if(!el)return;const secs=(typeof GUIDE_SECTIONS!=="undefined"&&GUIDE_SECTIONS.length)?GUIDE_SECTIONS:[];
+  el.innerHTML=secs.length?secs.map((s,i)=>`<details class="gcard" ${i<2?'open':''}><summary><span class="gicon">${s.icon||'•'}</span>${s.title}</summary><div class="gcontent">${s.html}</div></details>`).join(""):'<div class="empty">Guide loading…</div>';}
+function globalSearch(q){q=q.trim().toLowerCase();const box=$("#gResults");
+  if(!q){box.classList.remove("open");box.innerHTML="";return;}
+  const ck=COOKIES.filter(c=>c.n.toLowerCase().includes(q)).sort((a,b)=>GORDER[a.grade]-GORDER[b.grade]).slice(0,7);
+  const pt=PETS.filter(p=>p.n.toLowerCase().includes(q)).slice(0,5);
+  const sy=SYN_META.filter(s=>s.k.toLowerCase().includes(q)).slice(0,4);
+  const bm=BOSS_CACHE||(BOSS_CACHE=bossData());
+  const bs=Object.keys(bm).filter(n=>n.toLowerCase().includes(q)).slice(0,6);
+  let h="";
+  if(ck.length)h+='<div class="gsec">Cookies</div>'+ck.map(c=>`<div class="gitem" data-open="cookie" data-v="${c.n}"><span class="gdot" style="background:var(--e-${c.el.toLowerCase()})"></span>${c.n}<span class="gtag">${c.grade} · ${c.role}</span></div>`).join("");
+  if(bs.length)h+='<div class="gsec">Bosses</div>'+bs.map(n=>`<div class="gitem" data-open="boss" data-v="${n}"><span class="gdot" style="background:var(--boss)"></span>${n}<span class="gtag">${bm[n].length} stages</span></div>`).join("");
+  if(pt.length)h+='<div class="gsec">Pets</div>'+pt.map(p=>`<div class="gitem" data-open="pet" data-v="${p.n}"><span class="gdot" style="background:var(--accent)"></span>${p.n}<span class="gtag">${p.grade}</span></div>`).join("");
+  if(sy.length)h+='<div class="gsec">Synergies</div>'+sy.map(s=>`<div class="gitem" data-open="syn" data-v="${s.k}"><span class="gdot" style="background:var(--good)"></span>${s.k}<span class="gtag">${s.ko}</span></div>`).join("");
+  box.innerHTML=h||'<div class="gitem" style="color:var(--faint)">No matches for "'+q+'"</div>';box.classList.add("open");}
+function gOpen(type,v){const box=$("#gResults");box.classList.remove("open");$("#gSearch").value="";
+  if(type==="cookie")openCookieModal(v);
+  else if(type==="pet")jumpTab("pets");
+  else if(type==="boss"){jumpTab("stages");const b=$("#bossSearch");if(b){b.value=v;renderBossFinder(v);}}
+  else if(type==="syn")jumpTab("synergies");}
+if($("#gSearch")){
+  $("#gSearch").addEventListener("input",e=>globalSearch(e.target.value));
+  $("#gSearch").addEventListener("keydown",e=>{if(e.key==="Escape"){$("#gResults").classList.remove("open");$("#gSearch").value="";$("#gSearch").blur();}});
+  $("#gResults").addEventListener("click",e=>{const it=e.target.closest("[data-open]");if(it)gOpen(it.dataset.open,it.dataset.v);});
+  document.addEventListener("click",e=>{if(!e.target.closest(".gsearch"))$("#gResults").classList.remove("open");});
+}
+function econTier(e){return e>=1000?"eff-t1":e>=400?"eff-t2":"eff-t3";}
+function renderEcon(){
+  const btn=$("#econCat [aria-pressed='true']");const cat=btn?btn.dataset.cat:"All";
+  const list=PACKAGES.filter(p=>cat==="All"||p.cat===cat);
+  const top=list.length?list[0].eff:1;
+  $("#econBody").innerHTML=list.map(p=>'<tr><td><div class="eff-cell"><span class="eff-num '+econTier(p.eff)+'">'+p.eff.toLocaleString()+'%</span><span class="eff-bar"><span class="eff-fill" style="width:'+Math.max(4,Math.round(p.eff/top*100))+'%"></span></span></div></td><td><div class="econ-name">'+p.n+'</div><div class="econ-cat">'+p.cat+'</div></td><td class="econ-price">₩'+p.price.toLocaleString()+'</td><td class="econ-dia">'+p.dia.toLocaleString()+'💎</td><td class="econ-c">'+p.c+'</td></tr>').join("");
+  $("#econCount").textContent=list.length+" packages";
+}
+function powerFrontier(P){let f={f100:null,f75:null,f55:null};for(let ci=0;ci<STAGE_POW.length;ci++)for(let si=0;si<STAGE_POW[ci].length;si++){const rp=STAGE_POW[ci][si],lb=(ci+1)+"-"+(si+1);if(P>=rp)f.f100=lb;if(P>=rp*0.8)f.f75=lb;if(P>=rp*0.6)f.f55=lb;}return f;}
+function renderPlanner(){const box=$("#plannerResult");if(!box)return;const raw=$("#plannerPow").value.replace(/[^\d]/g,"");
+  if(!raw){box.innerHTML='<div class="verdict">Enter your team Power to see how far you can push right now.</div>';return;}
+  const P=+raw,f=powerFrontier(P);
+  const row=(d,st,note)=>'<div class="fr-row"><span class="fr-dmg">'+d+'% dmg</span><div><span class="fr-stage">'+(st||"—")+'</span> <span class="fr-sub">'+note+'</span></div></div>';
+  box.innerHTML='<div class="frontier">'+row(100,f.f100,"full damage — comfortable clear")+row(75,f.f75,"still very doable")+row(55,f.f55,"pushable with a strong team + dodging")+'</div><div class="verdict" style="margin-top:10px">At <b>'+P.toLocaleString()+'</b> Power you comfortably clear up to <b>'+(f.f100||"—")+'</b>. Beyond that you meet the <button class="linkbtn" data-jump="stages">damage brackets</button> — raise Power via <button class="linkbtn" data-jump="progression">Progression</button>.</div>';
+}
+(function(){const el=$("#econCat");if(!el)return;const cats=["All"].concat(Array.from(new Set(PACKAGES.map(p=>p.cat))));el.innerHTML=cats.map((c,i)=>'<button class="chip" aria-pressed="'+(i===0)+'" data-cat="'+c+'">'+c+'</button>').join("");})();
+if($("#econCat"))$("#econCat").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$("#econCat .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderEcon();});
+if($("#plannerBtn"))$("#plannerBtn").addEventListener("click",renderPlanner);
+if($("#plannerPow"))$("#plannerPow").addEventListener("keydown",e=>{if(e.key==="Enter")renderPlanner();});
+if($("#plannerResult"))$("#plannerResult").addEventListener("click",e=>{const j=e.target.closest("[data-jump]");if(j)jumpTab(j.dataset.jump);});
+$(".hq").forEach(b=>b.addEventListener("click",()=>jumpTab(b.dataset.hero)));
+const TIERS=[["S+",6.5],["S",5],["A",3.5],["B",2],["C",0]];
+const TCOL={"S+":"--g-tssr","S":"--g-ssr","A":"--g-sr","B":"--g-r","C":"--g-u"};
+const SCARCE_SYN=["Chain","Pierce","Multistrike","Proj. Speed"];
+function tierScore(c){let s=GRADEW[c.grade];if(META.has(c.n))s+=2;
+  if(c.gives.some(g=>SCARCE_SYN.includes(g)))s+=1.2;else if(c.gives.length)s+=0.6;
+  if(c.eff.some(e=>e==="DEF Down"||e==="ATK+"||e==="Skill Amp+"))s+=1;
+  if(c.eff.includes("Heal"))s+=0.6;return s;}
+function tierOf(c){const s=tierScore(c);for(const t of TIERS)if(s>=t[1])return t[0];return "C";}
+function renderTierlist(){
+  const rb=$("#tlRole [aria-pressed='true']"),eb=$("#tlEl [aria-pressed='true']");
+  const role=rb?rb.dataset.tlrole:"all",el=eb?eb.dataset.tlel:"all";
+  const groups={"S+":[],"S":[],"A":[],"B":[],"C":[]};
+  COOKIES.filter(c=>(role==="all"||c.role===role)&&(el==="all"||c.el===el)).forEach(c=>groups[tierOf(c)].push(c));
+  Object.keys(groups).forEach(t=>groups[t].sort((a,b)=>GORDER[a.grade]-GORDER[b.grade]||a.n.localeCompare(b.n)));
+  const el2=$("#tierboard");if(!el2)return;
+  el2.innerHTML=["S+","S","A","B","C"].map(t=>groups[t].length?'<div class="tier-row"><div class="tier-lab" style="background:var('+TCOL[t]+')">'+t+'</div><div class="tier-chips">'+groups[t].map(c=>'<span class="tchip clk" data-cookie="'+c.n+'"><span class="ed" style="background:var(--e-'+c.el.toLowerCase()+')"></span>'+(META.has(c.n)?"★ ":"")+c.n+(COOKIE_TIPS[c.n]?' <span class="tuse">'+COOKIE_TIPS[c.n].use+'</span>':'')+'</span>').join("")+'</div></div>':'').join("")||'<div class="empty">No cookies match.</div>';
+}
+if($("#tlRole")){$("#tlRole").innerHTML=chipHTML(ROLES,"tlrole","all");$("#tlEl").innerHTML=chipHTML(ELEMENTS,"tlel","all");
+  $("#tlRole").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$("#tlRole .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderTierlist();});
+  $("#tlEl").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$("#tlEl .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderTierlist();});
+  $("#tierboard").addEventListener("click",e=>{const c=e.target.closest(".clk[data-cookie]");if(c)openCookieModal(c.dataset.cookie);});}
+renderCookies();renderSyn();renderPets();renderTeams();renderProg();renderBuild();
+renderTierlist();
+
+renderEcon();renderPlanner();
+
+renderGuide();
+
+buildLockOptions();renderRoster();renderBossFinder("");parseHash();
+
+</script>
+
+</body>
+</html>
