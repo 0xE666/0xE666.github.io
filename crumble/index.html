@@ -919,7 +919,7 @@ function parseHash(){let hh=location.hash;if(!hh.startsWith("#build="))return;
   let parts;try{parts=hh.slice(7).split(".").map(p=>decodeURIComponent(p));}catch(e){return;}
   const key=parts[0],size=parts[1],lock=parts[2],uo=parts[3];
   if(!PROFILES[key])return;jumpTab("builder");
-  const cc=$('#contentChips [data-c="'+key+'"]');if(cc)$("#contentChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===cc));
+  const cc=$('#contentChips [data-c="'+key+'"]');if(cc)$$("#contentChips .chip").forEach(x=>x.setAttribute("aria-pressed",x===cc));
   if(size){$("#sizeRange").value=size;$("#sizeOut").textContent=size;}
   if(uo==="1"&&!useOwned){useOwned=true;LS.set("useOwned",true);renderRoster();renderCookies();renderTeams();}
   buildLockOptions();if($("#lockSel")&&lock)$("#lockSel").value=lock;
@@ -980,11 +980,11 @@ function renderPlanner(){const box=$("#plannerResult");if(!box)return;const raw=
   box.innerHTML='<div class="frontier">'+row(100,f.f100,"full damage — comfortable clear")+row(75,f.f75,"still very doable")+row(55,f.f55,"pushable with a strong team + dodging")+'</div><div class="verdict" style="margin-top:10px">At <b>'+P.toLocaleString()+'</b> Power you comfortably clear up to <b>'+(f.f100||"—")+'</b>. Beyond that you meet the <button class="linkbtn" data-jump="stages">damage brackets</button> — raise Power via <button class="linkbtn" data-jump="progression">Progression</button>.</div>';
 }
 (function(){const el=$("#econCat");if(!el)return;const cats=["All"].concat(Array.from(new Set(PACKAGES.map(p=>p.cat))));el.innerHTML=cats.map((c,i)=>'<button class="chip" aria-pressed="'+(i===0)+'" data-cat="'+c+'">'+c+'</button>').join("");})();
-if($("#econCat"))$("#econCat").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$("#econCat .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderEcon();});
+if($("#econCat"))$("#econCat").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$$("#econCat .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderEcon();});
 if($("#plannerBtn"))$("#plannerBtn").addEventListener("click",renderPlanner);
 if($("#plannerPow"))$("#plannerPow").addEventListener("keydown",e=>{if(e.key==="Enter")renderPlanner();});
 if($("#plannerResult"))$("#plannerResult").addEventListener("click",e=>{const j=e.target.closest("[data-jump]");if(j)jumpTab(j.dataset.jump);});
-$(".hq").forEach(b=>b.addEventListener("click",()=>jumpTab(b.dataset.hero)));
+$$(".hq").forEach(b=>b.addEventListener("click",()=>jumpTab(b.dataset.hero)));
 const TIERS=[["S+",6.5],["S",5],["A",3.5],["B",2],["C",0]];
 const TCOL={"S+":"--g-tssr","S":"--g-ssr","A":"--g-sr","B":"--g-r","C":"--g-u"};
 const SCARCE_SYN=["Chain","Pierce","Multistrike","Proj. Speed"];
@@ -1003,8 +1003,8 @@ function renderTierlist(){
   el2.innerHTML=["S+","S","A","B","C"].map(t=>groups[t].length?'<div class="tier-row"><div class="tier-lab" style="background:var('+TCOL[t]+')">'+t+'</div><div class="tier-chips">'+groups[t].map(c=>'<span class="tchip clk" data-cookie="'+c.n+'"><span class="ed" style="background:var(--e-'+c.el.toLowerCase()+')"></span>'+(META.has(c.n)?"★ ":"")+c.n+(COOKIE_TIPS[c.n]?' <span class="tuse">'+COOKIE_TIPS[c.n].use+'</span>':'')+'</span>').join("")+'</div></div>':'').join("")||'<div class="empty">No cookies match.</div>';
 }
 if($("#tlRole")){$("#tlRole").innerHTML=chipHTML(ROLES,"tlrole","all");$("#tlEl").innerHTML=chipHTML(ELEMENTS,"tlel","all");
-  $("#tlRole").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$("#tlRole .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderTierlist();});
-  $("#tlEl").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$("#tlEl .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderTierlist();});
+  $("#tlRole").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$$("#tlRole .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderTierlist();});
+  $("#tlEl").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;$$("#tlEl .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));renderTierlist();});
   $("#tierboard").addEventListener("click",e=>{const c=e.target.closest(".clk[data-cookie]");if(c)openCookieModal(c.dataset.cookie);});}
 renderCookies();renderSyn();renderPets();renderTeams();renderProg();renderBuild();
 renderTierlist();
