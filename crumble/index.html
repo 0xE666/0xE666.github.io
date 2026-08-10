@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="The all-in-one Cookie Run: Crumble companion — full cookie & pet codex, tier board, synergy-aware team optimizer, stage power tools, package value, and a complete guide.">
+<meta name="description" content="The all-in-one Cookie Run: Crumble companion — cookie & pet codex, tier board, team optimizer, stage power tools, package value, and a full guide.">
 <meta property="og:title" content="The Crumble Codex">
-<meta property="og:description" content="All-in-one Cookie Run: Crumble companion — codex, tier board, team optimizer, stage power, package value, and guide.">
+<meta property="og:description" content="All-in-one Cookie Run: Crumble companion.">
 <meta property="og:type" content="website">
 <meta name="robots" content="index,follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>%F0%9F%8D%AA</text></svg>">
@@ -66,11 +66,11 @@ nav.tabs{position:sticky;top:0;z-index:20;margin-top:24px;background:color-mix(i
 .tabs-inner{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
 .tabs-inner::-webkit-scrollbar{display:none}
 .tab{appearance:none;background:none;border:none;cursor:pointer;color:var(--muted);font-family:var(--font-display);font-weight:700;font-size:.92rem;
-  padding:15px 16px;white-space:nowrap;position:relative;transition:color .15s}
+  padding:15px 13px;white-space:nowrap;position:relative;transition:color .15s}
 .tab:hover{color:var(--text)}
 .tab[aria-selected="true"]{color:var(--accent)}
-.tab[aria-selected="true"]::after{content:"";position:absolute;left:16px;right:16px;bottom:-1px;height:2px;background:var(--accent);border-radius:2px 2px 0 0}
-.tab .n{font-family:var(--font-mono);font-size:.68rem;color:var(--faint);margin-left:5px}
+.tab[aria-selected="true"]::after{content:"";position:absolute;left:13px;right:13px;bottom:-1px;height:2px;background:var(--accent);border-radius:2px 2px 0 0}
+.tab .n{display:none}
 main{padding:28px 0 90px}
 .panel{display:none;animation:fade .3s ease}
 .panel.active{display:block}
@@ -403,13 +403,13 @@ footer a{color:var(--muted)}footer .srcs{display:flex;gap:8px 16px;flex-wrap:wra
 
 <nav class="tabs"><div class="wrap"><div class="tabs-inner" role="tablist">
   <button class="tab" role="tab" aria-selected="true" data-panel="cookies">Cookies <span class="n" id="cc"></span></button>
-    <button class="tab" role="tab" aria-selected="false" data-panel="tierlist">Tier Board</button><button class="tab" role="tab" aria-selected="false" data-panel="guide">Guide</button>
+    <button class="tab" role="tab" aria-selected="false" data-panel="tierlist">Tiers</button><button class="tab" role="tab" aria-selected="false" data-panel="guide">Guide</button>
   <button class="tab" role="tab" aria-selected="false" data-panel="synergies">Synergies <span class="n">7</span></button>
   <button class="tab" role="tab" aria-selected="false" data-panel="pets">Pets <span class="n">54</span></button>
-  <button class="tab" role="tab" aria-selected="false" data-panel="roster">My Roster</button>  <button class="tab" role="tab" aria-selected="false" data-panel="teams">Team Comps</button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="roster">Roster</button>  <button class="tab" role="tab" aria-selected="false" data-panel="teams">Comps</button>
   <button class="tab" role="tab" aria-selected="false" data-panel="builder">Builder <span class="n">✦</span></button>
-  <button class="tab" role="tab" aria-selected="false" data-panel="stages">Stage Power</button>
-  <button class="tab" role="tab" aria-selected="false" data-panel="economy">Package Value</button>  <button class="tab" role="tab" aria-selected="false" data-panel="progression">Progression</button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="stages">Stages</button>
+  <button class="tab" role="tab" aria-selected="false" data-panel="economy">Packages</button>  <button class="tab" role="tab" aria-selected="false" data-panel="progression">Progress</button>
 </div></div></nav>
 
 <main class="wrap">
@@ -535,12 +535,7 @@ footer a{color:var(--muted)}footer .srcs{display:flex;gap:8px 16px;flex-wrap:wra
 </main>
 
 <footer class="wrap">
-  <div>Cookie, pet, element, class, and synergy values reflect the current game build (1.0.002). Tier stars, team comps, ratings, guide, and progression tips are editorial and community-informed — provisional and subject to balance patches.</div>
-  <div class="srcs">
-    <a href="https://www.pockettactics.com/cookierun-crumble/tier-list">Pocket Tactics</a>
-    <a href="https://www.pocketgamer.com/cookierun-crumble/best-teams/">Pocket Gamer</a>
-    <a href="https://cookieruncrumble.guide/cookie-run-crumble-best-team/">CookieRun Crumble Guide</a>
-  </div>
+  <div>🍪 The Crumble Codex — a community fan-made tool.</div>
 </footer>
 <div id="modal" class="modal"><div class="modal-card"><button class="m-close" data-close aria-label="Close">✕</button><div id="modalBody"></div></div></div>
 
